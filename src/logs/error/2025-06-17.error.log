@@ -1,0 +1,13 @@
+2025-06-17 16:23:22 error: StatusCode : 404, Message : Authentication token missing
+2025-06-17 16:48:50 error: StatusCode : 400, Message : time must be a string
+2025-06-17 16:50:01 error: StatusCode : 500, Message : insert into "event" ("address_line_1", "address_line_2", "agenda", "all_day", "banner_image", "city", "created_at", "created_by", "currency", "date", "deleted_at", "deleted_by", "event_description", "event_title", "gate_no", "is_active", "is_deleted", "map_integration", "meta_description", "meta_title", "meta_url", "more_images", "our_partners", "pincode", "promo_video", "seats_remaining", "seats_remaining_indicator", "speaker_details", "sponsors", "state", "tags", "ticket_price", "time", "time_zone_selector", "total_seats", "updated_by", "venue_name") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37) returning * - null value in column "time" of relation "event" violates not-null constraint
+2025-06-17 18:10:48 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-17 18:11:09 error: StatusCode : 400, Message : Event ID is required
+2025-06-17 18:12:28 error: StatusCode : 400, Message : Event ID is required
+2025-06-17 18:20:14 error: StatusCode : 400, Message : Unexpected token '}', ..."ed_at": 
+}" is not valid JSON
+2025-06-17 18:20:40 error: StatusCode : 500, Message : update "event" set "is_deleted" = $1, "status" = $2, "deleted_by" = $3, "deleted_at" = $4 where "event_id" = $5 returning * - column "status" of relation "event" does not exist
+2025-06-17 19:07:59 error: StatusCode : 400, Message : deleted_at must be a Date instance
+2025-06-17 19:08:22 error: StatusCode : 400, Message : deleted_at must be a Date instance
+2025-06-17 19:09:42 error: StatusCode : 400, Message : deleted_at must be a Date instance
+2025-06-17 19:10:53 error: StatusCode : 400, Message : deleted_at must be a Date instance

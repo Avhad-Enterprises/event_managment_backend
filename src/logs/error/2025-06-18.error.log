@@ -1,0 +1,37 @@
+2025-06-18 15:34:06 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-18 16:12:05 error: StatusCode : 400, Message : form_data must be a json string
+2025-06-18 16:13:55 error: StatusCode : 400, Message : id must be a number conforming to the specified constraints, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-18 16:17:16 error: StatusCode : 400, Message : id must be a number conforming to the specified constraints
+2025-06-18 16:18:37 error: StatusCode : 400, Message : id must be an integer number
+2025-06-18 16:23:51 error: StatusCode : 400, Message : id must be an integer number
+2025-06-18 18:23:26 error: uncaughtException: Route.put() requires a callback function but got a [object Undefined]
+Error: Route.put() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as put] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\router\route.js:216:15)
+    at Function.proto.<computed> [as put] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\router\index.js:521:19)
+    at DynamicFormRoute.initializeRoutes (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\routes\dynamicform.route.ts:21:21)
+    at new DynamicFormRoute (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\routes\dynamicform.route.ts:13:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:13:115)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+2025-06-18 18:23:29 error: uncaughtException: Route.put() requires a callback function but got a [object Undefined]
+Error: Route.put() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as put] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\router\route.js:216:15)
+    at Function.proto.<computed> [as put] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\router\index.js:521:19)
+    at DynamicFormRoute.initializeRoutes (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\routes\dynamicform.route.ts:21:21)
+    at new DynamicFormRoute (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\routes\dynamicform.route.ts:13:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:13:115)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+2025-06-18 18:30:05 error: StatusCode : 400, Message : Unexpected token '}', ..."ed_at": 
+}" is not valid JSON
+2025-06-18 18:30:49 error: StatusCode : 400, Message : form_title must be a string, form_title should not be empty, form_description must be a string, form_description should not be empty, form_data must be a json string, form_data should not be empty
+2025-06-18 18:32:31 error: StatusCode : 404, Message : Form not found
+2025-06-18 18:32:31 error: StatusCode : 404, Message : Form not found
+2025-06-18 18:32:44 error: StatusCode : 404, Message : Form not found
+2025-06-18 18:32:44 error: StatusCode : 404, Message : Form not found

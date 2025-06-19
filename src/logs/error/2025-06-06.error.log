@@ -1,0 +1,53 @@
+2025-06-06 09:56:11 error: StatusCode : 500, Message : select * from "employee" where "email" = $1 limit $2 - relation "employee" does not exist
+2025-06-06 09:56:13 error: StatusCode : 500, Message : select * from "employee" where "email" = $1 limit $2 - relation "employee" does not exist
+2025-06-06 09:56:46 error: StatusCode : 500, Message : select * from "employee" where "email" = $1 limit $2 - relation "employee" does not exist
+2025-06-06 09:56:55 error: StatusCode : 500, Message : select * from "employee" where "email" = $1 limit $2 - relation "employee" does not exist
+2025-06-06 09:57:09 error: StatusCode : 500, Message : select * from "employee" where "email" = $1 limit $2 - relation "employee" does not exist
+2025-06-06 10:15:01 error: uncaughtException: Cannot find module './users.schema'
+Require stack:
+- D:\React Apps\Event Management\Event Management Backend\itw-backend\src\database\index.schema.ts
+- D:\React Apps\Event Management\Event Management Backend\itw-backend\src\middlewares\auth.middleware.ts
+- D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts
+- D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts
+Error: Cannot find module './users.schema'
+Require stack:
+- D:\React Apps\Event Management\Event Management Backend\itw-backend\src\database\index.schema.ts
+- D:\React Apps\Event Management\Event Management Backend\itw-backend\src\middlewares\auth.middleware.ts
+- D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts
+- D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\database\index.schema.ts:24:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-06-06 12:55:33 error: StatusCode : 500, Message : select * where "email" = $1 limit $2 - SELECT * with no tables specified is not valid
+2025-06-06 15:10:03 error: StatusCode : 500, Message : select * where "email" = $1 limit $2 - SELECT * with no tables specified is not valid
+2025-06-06 15:12:11 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:12:34 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:13:22 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:14:28 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:16:31 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:24:25 error: StatusCode : 404, Message : Email not registered
+2025-06-06 15:44:40 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:53:29 error: StatusCode : 409, Message : Email already registered
+2025-06-06 17:19:27 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-06 17:21:06 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 18:51:09 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:00:30 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:00:46 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:01:38 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:02:54 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:03:34 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:03:42 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:07:57 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:08:18 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:09:48 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:13:09 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:13:12 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:13:24 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:15:21 error: StatusCode : 500, Message : Failed to upload file

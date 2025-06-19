@@ -1,0 +1,12 @@
+2025-05-24 15:21:11 error: StatusCode : 500, Message : update "event" set "is_deleted" = $1, "status" = $2, "deleted_by" = $3, "deleted_at" = $4 where "event_id" = $5 returning * - invalid input syntax for type integer: "admin"
+2025-05-24 15:23:17 error: StatusCode : 500, Message : update "event" set "is_deleted" = $1, "status" = $2, "deleted_by" = $3, "deleted_at" = $4 where "event_id" = $5 returning * - invalid input syntax for type integer: "admin"
+2025-05-24 15:33:23 error: StatusCode : 500, Message : update "event" set "is_deleted" = $1, "status" = $2, "deleted_by" = $3, "deleted_at" = $4 where "event_id" = $5 returning * - invalid input syntax for type integer: "admin"
+2025-05-24 15:33:40 error: StatusCode : 500, Message : update "event" set "is_deleted" = $1, "status" = $2, "deleted_by" = $3, "deleted_at" = $4 where "event_id" = $5 returning * - invalid input syntax for type integer: "admin"
+2025-05-24 15:35:36 error: StatusCode : 500, Message : update "event" set "is_deleted" = $1, "status" = $2, "deleted_by" = $3, "deleted_at" = $4 where "event_id" = $5 returning * - invalid input syntax for type integer: "admin"
+2025-05-24 15:36:07 error: StatusCode : 500, Message : update "event" set "is_deleted" = $1, "status" = $2, "deleted_by" = $3, "deleted_at" = $4 where "event_id" = $5 returning * - invalid input syntax for type integer: "admin"
+2025-05-24 15:36:55 error: StatusCode : 500, Message : update "event" set "is_deleted" = $1, "status" = $2, "deleted_by" = $3, "deleted_at" = $4 where "event_id" = $5 returning * - invalid input syntax for type integer: "admin"
+2025-05-24 15:38:29 error: StatusCode : 500, Message : update "event" set "is_deleted" = $1, "status" = $2, "deleted_by" = $3, "deleted_at" = $4 where "event_id" = $5 returning * - invalid input syntax for type integer: "admin"
+2025-05-24 15:38:29 error: StatusCode : 500, Message : update "event" set "is_deleted" = $1, "status" = $2, "deleted_by" = $3, "deleted_at" = $4 where "event_id" = $5 returning * - invalid input syntax for type integer: "admin"
+2025-05-24 16:08:13 error: StatusCode : 401, Message : Incorrect password
+2025-05-24 16:09:03 error: StatusCode : 401, Message : Incorrect password
+2025-05-24 16:09:46 error: StatusCode : 401, Message : Incorrect password

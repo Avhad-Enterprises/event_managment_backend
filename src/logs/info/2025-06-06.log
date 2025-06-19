@@ -1,0 +1,315 @@
+2025-06-06 09:31:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 09:33:54 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 1.317 ms - 0[0m
+2025-06-06 09:33:54 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.150 ms - 0[0m
+2025-06-06 09:33:54 info: [0mGET /api/v1/booking/activebookings [36m304[0m 112.803 ms - -[0m
+2025-06-06 09:33:54 info: [0mGET /api/v1/booking/activebookings [36m304[0m 7.471 ms - -[0m
+2025-06-06 09:33:56 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.161 ms - 0[0m
+2025-06-06 09:33:56 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.160 ms - 0[0m
+2025-06-06 09:33:56 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 10.279 ms - -[0m
+2025-06-06 09:33:56 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 4.395 ms - -[0m
+2025-06-06 09:34:03 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.158 ms - 0[0m
+2025-06-06 09:34:03 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.115 ms - 0[0m
+2025-06-06 09:34:03 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 11.499 ms - -[0m
+2025-06-06 09:34:03 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 6.549 ms - -[0m
+2025-06-06 09:56:11 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 0.119 ms - 0[0m
+2025-06-06 09:56:11 error: StatusCode : 500, Message : select * from "employee" where "email" = $1 limit $2 - relation "employee" does not exist
+2025-06-06 09:56:11 info: [0mPOST /api/v1/employee/login [31m500[0m 33.570 ms - 109[0m
+2025-06-06 09:56:13 error: StatusCode : 500, Message : select * from "employee" where "email" = $1 limit $2 - relation "employee" does not exist
+2025-06-06 09:56:13 info: [0mPOST /api/v1/employee/login [31m500[0m 2.978 ms - 109[0m
+2025-06-06 09:56:46 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 0.365 ms - 0[0m
+2025-06-06 09:56:46 error: StatusCode : 500, Message : select * from "employee" where "email" = $1 limit $2 - relation "employee" does not exist
+2025-06-06 09:56:46 info: [0mPOST /api/v1/employee/login [31m500[0m 2.212 ms - 109[0m
+2025-06-06 09:56:55 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 0.104 ms - 0[0m
+2025-06-06 09:56:55 error: StatusCode : 500, Message : select * from "employee" where "email" = $1 limit $2 - relation "employee" does not exist
+2025-06-06 09:56:55 info: [0mPOST /api/v1/employee/login [31m500[0m 2.029 ms - 109[0m
+2025-06-06 09:57:09 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 0.161 ms - 0[0m
+2025-06-06 09:57:09 error: StatusCode : 500, Message : select * from "employee" where "email" = $1 limit $2 - relation "employee" does not exist
+2025-06-06 09:57:09 info: [0mPOST /api/v1/employee/login [31m500[0m 2.982 ms - 109[0m
+2025-06-06 09:59:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 10:00:54 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 10:14:07 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 10:14:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 10:14:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 10:15:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 10:15:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 10:15:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 12:55:33 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 8.529 ms - 0[0m
+2025-06-06 12:55:33 error: StatusCode : 500, Message : select * where "email" = $1 limit $2 - SELECT * with no tables specified is not valid
+2025-06-06 12:55:33 info: [0mPOST /api/v1/employee/login [31m500[0m 116.403 ms - 101[0m
+2025-06-06 13:56:57 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:05:20 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:05:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:07:08 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:07:12 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:07:57 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:08:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:08:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:08:36 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:08:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:10:03 error: StatusCode : 500, Message : select * where "email" = $1 limit $2 - SELECT * with no tables specified is not valid
+2025-06-06 15:10:03 info: [0mPOST /api/v1/employee/login [31m500[0m 187.516 ms - 101[0m
+2025-06-06 15:11:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:12:11 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:12:11 info: [0mPOST /api/v1/employee/insertemployee [33m404[0m 17.346 ms - 42[0m
+2025-06-06 15:12:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:12:34 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:12:34 info: [0mPOST /api/v1/employee/insertemployee [33m404[0m 13.611 ms - 42[0m
+2025-06-06 15:13:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:13:22 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:13:22 info: [0mPOST /api/v1/employee/insertemployee [33m404[0m 14.900 ms - 42[0m
+2025-06-06 15:14:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:14:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:14:28 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:14:28 info: [0mPOST /api/v1/employee/insertemployee [33m404[0m 15.794 ms - 42[0m
+2025-06-06 15:16:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:16:29 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:16:31 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:16:31 info: [0mPOST /api/v1/employee/insertemployee [33m404[0m 16.264 ms - 42[0m
+2025-06-06 15:17:27 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:21:32 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:22:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:22:27 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:22:30 info: [0mPOST /api/v1/employee/insertemployee [32m201[0m 137.868 ms - 710[0m
+2025-06-06 15:23:11 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 1.099 ms - 0[0m
+2025-06-06 15:23:11 info: [0mPOST /api/v1/employee/login [32m200[0m 81.274 ms - -[0m
+2025-06-06 15:23:49 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:24:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:24:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:24:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:24:19 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:24:25 error: StatusCode : 404, Message : Email not registered
+2025-06-06 15:24:25 info: [0mPOST /api/v1/users/login [33m404[0m 67.329 ms - 34[0m
+2025-06-06 15:24:34 info: [0mPOST /api/v1/users/login [32m200[0m 72.026 ms - -[0m
+2025-06-06 15:24:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:25:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:26:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:29:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:30:08 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:31:01 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:31:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:31:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:33:17 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:33:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:33:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:33:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:33:53 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:34:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:34:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:34:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:34:55 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:35:05 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:35:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:35:26 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:35:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:35:41 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:36:07 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:38:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:38:11 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:39:08 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:40:24 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:40:32 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:41:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:41:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:42:03 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:42:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:42:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:42:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:42:43 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:43:12 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 15:44:40 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 15:44:40 info: [0mPOST /api/v1/employee/insertemployee [33m404[0m 13.956 ms - 42[0m
+2025-06-06 15:52:04 info: [0mPOST /api/v1/employee/insertemployee [33m404[0m 62.724 ms - 170[0m
+2025-06-06 15:52:21 info: [0mPOST /api/v1/users/insertemployee [32m201[0m 80.545 ms - 711[0m
+2025-06-06 15:52:50 info: [0mPOST /api/v1/users/insertemployee [32m201[0m 70.961 ms - 724[0m
+2025-06-06 15:53:16 info: [0mPOST /api/v1/users/insertemployee [32m201[0m 66.579 ms - 708[0m
+2025-06-06 15:53:29 error: StatusCode : 409, Message : Email already registered
+2025-06-06 15:53:29 info: [0mPOST /api/v1/users/insertemployee [33m409[0m 7.984 ms - 38[0m
+2025-06-06 16:04:54 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:05:01 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:05:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:07:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:23:12 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:26:26 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:26:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:26:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:26:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:27:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:27:19 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:27:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:27:34 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:39:57 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:40:08 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:41:04 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:41:08 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:43:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:43:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:43:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:43:43 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:44:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:45:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:45:19 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:46:24 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:50:32 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:51:41 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:51:55 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:51:59 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:52:26 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:52:43 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:52:53 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:52:57 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:53:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:53:14 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:53:28 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:54:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:54:18 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:54:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:54:55 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:55:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:55:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:55:54 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:56:05 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:58:26 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:58:29 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:59:01 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:59:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 16:59:44 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:00:14 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:00:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:00:53 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:01:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:01:27 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:02:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:03:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:06:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:06:29 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:06:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:11:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:11:43 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:12:37 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:13:08 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:13:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:16:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:17:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:17:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:17:29 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:17:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:18:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:18:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:18:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:18:37 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:19:27 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-06 17:19:27 info: [0mPOST /api/v1//files/uploadtoaws [33m401[0m 23.720 ms - 40[0m
+2025-06-06 17:19:48 info: [0mPOST /api/v1//files/uploadtoaws [33m404[0m 58.160 ms - 165[0m
+2025-06-06 17:19:57 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:20:41 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:20:56 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:21:06 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 17:21:06 info: [0mPOST /api/v1//files/uploadtoaws [31m500[0m 189.539 ms - 35[0m
+2025-06-06 17:21:14 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:21:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:21:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:21:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:21:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 17:24:22 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 2.104 ms - 0[0m
+2025-06-06 17:24:22 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.193 ms - 0[0m
+2025-06-06 17:24:22 info: [0mGET /api/v1/event/activeevents [36m304[0m 99.802 ms - -[0m
+2025-06-06 17:24:22 info: [0mGET /api/v1/event/activeevents [36m304[0m 9.277 ms - -[0m
+2025-06-06 17:24:26 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.278 ms - 0[0m
+2025-06-06 17:24:26 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.107 ms - 0[0m
+2025-06-06 17:24:26 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 8.067 ms - -[0m
+2025-06-06 17:24:26 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 7.184 ms - -[0m
+2025-06-06 17:49:05 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.133 ms - 0[0m
+2025-06-06 17:49:05 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.294 ms - 0[0m
+2025-06-06 17:49:05 info: [0mGET /api/v1/event/activeevents [36m304[0m 12.100 ms - -[0m
+2025-06-06 17:49:05 info: [0mGET /api/v1/event/activeevents [36m304[0m 10.483 ms - -[0m
+2025-06-06 18:23:21 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.148 ms - 0[0m
+2025-06-06 18:23:21 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.112 ms - 0[0m
+2025-06-06 18:23:21 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 5.916 ms - -[0m
+2025-06-06 18:23:21 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 6.313 ms - -[0m
+2025-06-06 18:27:21 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.127 ms - 0[0m
+2025-06-06 18:27:21 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 4.803 ms - -[0m
+2025-06-06 18:36:34 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.217 ms - 0[0m
+2025-06-06 18:36:34 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.152 ms - 0[0m
+2025-06-06 18:36:34 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 8.059 ms - -[0m
+2025-06-06 18:36:34 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 5.175 ms - -[0m
+2025-06-06 18:36:38 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 8.517 ms - -[0m
+2025-06-06 18:36:38 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 4.683 ms - -[0m
+2025-06-06 18:37:42 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.127 ms - 0[0m
+2025-06-06 18:37:42 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.156 ms - 0[0m
+2025-06-06 18:37:42 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 6.869 ms - -[0m
+2025-06-06 18:37:42 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 3.241 ms - -[0m
+2025-06-06 18:40:16 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.378 ms - 0[0m
+2025-06-06 18:40:16 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.286 ms - 0[0m
+2025-06-06 18:40:16 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 43.689 ms - -[0m
+2025-06-06 18:40:16 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 10.338 ms - -[0m
+2025-06-06 18:40:19 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 5.752 ms - -[0m
+2025-06-06 18:40:19 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 6.422 ms - -[0m
+2025-06-06 18:40:37 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.189 ms - 0[0m
+2025-06-06 18:40:37 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.656 ms - 0[0m
+2025-06-06 18:40:37 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 5.351 ms - -[0m
+2025-06-06 18:40:37 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 5.936 ms - -[0m
+2025-06-06 18:41:22 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.116 ms - 0[0m
+2025-06-06 18:41:22 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 3.141 ms - -[0m
+2025-06-06 18:41:24 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 10.383 ms - -[0m
+2025-06-06 18:41:24 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 10.122 ms - -[0m
+2025-06-06 18:43:04 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.119 ms - 0[0m
+2025-06-06 18:43:04 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.116 ms - 0[0m
+2025-06-06 18:43:04 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 9.605 ms - -[0m
+2025-06-06 18:43:04 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 6.357 ms - -[0m
+2025-06-06 18:43:24 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.136 ms - 0[0m
+2025-06-06 18:43:24 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 2.820 ms - -[0m
+2025-06-06 18:44:32 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.153 ms - 0[0m
+2025-06-06 18:44:32 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.231 ms - 0[0m
+2025-06-06 18:44:32 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 3.318 ms - -[0m
+2025-06-06 18:44:32 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 3.724 ms - -[0m
+2025-06-06 18:44:56 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.127 ms - 0[0m
+2025-06-06 18:44:56 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.451 ms - 0[0m
+2025-06-06 18:44:56 info: [0mGET /api/v1/event/activeevents [36m304[0m 10.134 ms - -[0m
+2025-06-06 18:44:56 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.993 ms - -[0m
+2025-06-06 18:51:09 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 18:51:09 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 221.523 ms - 35[0m
+2025-06-06 19:00:30 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:00:30 info: [0mPOST /api/v1/files/uploadtoaws [33m404[0m 1.565 ms - 42[0m
+2025-06-06 19:00:46 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:00:46 info: [0mPOST /api/v1/files/uploadtoaws [33m404[0m 3.251 ms - 42[0m
+2025-06-06 19:01:38 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:01:38 info: [0mPOST /api/v1/files/uploadtoaws [33m404[0m 2.744 ms - 42[0m
+2025-06-06 19:02:54 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:02:54 info: [0mPOST /api/v1/files/uploadtoaws [33m404[0m 2.498 ms - 42[0m
+2025-06-06 19:03:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:03:34 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:03:34 info: [0mPOST /api/v1/files/uploadtoaws [33m404[0m 30.865 ms - 42[0m
+2025-06-06 19:03:42 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:03:42 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 287.751 ms - 35[0m
+2025-06-06 19:07:57 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:07:57 info: [0mPOST /api/v1/files/uploadtoaws [33m404[0m 2.044 ms - 42[0m
+2025-06-06 19:08:18 error: StatusCode : 404, Message : Authentication token missing
+2025-06-06 19:08:18 info: [0mPOST /api/v1/files/uploadtoaws [33m404[0m 2.182 ms - 42[0m
+2025-06-06 19:09:47 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.540 ms - 0[0m
+2025-06-06 19:09:48 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:09:48 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 108.216 ms - 35[0m
+2025-06-06 19:11:44 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:11:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:11:54 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:11:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:12:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:12:44 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:13:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:13:09 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:13:09 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 194.642 ms - 35[0m
+2025-06-06 19:13:12 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:13:12 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 55.714 ms - 35[0m
+2025-06-06 19:13:24 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.464 ms - 0[0m
+2025-06-06 19:13:24 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:13:24 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 95.588 ms - 35[0m
+2025-06-06 19:14:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:15:11 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:15:21 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 1.318 ms - 0[0m
+2025-06-06 19:15:21 error: StatusCode : 500, Message : Failed to upload file
+2025-06-06 19:15:21 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 252.608 ms - 35[0m
+2025-06-06 19:15:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:15:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:16:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:16:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:16:44 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-06 19:44:06 info: 🚀 App listening on the port 8000. Current Env development.

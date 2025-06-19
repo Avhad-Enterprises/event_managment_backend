@@ -1,0 +1,123 @@
+2025-05-21 10:56:25 error: uncaughtException: Cannot find module './test.schema'
+Require stack:
+- D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\services\employee.service.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\controllers\employee.controller.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\routes\employee.route.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\server.ts
+Error: Cannot find module './test.schema'
+Require stack:
+- D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\services\employee.service.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\controllers\employee.controller.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\routes\employee.route.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (D:\React Apps\React Ticket Management\itw-backend\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts:27:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\React Ticket Management\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\React Ticket Management\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-05-21 11:01:22 error: uncaughtException: Cannot find module './test.schema'
+Require stack:
+- D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\services\employee.service.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\controllers\employee.controller.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\routes\employee.route.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\server.ts
+Error: Cannot find module './test.schema'
+Require stack:
+- D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\services\employee.service.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\controllers\employee.controller.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\routes\employee.route.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (D:\React Apps\React Ticket Management\itw-backend\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts:27:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\React Ticket Management\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\React Ticket Management\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-05-21 11:05:00 error: StatusCode : 400, Message : Data Invalid
+2025-05-21 11:34:49 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 11:35:56 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:11:00 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:12:56 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:17:29 error: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\React Apps\React Ticket Management\itw-backend\node_modules\express\lib\router\route.js:216:15)
+    at Function.proto.<computed> [as post] (D:\React Apps\React Ticket Management\itw-backend\node_modules\express\lib\router\index.js:521:19)
+    at EmployeeRoute.initializeRoutes (D:\React Apps\React Ticket Management\itw-backend\src\routes\employee.route.ts:21:17)
+    at new EmployeeRoute (D:\React Apps\React Ticket Management\itw-backend\src\routes\employee.route.ts:15:10)
+    at Object.<anonymous> (D:\React Apps\React Ticket Management\itw-backend\src\server.ts:8:22)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\React Ticket Management\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\React Ticket Management\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+2025-05-21 12:17:49 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:26:32 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:26:41 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:31:42 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:31:49 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:33:48 error: StatusCode : 400, Message : Email is required
+2025-05-21 12:35:29 error: StatusCode : 400, Message : Email is required
+2025-05-21 12:36:27 error: StatusCode : 400, Message : Email is required
+2025-05-21 12:37:43 error: StatusCode : 409, Message : Email already registered
+2025-05-21 18:55:24 error: uncaughtException: Cannot find module './users.schema'
+Require stack:
+- D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\services\employee.service.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\controllers\employee.controller.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\routes\employee.route.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\server.ts
+Error: Cannot find module './users.schema'
+Require stack:
+- D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\services\employee.service.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\controllers\employee.controller.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\routes\employee.route.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (D:\React Apps\React Ticket Management\itw-backend\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts:28:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\React Ticket Management\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\React Ticket Management\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-05-21 18:55:29 error: uncaughtException: Cannot find module './users.schema'
+Require stack:
+- D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\services\employee.service.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\controllers\employee.controller.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\routes\employee.route.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\server.ts
+Error: Cannot find module './users.schema'
+Require stack:
+- D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\services\employee.service.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\controllers\employee.controller.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\routes\employee.route.ts
+- D:\React Apps\React Ticket Management\itw-backend\src\server.ts
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:1225:15)
+    at Function.Module._resolveFilename.sharedData.moduleResolveFilenameHook.installedValue [as _resolveFilename] (D:\React Apps\React Ticket Management\itw-backend\node_modules\@cspotcode\source-map-support\source-map-support.js:811:30)
+    at Function.Module._load (node:internal/modules/cjs/loader:1051:27)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+    at require (node:internal/modules/helpers:179:18)
+    at Object.<anonymous> (D:\React Apps\React Ticket Management\itw-backend\src\database\index.schema.ts:28:1)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\React Ticket Management\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\React Ticket Management\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-05-21 19:12:50 error: StatusCode : 409, Message : Email already registered

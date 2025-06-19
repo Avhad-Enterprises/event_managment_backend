@@ -1,0 +1,18 @@
+2025-06-03 10:08:15 error: StatusCode : 404, Message : Authentication token missing
+2025-06-03 10:10:20 error: StatusCode : 500, Message : document is not defined
+2025-06-03 10:11:09 error: StatusCode : 500, Message : insert into "bookings" ("booking_status", "created_by", "email_address", "event_id", "is_active", "location", "name", "notes", "notify_via_email_sms", "payment_method", "phone_number", "promo_code", "quantity", "tags", "terms_and_conditions", "ticket_download_link", "ticket_price", "ticket_type", "total_amount") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19) returning * - invalid input syntax for type json
+2025-06-03 10:11:23 error: StatusCode : 500, Message : document is not defined
+2025-06-03 10:16:07 error: StatusCode : 500, Message : Input file is missing: D:\React Apps\Event Management\Event Management Backend\itw-backend\src\assets\ticket_template.png
+2025-06-03 10:16:16 error: StatusCode : 500, Message : Input file is missing: D:\React Apps\Event Management\Event Management Backend\itw-backend\src\assets\ticket_template.png
+2025-06-03 10:18:59 error: StatusCode : 500, Message : Failed to send email
+2025-06-03 11:04:39 error: StatusCode : 500, Message : bwipp.typeError: barcode text not a string (22)
+2025-06-03 16:10:12 error: StatusCode : 400, Message : Expected double-quoted property name in JSON at position 2917
+2025-06-03 16:11:49 error: StatusCode : 400, Message : Expected double-quoted property name in JSON at position 1318
+2025-06-03 16:12:02 error: StatusCode : 404, Message : Authentication token missing
+2025-06-03 16:12:41 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-03 16:13:41 error: StatusCode : 400, Message : more_images must be a string, speaker_details must be a json string
+2025-06-03 16:13:48 error: StatusCode : 400, Message : speaker_details must be a json string
+2025-06-03 16:14:44 error: StatusCode : 400, Message : speaker_details must be a json string
+2025-06-03 17:55:02 error: StatusCode : 400, Message : speaker_details must be a json string
+2025-06-03 18:04:24 error: StatusCode : 400, Message : speaker_details must be a json string
+2025-06-03 19:26:11 error: StatusCode : 500, Message : insert into "tags" ("created_by", "is_active", "tag_name", "tag_value") values ($1, $2, $3, $4) returning * - null value in column "tag_type" of relation "tags" violates not-null constraint

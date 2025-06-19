@@ -1,0 +1,366 @@
+2025-06-05 09:24:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 09:24:43 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 09:24:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 09:24:55 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 2.172 ms - 0[0m
+2025-06-05 09:24:55 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.123 ms - 0[0m
+2025-06-05 09:24:55 info: [0mGET /api/v1/event/activeevents [36m304[0m 114.802 ms - -[0m
+2025-06-05 09:24:55 info: [0mGET /api/v1/event/activeevents [36m304[0m 7.831 ms - -[0m
+2025-06-05 09:25:01 info: [0mOPTIONS /api/v1/event/editevent/7 [32m204[0m 0.219 ms - 0[0m
+2025-06-05 09:25:01 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.150 ms - 0[0m
+2025-06-05 09:25:01 info: [0mOPTIONS /api/v1/event/editevent/7 [32m204[0m 0.145 ms - 0[0m
+2025-06-05 09:25:01 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.113 ms - 0[0m
+2025-06-05 09:25:01 info: [0mGET /api/v1/event/editevent/7 [36m304[0m 20.862 ms - -[0m
+2025-06-05 09:25:01 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 26.073 ms - -[0m
+2025-06-05 09:25:01 info: [0mGET /api/v1/event/editevent/7 [36m304[0m 14.915 ms - -[0m
+2025-06-05 09:25:01 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 9.482 ms - -[0m
+2025-06-05 09:25:09 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.182 ms - 0[0m
+2025-06-05 09:25:09 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.167 ms - 0[0m
+2025-06-05 09:25:09 info: [0mGET /api/v1/event/activeevents [36m304[0m 8.105 ms - -[0m
+2025-06-05 09:25:09 info: [0mGET /api/v1/event/activeevents [36m304[0m 6.819 ms - -[0m
+2025-06-05 09:36:13 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.241 ms - 0[0m
+2025-06-05 09:36:13 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.217 ms - 0[0m
+2025-06-05 09:36:13 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 11.315 ms - -[0m
+2025-06-05 09:36:13 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 7.481 ms - -[0m
+2025-06-05 09:39:58 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.149 ms - 0[0m
+2025-06-05 09:39:58 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.127 ms - 0[0m
+2025-06-05 09:39:58 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 5.654 ms - -[0m
+2025-06-05 09:39:58 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 6.283 ms - -[0m
+2025-06-05 09:40:01 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.212 ms - 0[0m
+2025-06-05 09:40:01 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.164 ms - 0[0m
+2025-06-05 09:40:01 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.111 ms - -[0m
+2025-06-05 09:40:01 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.534 ms - -[0m
+2025-06-05 09:40:05 info: [0mGET /api/v1/event/activeevents [36m304[0m 16.622 ms - -[0m
+2025-06-05 09:40:05 info: [0mGET /api/v1/event/activeevents [36m304[0m 9.313 ms - -[0m
+2025-06-05 09:41:01 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.207 ms - 0[0m
+2025-06-05 09:41:01 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.228 ms - 0[0m
+2025-06-05 09:41:01 info: [0mGET /api/v1/event/activeevents [36m304[0m 14.952 ms - -[0m
+2025-06-05 09:41:01 info: [0mGET /api/v1/event/activeevents [36m304[0m 8.656 ms - -[0m
+2025-06-05 09:41:04 info: [0mGET /api/v1/event/activeevents [36m304[0m 38.984 ms - -[0m
+2025-06-05 09:41:04 info: [0mGET /api/v1/event/activeevents [36m304[0m 9.832 ms - -[0m
+2025-06-05 09:43:54 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.195 ms - 0[0m
+2025-06-05 09:43:54 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.107 ms - 0[0m
+2025-06-05 09:43:54 info: [0mGET /api/v1/event/activeevents [36m304[0m 7.718 ms - -[0m
+2025-06-05 09:43:54 info: [0mGET /api/v1/event/activeevents [36m304[0m 8.445 ms - -[0m
+2025-06-05 09:43:56 info: [0mGET /api/v1/event/activeevents [36m304[0m 12.795 ms - -[0m
+2025-06-05 09:43:56 info: [0mGET /api/v1/event/activeevents [36m304[0m 8.446 ms - -[0m
+2025-06-05 09:44:29 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.133 ms - 0[0m
+2025-06-05 09:44:29 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.125 ms - 0[0m
+2025-06-05 09:44:29 info: [0mGET /api/v1/event/activeevents [36m304[0m 3.833 ms - -[0m
+2025-06-05 09:44:29 info: [0mGET /api/v1/event/activeevents [36m304[0m 6.090 ms - -[0m
+2025-06-05 09:50:31 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 0.107 ms - 0[0m
+2025-06-05 09:50:31 info: [0mPOST /api/v1/employee/login [32m200[0m 94.930 ms - -[0m
+2025-06-05 10:38:39 info: [0mOPTIONS /api/v1/booking/scan [32m204[0m 1.067 ms - 0[0m
+2025-06-05 10:38:39 error: StatusCode : 409, Message : Already checked in
+2025-06-05 10:38:39 info: [0mPOST /api/v1/booking/scan [33m409[0m 43.466 ms - 32[0m
+2025-06-05 12:25:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 12:41:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 12:41:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 12:41:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 12:46:03 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-05 12:46:03 info: [0mPOST /api/v1/booking/scan [33m401[0m 27.373 ms - 40[0m
+2025-06-05 12:46:09 info: [0mPOST /api/v1/employee/login [32m200[0m 227.504 ms - -[0m
+2025-06-05 12:46:23 error: StatusCode : 409, Message : Already checked in
+2025-06-05 12:46:23 info: [0mPOST /api/v1/booking/scan [33m409[0m 8.614 ms - 32[0m
+2025-06-05 13:09:57 info: [0mOPTIONS /api/v1/booking/scan [32m204[0m 0.623 ms - 0[0m
+2025-06-05 13:09:57 error: StatusCode : 409, Message : Already checked in
+2025-06-05 13:09:57 info: [0mPOST /api/v1/booking/scan [33m409[0m 5.672 ms - 32[0m
+2025-06-05 13:10:00 error: StatusCode : 409, Message : Already checked in
+2025-06-05 13:10:00 info: [0mPOST /api/v1/booking/scan [33m409[0m 8.027 ms - 32[0m
+2025-06-05 13:27:13 info: [0mOPTIONS /api/v1/booking/scan [32m204[0m 0.243 ms - 0[0m
+2025-06-05 13:27:13 error: StatusCode : 409, Message : Already checked in
+2025-06-05 13:27:13 info: [0mPOST /api/v1/booking/scan [33m409[0m 7.002 ms - 32[0m
+2025-06-05 13:30:13 info: [0mOPTIONS /api/v1/booking/scan [32m204[0m 0.252 ms - 0[0m
+2025-06-05 13:30:13 error: StatusCode : 409, Message : Already checked in
+2025-06-05 13:30:13 info: [0mPOST /api/v1/booking/scan [33m409[0m 5.307 ms - 32[0m
+2025-06-05 14:43:55 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 1.158 ms - 0[0m
+2025-06-05 14:43:55 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 1.080 ms - 0[0m
+2025-06-05 14:43:55 info: [0mGET /api/v1/event/activeevents [36m304[0m 26.435 ms - -[0m
+2025-06-05 14:43:55 info: [0mGET /api/v1/event/activeevents [36m304[0m 15.922 ms - -[0m
+2025-06-05 14:43:56 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.215 ms - 0[0m
+2025-06-05 14:43:56 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.135 ms - 0[0m
+2025-06-05 14:43:56 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 8.640 ms - -[0m
+2025-06-05 14:43:56 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 4.656 ms - -[0m
+2025-06-05 14:55:35 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.179 ms - 0[0m
+2025-06-05 14:55:35 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.164 ms - 0[0m
+2025-06-05 14:55:35 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.900 ms - -[0m
+2025-06-05 14:55:35 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.808 ms - -[0m
+2025-06-05 14:56:24 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:00:04 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:01:55 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-05 15:01:55 info: [0mPOST /api/v1/booking/insertbooking [33m401[0m 23.863 ms - 40[0m
+2025-06-05 15:02:21 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 6929.038 ms - 879[0m
+2025-06-05 15:03:40 error: StatusCode : 404, Message : Event not found
+2025-06-05 15:03:40 info: [0mPOST /api/v1/booking/insertbooking [33m404[0m 15.403 ms - 29[0m
+2025-06-05 15:04:10 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 5374.614 ms - 895[0m
+2025-06-05 15:04:18 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 5668.653 ms - 905[0m
+2025-06-05 15:04:37 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 5470.595 ms - 885[0m
+2025-06-05 15:04:48 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 6214.069 ms - 880[0m
+2025-06-05 15:04:57 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 5442.846 ms - 895[0m
+2025-06-05 15:13:28 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:13:37 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:37:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:38:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:38:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:39:32 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:46:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:48:19 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:49:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:49:26 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:49:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:49:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:51:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:51:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:53:15 error: StatusCode : 500, Message : insert into "bookings" ("booking_status", "created_by", "email_address", "event_id", "is_active", "location", "name", "notes", "notify_via_email_sms", "payment_method", "phone_number", "promo_code", "quantity", "terms_and_conditions", "ticket_details", "ticket_price", "ticket_type", "total_amount") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18) returning * - column "ticket_details" of relation "bookings" does not exist
+2025-06-05 15:53:15 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 186.067 ms - 520[0m
+2025-06-05 15:55:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:55:12 error: StatusCode : 500, Message : insert into "bookings" ("booking_status", "created_by", "email_address", "event_id", "is_active", "location", "name", "notes", "notify_via_email_sms", "payment_method", "phone_number", "promo_code", "quantity", "terms_and_conditions", "ticket_price", "ticket_type", "total_amount") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17) returning * - null value in column "ticket_id" of relation "bookings" violates not-null constraint
+2025-06-05 15:55:12 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 187.345 ms - 518[0m
+2025-06-05 15:57:06 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling UPDATE. Undefined column(s): [ticket_id] query: update "ticket_details" set "ticket_image_path" = ? where "ticket_id" = ?
+2025-06-05 15:57:06 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 753.094 ms - 186[0m
+2025-06-05 15:57:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 15:58:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:00:11 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling UPDATE. Undefined column(s): [ticket_id] query: update "ticket_details" set "ticket_image_path" = ? where "ticket_id" = ?
+2025-06-05 16:00:11 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 565.634 ms - 186[0m
+2025-06-05 16:00:18 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling UPDATE. Undefined column(s): [ticket_id] query: update "ticket_details" set "ticket_image_path" = ? where "ticket_id" = ?
+2025-06-05 16:00:18 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 40.836 ms - 186[0m
+2025-06-05 16:05:41 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:06:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:06:20 error: StatusCode : 500, Message : update "ticket_details" set "ticket_image_path" = $1 where "ticket_id" = $2 - column "ticket_image_path" of relation "ticket_details" does not exist
+2025-06-05 16:06:20 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 672.339 ms - 172[0m
+2025-06-05 16:07:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:08:00 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 5889.035 ms - 862[0m
+2025-06-05 16:16:07 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:17:27 error: StatusCode : 500, Message : insert into "bookings" ("email_address", "event_id", "name", "notify_via_email_sms", "phone_number", "quantity", "terms_and_conditions", "ticket_id", "ticket_type") values ($1, $2, $3, $4, $5, $6, $7, $8, $9) returning * - column "ticket_id" of relation "bookings" does not exist
+2025-06-05 16:17:27 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 108.339 ms - 317[0m
+2025-06-05 16:17:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:17:50 error: StatusCode : 500, Message : insert into "bookings" ("email_address", "event_id", "name", "notify_via_email_sms", "phone_number", "quantity", "terms_and_conditions", "ticket_type") values ($1, $2, $3, $4, $5, $6, $7, $8) returning * - null value in column "ticket_price" of relation "bookings" violates not-null constraint
+2025-06-05 16:17:50 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 204.760 ms - 329[0m
+2025-06-05 16:18:41 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:18:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:19:49 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:20:18 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:20:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:21:25 error: StatusCode : 500, Message : insert into "bookings" ("booking_status", "created_by", "email_address", "event_id", "is_active", "location", "name", "notes", "notify_via_email_sms", "payment_method", "phone_number", "promo_code", "quantity", "terms_and_conditions", "ticket_id", "ticket_price", "ticket_type", "total_amount") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18) returning * - column "ticket_id" of relation "bookings" does not exist
+2025-06-05 16:21:25 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 126.000 ms - 510[0m
+2025-06-05 16:21:41 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:21:42 error: StatusCode : 500, Message : insert into "bookings" ("booking_status", "created_by", "email_address", "event_id", "is_active", "location", "name", "notes", "notify_via_email_sms", "payment_method", "phone_number", "promo_code", "quantity", "terms_and_conditions", "ticket_id", "ticket_price", "ticket_type", "total_amount") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18) returning * - column "ticket_id" of relation "bookings" does not exist
+2025-06-05 16:21:42 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 73.668 ms - 510[0m
+2025-06-05 16:22:14 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:22:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:23:44 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 6738.001 ms - 859[0m
+2025-06-05 16:27:29 error: StatusCode : 500, Message : update "bookings" set "is_present" = $1, "check_in_time" = $2 where "ticket_id" = $3 returning * - column "check_in_time" of relation "bookings" does not exist
+2025-06-05 16:27:29 info: [0mPOST /api/v1/booking/scan [31m500[0m 11.895 ms - 185[0m
+2025-06-05 16:28:28 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:28:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:29:26 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:29:54 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 6072.734 ms - 902[0m
+2025-06-05 16:30:01 info: [0mPOST /api/v1/booking/scan [32m200[0m 10.579 ms - 840[0m
+2025-06-05 16:30:10 error: StatusCode : 409, Message : Already checked in
+2025-06-05 16:30:10 info: [0mPOST /api/v1/booking/scan [33m409[0m 6.974 ms - 32[0m
+2025-06-05 16:32:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:32:49 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:33:01 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 2.475 ms - 0[0m
+2025-06-05 16:33:01 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.505 ms - 0[0m
+2025-06-05 16:33:01 info: [0mGET /api/v1/event/activeevents [36m304[0m 127.127 ms - -[0m
+2025-06-05 16:33:01 info: [0mGET /api/v1/event/activeevents [36m304[0m 49.579 ms - -[0m
+2025-06-05 16:33:11 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.145 ms - 0[0m
+2025-06-05 16:33:11 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.114 ms - 0[0m
+2025-06-05 16:33:11 info: [0mGET /api/v1/booking/activebookings [32m200[0m 13.543 ms - 47[0m
+2025-06-05 16:33:11 info: [0mGET /api/v1/booking/activebookings [36m304[0m 9.005 ms - -[0m
+2025-06-05 16:33:15 info: [0mGET /api/v1/booking/activebookings [36m304[0m 32.500 ms - -[0m
+2025-06-05 16:33:15 info: [0mGET /api/v1/booking/activebookings [36m304[0m 14.262 ms - -[0m
+2025-06-05 16:33:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:33:42 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 1.927 ms - 0[0m
+2025-06-05 16:33:42 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.260 ms - 0[0m
+2025-06-05 16:33:42 info: [0mGET /api/v1/booking/activebookings [36m304[0m 46.768 ms - -[0m
+2025-06-05 16:33:42 info: [0mGET /api/v1/booking/activebookings [36m304[0m 9.850 ms - -[0m
+2025-06-05 16:34:11 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.760 ms - 0[0m
+2025-06-05 16:34:11 info: [0mGET /api/v1/booking/activebookings [32m200[0m 26.834 ms - 983[0m
+2025-06-05 16:34:11 info: [0mGET /api/v1/booking/activebookings [36m304[0m 34.440 ms - -[0m
+2025-06-05 16:35:26 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:35:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:35:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:35:59 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:36:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:46:44 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 16:46:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:03:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:03:59 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:17:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:17:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:17:57 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 6648.455 ms - -[0m
+2025-06-05 18:50:28 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:50:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:50:55 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 1.509 ms - 0[0m
+2025-06-05 18:50:55 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.266 ms - 0[0m
+2025-06-05 18:50:55 info: [0mGET /api/v1/booking/activebookings [32m200[0m 59.944 ms - -[0m
+2025-06-05 18:50:55 info: [0mGET /api/v1/booking/activebookings [36m304[0m 169.053 ms - -[0m
+2025-06-05 18:51:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:51:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:51:49 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:52:36 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:52:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:52:50 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:55:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 18:56:52 info: [0mGET /api/v1/booking/purchasedtickets [32m200[0m 26.365 ms - -[0m
+2025-06-05 18:57:55 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 11534.254 ms - -[0m
+2025-06-05 18:58:02 info: [0mGET /api/v1/booking/purchasedtickets [32m200[0m 6.428 ms - -[0m
+2025-06-05 19:01:20 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.413 ms - 0[0m
+2025-06-05 19:01:20 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.327 ms - 0[0m
+2025-06-05 19:01:20 info: [0mGET /api/v1/booking/purchasedtickets [32m200[0m 18.125 ms - -[0m
+2025-06-05 19:01:20 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 6.509 ms - -[0m
+2025-06-05 19:02:44 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.203 ms - 0[0m
+2025-06-05 19:02:44 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 6.355 ms - -[0m
+2025-06-05 19:03:17 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.194 ms - 0[0m
+2025-06-05 19:03:17 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 5.549 ms - -[0m
+2025-06-05 19:03:28 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.279 ms - 0[0m
+2025-06-05 19:03:28 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 6.524 ms - -[0m
+2025-06-05 19:03:48 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.122 ms - 0[0m
+2025-06-05 19:03:48 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 5.598 ms - -[0m
+2025-06-05 19:04:31 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.461 ms - 0[0m
+2025-06-05 19:04:31 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 127.995 ms - -[0m
+2025-06-05 19:05:03 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 2.569 ms - 0[0m
+2025-06-05 19:05:03 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.116 ms - 0[0m
+2025-06-05 19:05:03 info: [0mGET /api/v1/booking/activebookings [32m200[0m 6.637 ms - -[0m
+2025-06-05 19:05:03 info: [0mGET /api/v1/booking/activebookings [36m304[0m 8.632 ms - -[0m
+2025-06-05 19:05:08 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.196 ms - 0[0m
+2025-06-05 19:05:08 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.185 ms - 0[0m
+2025-06-05 19:05:08 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 8.139 ms - -[0m
+2025-06-05 19:05:08 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 3.807 ms - -[0m
+2025-06-05 19:05:09 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.152 ms - 0[0m
+2025-06-05 19:05:09 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.118 ms - 0[0m
+2025-06-05 19:05:09 info: [0mGET /api/v1/booking/activebookings [36m304[0m 6.909 ms - -[0m
+2025-06-05 19:05:09 info: [0mGET /api/v1/booking/activebookings [36m304[0m 6.963 ms - -[0m
+2025-06-05 19:05:10 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.192 ms - 0[0m
+2025-06-05 19:05:10 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.174 ms - 0[0m
+2025-06-05 19:05:10 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 12.282 ms - -[0m
+2025-06-05 19:05:10 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 8.934 ms - -[0m
+2025-06-05 19:06:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:06:05 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:06:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:08:25 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 6695.746 ms - -[0m
+2025-06-05 19:08:30 info: [0mGET /api/v1/booking/purchasedtickets [32m200[0m 12.948 ms - -[0m
+2025-06-05 19:08:59 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 2.097 ms - 0[0m
+2025-06-05 19:08:59 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.216 ms - 0[0m
+2025-06-05 19:08:59 info: [0mGET /api/v1/booking/activebookings [32m200[0m 7.937 ms - 990[0m
+2025-06-05 19:08:59 info: [0mGET /api/v1/booking/activebookings [36m304[0m 9.847 ms - -[0m
+2025-06-05 19:08:59 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.431 ms - 0[0m
+2025-06-05 19:08:59 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.187 ms - 0[0m
+2025-06-05 19:08:59 info: [0mGET /api/v1/booking/purchasedtickets [32m200[0m 5.978 ms - -[0m
+2025-06-05 19:08:59 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 6.732 ms - -[0m
+2025-06-05 19:09:23 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:16:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:17:05 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:17:11 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:18:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:18:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:19:11 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:19:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:20:08 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:20:37 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 6487.213 ms - -[0m
+2025-06-05 19:20:43 info: [0mGET /api/v1/booking/purchasedtickets [32m200[0m 12.573 ms - -[0m
+2025-06-05 19:20:51 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.499 ms - 0[0m
+2025-06-05 19:20:51 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.270 ms - 0[0m
+2025-06-05 19:20:51 info: [0mGET /api/v1/booking/purchasedtickets [32m200[0m 6.758 ms - -[0m
+2025-06-05 19:20:51 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 8.586 ms - -[0m
+2025-06-05 19:20:54 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.233 ms - 0[0m
+2025-06-05 19:20:54 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.091 ms - 0[0m
+2025-06-05 19:20:55 info: [0mGET /api/v1/booking/activebookings [32m200[0m 7.980 ms - 928[0m
+2025-06-05 19:20:55 info: [0mGET /api/v1/booking/activebookings [36m304[0m 18.906 ms - -[0m
+2025-06-05 19:21:19 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.238 ms - 0[0m
+2025-06-05 19:21:19 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.146 ms - 0[0m
+2025-06-05 19:21:19 info: [0mGET /api/v1/booking/activebookings [32m200[0m 5.550 ms - 905[0m
+2025-06-05 19:21:19 info: [0mGET /api/v1/booking/activebookings [36m304[0m 9.067 ms - -[0m
+2025-06-05 19:21:21 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.709 ms - 0[0m
+2025-06-05 19:21:21 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.163 ms - 0[0m
+2025-06-05 19:21:21 info: [0mGET /api/v1/booking/purchasedtickets [32m200[0m 8.050 ms - -[0m
+2025-06-05 19:21:21 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 5.954 ms - -[0m
+2025-06-05 19:21:43 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.211 ms - 0[0m
+2025-06-05 19:21:43 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.281 ms - 0[0m
+2025-06-05 19:21:43 info: [0mGET /api/v1/event/activeevents [36m304[0m 17.360 ms - -[0m
+2025-06-05 19:21:43 info: [0mGET /api/v1/event/activeevents [36m304[0m 6.131 ms - -[0m
+2025-06-05 19:22:23 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.901 ms - 0[0m
+2025-06-05 19:22:23 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.230 ms - 0[0m
+2025-06-05 19:22:23 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 10.543 ms - -[0m
+2025-06-05 19:22:23 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 10.509 ms - -[0m
+2025-06-05 19:24:30 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.234 ms - 0[0m
+2025-06-05 19:24:30 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.176 ms - 0[0m
+2025-06-05 19:24:30 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 12.546 ms - -[0m
+2025-06-05 19:24:30 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 8.604 ms - -[0m
+2025-06-05 19:24:38 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.367 ms - 0[0m
+2025-06-05 19:24:38 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.144 ms - 0[0m
+2025-06-05 19:24:38 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 8.575 ms - -[0m
+2025-06-05 19:24:38 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 8.816 ms - -[0m
+2025-06-05 19:24:48 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.112 ms - 0[0m
+2025-06-05 19:24:48 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 3.110 ms - -[0m
+2025-06-05 19:24:49 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 9.635 ms - -[0m
+2025-06-05 19:25:41 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.128 ms - 0[0m
+2025-06-05 19:25:41 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 3.686 ms - -[0m
+2025-06-05 19:25:41 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 3.832 ms - -[0m
+2025-06-05 19:25:52 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.086 ms - 0[0m
+2025-06-05 19:25:52 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 4.756 ms - -[0m
+2025-06-05 19:25:52 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 4.179 ms - -[0m
+2025-06-05 19:26:41 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.152 ms - 0[0m
+2025-06-05 19:26:41 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 4.868 ms - -[0m
+2025-06-05 19:26:42 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 4.151 ms - -[0m
+2025-06-05 19:26:53 error: StatusCode : 404, Message : Booking not found
+2025-06-05 19:26:53 info: [0mPOST /api/v1/booking/scan [33m404[0m 9.689 ms - 31[0m
+2025-06-05 19:27:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:28:03 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:28:04 error: StatusCode : 500, Message : update "ticket_details" set "is_present" = $1, "check_in_time" = $2 where "ticket_id" = $3 returning * - column "check_in_time" of relation "ticket_details" does not exist
+2025-06-05 19:28:04 info: [0mPOST /api/v1/booking/scan [31m500[0m 91.773 ms - 197[0m
+2025-06-05 19:29:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:30:17 info: [0mPOST /api/v1/booking/scan [32m200[0m 183.798 ms - 527[0m
+2025-06-05 19:30:22 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.271 ms - 0[0m
+2025-06-05 19:30:22 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.140 ms - 0[0m
+2025-06-05 19:30:22 info: [0mGET /api/v1/booking/purchasedtickets [32m200[0m 16.098 ms - -[0m
+2025-06-05 19:30:22 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 5.526 ms - -[0m
+2025-06-05 19:35:52 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.140 ms - 0[0m
+2025-06-05 19:35:52 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.201 ms - 0[0m
+2025-06-05 19:35:52 info: [0mGET /api/v1/booking/activebookings [36m304[0m 6.956 ms - -[0m
+2025-06-05 19:35:52 info: [0mGET /api/v1/booking/activebookings [36m304[0m 7.041 ms - -[0m
+2025-06-05 19:37:19 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.520 ms - 0[0m
+2025-06-05 19:37:19 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.163 ms - 0[0m
+2025-06-05 19:37:19 info: [0mGET /api/v1/booking/activebookings [36m304[0m 21.451 ms - -[0m
+2025-06-05 19:37:19 info: [0mGET /api/v1/booking/activebookings [36m304[0m 7.098 ms - -[0m
+2025-06-05 19:37:21 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.204 ms - 0[0m
+2025-06-05 19:37:21 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.145 ms - 0[0m
+2025-06-05 19:37:21 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 7.080 ms - -[0m
+2025-06-05 19:37:21 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 9.572 ms - -[0m
+2025-06-05 19:37:26 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.484 ms - 0[0m
+2025-06-05 19:37:26 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.123 ms - 0[0m
+2025-06-05 19:37:26 info: [0mGET /api/v1/booking/activebookings [36m304[0m 10.392 ms - -[0m
+2025-06-05 19:37:26 info: [0mGET /api/v1/booking/activebookings [36m304[0m 5.598 ms - -[0m
+2025-06-05 19:37:32 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.548 ms - 0[0m
+2025-06-05 19:37:32 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.726 ms - 0[0m
+2025-06-05 19:37:32 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 10.969 ms - -[0m
+2025-06-05 19:37:32 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 10.310 ms - -[0m
+2025-06-05 19:38:42 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.192 ms - 0[0m
+2025-06-05 19:38:42 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.141 ms - 0[0m
+2025-06-05 19:38:42 info: [0mGET /api/v1/event/activeevents [36m304[0m 6.409 ms - -[0m
+2025-06-05 19:38:42 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.945 ms - -[0m
+2025-06-05 19:38:48 info: [0mOPTIONS /api/v1/event/editevent/3 [32m204[0m 0.151 ms - 0[0m
+2025-06-05 19:38:48 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.234 ms - 0[0m
+2025-06-05 19:38:48 info: [0mOPTIONS /api/v1/event/editevent/3 [32m204[0m 0.139 ms - 0[0m
+2025-06-05 19:38:48 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.094 ms - 0[0m
+2025-06-05 19:38:48 info: [0mGET /api/v1/event/editevent/3 [32m200[0m 25.417 ms - -[0m
+2025-06-05 19:38:48 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 9.577 ms - -[0m
+2025-06-05 19:38:48 info: [0mGET /api/v1/event/editevent/3 [36m304[0m 10.200 ms - -[0m
+2025-06-05 19:38:48 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 6.147 ms - -[0m
+2025-06-05 19:40:10 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.148 ms - 0[0m
+2025-06-05 19:40:10 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.131 ms - 0[0m
+2025-06-05 19:40:10 info: [0mGET /api/v1/booking/activebookings [36m304[0m 17.716 ms - -[0m
+2025-06-05 19:40:10 info: [0mGET /api/v1/booking/activebookings [36m304[0m 3.750 ms - -[0m
+2025-06-05 19:40:11 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.215 ms - 0[0m
+2025-06-05 19:40:11 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.372 ms - 0[0m
+2025-06-05 19:40:11 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 13.504 ms - -[0m
+2025-06-05 19:40:12 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 6.251 ms - -[0m
+2025-06-05 19:40:20 info: [0mPOST /api/v1/booking/scan [32m200[0m 13.154 ms - 527[0m
+2025-06-05 19:40:28 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.140 ms - 0[0m
+2025-06-05 19:40:28 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.124 ms - 0[0m
+2025-06-05 19:40:28 info: [0mGET /api/v1/booking/purchasedtickets [32m200[0m 6.248 ms - -[0m
+2025-06-05 19:40:29 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 4.024 ms - -[0m
+2025-06-05 19:41:51 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.196 ms - 0[0m
+2025-06-05 19:41:51 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 17.910 ms - -[0m
+2025-06-05 19:45:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-05 19:46:53 info: 🚀 App listening on the port 8000. Current Env development.

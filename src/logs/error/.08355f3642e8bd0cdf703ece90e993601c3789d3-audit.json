@@ -1,0 +1,125 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\.08355f3642e8bd0cdf703ece90e993601c3789d3-audit.json",
+    "files": [
+        {
+            "date": 1747979366319,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-05-23.error.log",
+            "hash": "59ce585c326d5cd89cb36e5f0ec5469b50d77019e87ab117f6123fbb90bb52de"
+        },
+        {
+            "date": 1748060712978,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-05-24.error.log",
+            "hash": "d17c5fa0f1eadb72133462bb10b542eb1d6b13a0e6a5aae7cde80528e917b20d"
+        },
+        {
+            "date": 1748152469129,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-05-25.error.log",
+            "hash": "ba47d6ab6fd6bf6ad6ddf902e1d1f0d0ab1f6c64a1c67cafae79f66cb656d854"
+        },
+        {
+            "date": 1748322857562,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-05-27.error.log",
+            "hash": "eac5958349f841ab33e3c23238afa6842dca61df664659e0d4ea233499b5c6d8"
+        },
+        {
+            "date": 1748404668661,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-05-28.error.log",
+            "hash": "ee2858ac2c9c96ce94fc2b048b7c8a330e058e5889eb6e263946b038b24badc6"
+        },
+        {
+            "date": 1748491113887,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-05-29.error.log",
+            "hash": "b4b32f0e3633bccaf2cec845e1dcad13b34facc810c36423e007475a27c0f34f"
+        },
+        {
+            "date": 1748576790050,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-05-30.error.log",
+            "hash": "bf1048a1a7461cb0fcf0413faadf5a757838a68a8f7a89dc06438856a43442ea"
+        },
+        {
+            "date": 1748663361374,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-05-31.error.log",
+            "hash": "0e847c884831641bb5f1c0c779beaf4c3976444ae616a853ebc4ec5a4968be75"
+        },
+        {
+            "date": 1748752569577,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-01.error.log",
+            "hash": "70894811385b063be2cc190b82bedcd874db3aee0bb81347d7aef14885448f45"
+        },
+        {
+            "date": 1748922765843,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-03.error.log",
+            "hash": "569be632d87a78ab5c0b9d9c00bba7cf8205f6f348986bf2b6391e3a5886f5f1"
+        },
+        {
+            "date": 1749010445987,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-04.error.log",
+            "hash": "e72c1f0e060c73b07a629938ee75a9b23f860964108e218c2de879106ec0e010"
+        },
+        {
+            "date": 1749095651234,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-05.error.log",
+            "hash": "103d520dff80b497b78c0dd3be8ae087b23da2c69635c98d0fd51772784789de"
+        },
+        {
+            "date": 1749182465789,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-06.error.log",
+            "hash": "6141c5c8b3811eb8a1f24f8748887dadabad484a402a5751a6ab6613554944ae"
+        },
+        {
+            "date": 1749355428695,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-08.error.log",
+            "hash": "8d6bfaf0012756da0eb0b11e77b7fb1ebd908c11d6520b265f08e50ea72f5336"
+        },
+        {
+            "date": 1749528128267,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-10.error.log",
+            "hash": "62a40671965c22c633c7ddce607208bd70188915d67901ad364d14a878133329"
+        },
+        {
+            "date": 1749614491062,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-11.error.log",
+            "hash": "950037a7dbc5a0e43b543d69a66c242809cd69531b2f416faac26452bbc044a4"
+        },
+        {
+            "date": 1749701571427,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-12.error.log",
+            "hash": "1f0a5966d5def845edc8093d697fcbf29d10a336846a876c639a7304f1f86cd1"
+        },
+        {
+            "date": 1749787309994,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-13.error.log",
+            "hash": "b67c46fe09fa434651f3e59b49cac1070ddecd2eeba528c3d01c59b8de823941"
+        },
+        {
+            "date": 1749873863197,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-14.error.log",
+            "hash": "4aee7db52a3a243f7ae4ff2bb4863ec1e0121448c3e58ac6046103ae37844e85"
+        },
+        {
+            "date": 1749960489755,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-15.error.log",
+            "hash": "91821de17936db89a1db1d5645fb74ccdbc862af2679cb794a5f3ce1c137d1be"
+        },
+        {
+            "date": 1750138304303,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-17.error.log",
+            "hash": "8b7a4fd411946abab22264ef29bd9d7fd8ed904c2ad5ceb28ed1f103baf2623a"
+        },
+        {
+            "date": 1750220884558,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-18.error.log",
+            "hash": "bb63455cc6c3d8647fc72fd0172fc2fbf886c2471bda8edd333d4f0b81971e55"
+        },
+        {
+            "date": 1750307112794,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-19.error.log",
+            "hash": "c3978c5a1da9b3067b9ded5b85d7626361ff85771e0a71a06f0de9c1c682fcf9"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,58 @@
+2025-06-01 10:27:31 error: StatusCode : 404, Message : Event not found
+2025-06-01 14:43:22 error: StatusCode : 400, Message : tag_name must be a string, tag_value must be a string
+2025-06-01 14:43:52 error: StatusCode : 500, Message : insert into "bookings" ("booking_status", "created_by", "email_address", "event_id", "location", "name", "notes", "notify_via_email_sms", "payment_method", "phone_number", "promo_code", "quantity", "tags", "terms_and_conditions", "ticket_download_link", "ticket_price", "ticket_type", "total_amount") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18) returning * - invalid input syntax for type json
+2025-06-01 15:45:42 error: StatusCode : 500, Message : select "bookings".*, "event"."event_title", "event"."venue_name", "event"."date", "event"."time" from "bookings" inner join "event" on "bookings"."event_id" = "event"."event_id" where "bookings"."booking_id" = $1 and "bookings"."is_deleted" = $2 limit $3 - invalid input syntax for type integer: "NaN"
+2025-06-01 15:45:42 error: StatusCode : 500, Message : select "bookings".*, "event"."event_title", "event"."venue_name", "event"."date", "event"."time" from "bookings" inner join "event" on "bookings"."event_id" = "event"."event_id" where "bookings"."booking_id" = $1 and "bookings"."is_deleted" = $2 limit $3 - invalid input syntax for type integer: "NaN"
+2025-06-01 15:45:58 error: StatusCode : 500, Message : select "bookings".*, "event"."event_title", "event"."venue_name", "event"."date", "event"."time" from "bookings" inner join "event" on "bookings"."event_id" = "event"."event_id" where "bookings"."booking_id" = $1 and "bookings"."is_deleted" = $2 limit $3 - invalid input syntax for type integer: "NaN"
+2025-06-01 17:11:21 error: StatusCode : 500, Message : insert into "bookings" ("booking_id", "date", "email_address", "event_id", "event_title", "location", "name", "notify_via_email_sms", "payment_method", "phone_number", "promo_code", "quantity", "terms_and_conditions", "ticket_type", "time", "venue_name") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16) returning * - column "date" of relation "bookings" does not exist
+2025-06-01 17:12:44 error: StatusCode : 500, Message : insert into "bookings" ("booking_status", "created_by", "email_address", "event_id", "is_active", "location", "name", "notes", "notify_via_email_sms", "payment_method", "phone_number", "promo_code", "quantity", "tags", "terms_and_conditions", "ticket_download_link", "ticket_price", "ticket_type", "total_amount") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19) returning * - invalid input syntax for type json
+2025-06-01 17:13:23 error: StatusCode : 500, Message : insert into "bookings" ("booking_status", "created_by", "email_address", "event_id", "is_active", "location", "name", "notes", "notify_via_email_sms", "payment_method", "phone_number", "promo_code", "quantity", "tags", "terms_and_conditions", "ticket_download_link", "ticket_price", "ticket_type", "total_amount") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19) returning * - invalid input syntax for type json
+2025-06-01 17:20:32 error: StatusCode : 500, Message : insert into "bookings" ("booking_status", "created_by", "email_address", "event_id", "is_active", "location", "name", "notes", "notify_via_email_sms", "payment_method", "phone_number", "promo_code", "quantity", "tags", "terms_and_conditions", "ticket_download_link", "ticket_price", "ticket_type", "total_amount") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19) returning * - invalid input syntax for type json
+2025-06-01 17:21:06 error: StatusCode : 400, Message : Unexpected token ''', ..."  "tags": '["music","... is not valid JSON
+2025-06-01 17:21:34 error: StatusCode : 400, Message : Unexpected token 'J', ..."  "tags": JSON.strin"... is not valid JSON
+2025-06-01 17:23:40 error: StatusCode : 400, Message : Unexpected token ''', ..."  "tags": '["music","... is not valid JSON
+2025-06-01 17:24:28 error: StatusCode : 400, Message : Unexpected token ''', ..."  "tags": '[\"music\"... is not valid JSON
+2025-06-01 17:41:58 error: uncaughtException: app is not defined
+ReferenceError: app is not defined
+    at new App (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:24:5)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:11:13)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at phase4 (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\bin.ts:649:14)
+2025-06-01 17:42:23 error: uncaughtException: Cannot read properties of undefined (reading 'use')
+TypeError: Cannot read properties of undefined (reading 'use')
+    at new App (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:24:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:11:13)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at phase4 (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\bin.ts:649:14)
+2025-06-01 17:45:58 error: uncaughtException: Cannot read properties of undefined (reading 'use')
+TypeError: Cannot read properties of undefined (reading 'use')
+    at new App (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:24:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:11:13)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at phase4 (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\bin.ts:649:14)
+2025-06-01 17:46:52 error: StatusCode : 500, Message : ENOENT: no such file or directory, open 'D:\React Apps\Event Management\Event Management Backend\itw-backend\src\uploads\qr_codes\booking_7.png'
+2025-06-01 17:47:42 error: StatusCode : 500, Message : ENOENT: no such file or directory, open 'D:\React Apps\Event Management\Event Management Backend\itw-backend\src\uploads\qr_codes\booking_8.png'
+2025-06-01 17:47:44 error: StatusCode : 500, Message : ENOENT: no such file or directory, open 'D:\React Apps\Event Management\Event Management Backend\itw-backend\src\uploads\qr_codes\booking_9.png'
+2025-06-01 17:49:45 error: StatusCode : 500, Message : ENOENT: no such file or directory, open 'D:\React Apps\Event Management\Event Management Backend\itw-backend\src\uploads\qr_codes\booking_10.png'
+2025-06-01 17:52:16 error: StatusCode : 500, Message : ENOENT: no such file or directory, open 'D:\React Apps\Event Management\Event Management Backend\itw-backend\src\uploads\qr_codes\booking_11.png'
+2025-06-01 18:05:14 error: StatusCode : 500, Message : (0 , email_1.sendBookingEmail) is not a function
+2025-06-01 18:11:32 error: StatusCode : 500, Message : (0 , email_1.sendBookingEmail) is not a function
+2025-06-01 18:13:21 error: StatusCode : 500, Message : Failed to send email

@@ -1,0 +1,78 @@
+2025-06-08 09:34:48 error: StatusCode : 404, Message : Authentication token missing
+2025-06-08 09:34:59 error: StatusCode : 404, Message : Authentication token missing
+2025-06-08 09:35:09 error: StatusCode : 404, Message : Authentication token missing
+2025-06-08 09:43:45 error: StatusCode : 500, Message : Failed to upload file
+2025-06-08 10:05:11 error: StatusCode : 500, Message : Failed to upload file
+2025-06-08 10:05:30 error: StatusCode : 500, Message : Failed to upload file
+2025-06-08 10:08:32 error: StatusCode : 500, Message : Failed to upload file
+2025-06-08 10:08:46 error: StatusCode : 500, Message : Failed to upload file
+2025-06-08 10:10:18 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/uploadtoawsService.service.ts[0m:[93m23[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m23[0m }
+[7m  [0m [91m~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/uploadtoawsService.service.ts[0m:[93m23[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m23[0m }
+[7m  [0m [91m~[0m
+
+    at createTSError (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:863:19)
+    at D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+2025-06-08 10:13:47 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:22:08 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:32:08 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:41:17 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:43:00 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:44:43 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:47:28 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:56:02 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/utils/util.ts[0m:[93m21[0m:[93m1[0m - [91merror[0m[90m TS1161: [0mUnterminated regular expression literal.
+
+[7m21[0m / export const cleanObj = (input: any, allowedKeys: string[] = []) => {
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/utils/util.ts[0m:[93m28[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m28[0m };
+[7m  [0m [91m~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/utils/util.ts[0m:[93m21[0m:[93m1[0m - [91merror[0m[90m TS1161: [0mUnterminated regular expression literal.
+
+[7m21[0m / export const cleanObj = (input: any, allowedKeys: string[] = []) => {
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[96msrc/utils/util.ts[0m:[93m28[0m:[93m1[0m - [91merror[0m[90m TS1128: [0mDeclaration or statement expected.
+
+[7m28[0m };
+[7m  [0m [91m~[0m
+
+    at createTSError (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:863:19)
+    at D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1379:34
+    at Object.compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1458:13)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Module.require (node:internal/modules/cjs/loader:1311:19)
+2025-06-08 10:58:38 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:00:25 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:04:52 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:06:42 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:30:25 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:31:11 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:44:03 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:44:16 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 15:21:32 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 15:23:20 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 15:24:52 error: StatusCode : 500, Message : Error uploading file to S3

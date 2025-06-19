@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\React Apps\\React Ticket Management\\itw-backend\\src\\logs\\error\\.8582881e5b999ea86b1cc4e903233b51167f68a5-audit.json",
+    "files": [
+        {
+            "date": 1747805078976,
+            "name": "D:\\React Apps\\React Ticket Management\\itw-backend\\src\\logs\\error\\2025-05-21.error.log",
+            "hash": "beaae1921c094dbf8ba8c19ac5463ae13c44a0d670a133834bc7d0fd7bd2650d"
+        },
+        {
+            "date": 1747887765826,
+            "name": "D:\\React Apps\\React Ticket Management\\itw-backend\\src\\logs\\error\\2025-05-22.error.log",
+            "hash": "faee84159206509e8a7c0d92e615651c5c51a036c15e87c992468944ac67cb60"
+        }
+    ],
+    "hashType": "sha256"
+}

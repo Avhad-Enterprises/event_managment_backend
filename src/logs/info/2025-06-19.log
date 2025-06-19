@@ -1,0 +1,92 @@
+2025-06-19 09:55:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-19 09:55:23 info: [0mOPTIONS /api/v1/dynamicforms/all [32m204[0m 1.508 ms - 0[0m
+2025-06-19 09:55:23 info: [0mOPTIONS /api/v1/dynamicforms/all [32m204[0m 0.721 ms - 0[0m
+2025-06-19 09:55:23 info: [0mGET /api/v1/dynamicforms/all [36m304[0m 115.983 ms - -[0m
+2025-06-19 09:55:23 info: [0mGET /api/v1/dynamicforms/all [36m304[0m 6.550 ms - -[0m
+2025-06-19 09:55:31 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.188 ms - 0[0m
+2025-06-19 09:55:31 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.162 ms - 0[0m
+2025-06-19 09:55:31 info: [0mGET /api/v1/event/activeevents [36m304[0m 17.969 ms - -[0m
+2025-06-19 09:55:31 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.550 ms - -[0m
+2025-06-19 10:13:53 info: [0mOPTIONS /api/v1/dynamicforms/all [32m204[0m 0.130 ms - 0[0m
+2025-06-19 10:13:53 info: [0mOPTIONS /api/v1/dynamicforms/all [32m204[0m 0.107 ms - 0[0m
+2025-06-19 10:13:53 info: [0mGET /api/v1/dynamicforms/all [36m304[0m 11.405 ms - -[0m
+2025-06-19 10:13:53 info: [0mGET /api/v1/dynamicforms/all [36m304[0m 6.045 ms - -[0m
+2025-06-19 10:14:18 info: [0mOPTIONS /api/v1/dynamicforms/all [32m204[0m 0.208 ms - 0[0m
+2025-06-19 10:14:18 info: [0mOPTIONS /api/v1/dynamicforms/all [32m204[0m 0.126 ms - 0[0m
+2025-06-19 10:14:18 info: [0mGET /api/v1/dynamicforms/all [32m200[0m 7.426 ms - -[0m
+2025-06-19 10:14:18 info: [0mGET /api/v1/dynamicforms/all [36m304[0m 10.699 ms - -[0m
+2025-06-19 10:16:04 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-19 10:16:04 info: [0mOPTIONS /api/v1/dynamicforms/all [32m204[0m 1.129 ms - 0[0m
+2025-06-19 10:16:04 info: [0mOPTIONS /api/v1/dynamicforms/all [32m204[0m 0.123 ms - 0[0m
+2025-06-19 10:16:04 info: [0mGET /api/v1/dynamicforms/all [32m200[0m 159.045 ms - -[0m
+2025-06-19 10:16:04 info: [0mGET /api/v1/dynamicforms/all [36m304[0m 4.749 ms - -[0m
+2025-06-19 10:41:52 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.148 ms - 0[0m
+2025-06-19 10:41:52 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.448 ms - 0[0m
+2025-06-19 10:41:52 info: [0mGET /api/v1/event/activeevents [36m304[0m 25.598 ms - -[0m
+2025-06-19 10:41:52 info: [0mGET /api/v1/event/activeevents [36m304[0m 6.205 ms - -[0m
+2025-06-19 10:41:53 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.489 ms - 0[0m
+2025-06-19 10:41:53 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.186 ms - 0[0m
+2025-06-19 10:41:53 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 15.667 ms - -[0m
+2025-06-19 10:41:53 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 26.320 ms - -[0m
+2025-06-19 10:42:10 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.482 ms - 0[0m
+2025-06-19 10:42:10 info: [0mPOST /api/v1/files/uploadtoaws [32m200[0m 266.545 ms - 181[0m
+2025-06-19 10:45:17 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-19 10:45:29 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-19 10:48:35 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 1.839 ms - 0[0m
+2025-06-19 10:48:35 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-19 10:48:35 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 456.008 ms - 40[0m
+2025-06-19 10:48:45 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.248 ms - 0[0m
+2025-06-19 10:48:46 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-19 10:48:46 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 380.736 ms - 40[0m
+2025-06-19 11:14:43 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.620 ms - 0[0m
+2025-06-19 11:14:43 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.523 ms - 0[0m
+2025-06-19 11:14:43 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 16.105 ms - -[0m
+2025-06-19 11:14:43 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 9.497 ms - -[0m
+2025-06-19 11:14:52 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.256 ms - 0[0m
+2025-06-19 11:14:52 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-19 11:14:52 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 339.038 ms - 40[0m
+2025-06-19 11:18:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-19 11:18:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-19 11:18:46 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 1.462 ms - 0[0m
+2025-06-19 11:18:46 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.291 ms - 0[0m
+2025-06-19 11:18:47 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 198.379 ms - -[0m
+2025-06-19 11:18:47 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 9.258 ms - -[0m
+2025-06-19 11:18:53 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.323 ms - 0[0m
+2025-06-19 11:18:54 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-19 11:18:54 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 339.024 ms - 40[0m
+2025-06-19 11:20:06 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.440 ms - 0[0m
+2025-06-19 11:20:06 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-19 11:20:06 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 19.406 ms - 40[0m
+2025-06-19 11:20:12 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.298 ms - 0[0m
+2025-06-19 11:20:12 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 10.194 ms - -[0m
+2025-06-19 11:20:12 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 8.483 ms - -[0m
+2025-06-19 11:20:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-19 11:21:10 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 1.735 ms - 0[0m
+2025-06-19 11:21:10 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.286 ms - 0[0m
+2025-06-19 11:21:10 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 238.648 ms - -[0m
+2025-06-19 11:21:10 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 6.922 ms - -[0m
+2025-06-19 11:21:15 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 4.521 ms - 0[0m
+2025-06-19 11:21:15 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-19 11:21:15 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 37.032 ms - 40[0m
+2025-06-19 11:21:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-19 11:21:43 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-19 11:21:50 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-19 11:21:59 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 1.506 ms - 0[0m
+2025-06-19 11:21:59 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.239 ms - 0[0m
+2025-06-19 11:21:59 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 269.180 ms - -[0m
+2025-06-19 11:21:59 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 7.196 ms - -[0m
+2025-06-19 11:22:05 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.300 ms - 0[0m
+2025-06-19 11:22:05 info: [0mPOST /api/v1/files/uploadtoaws [32m200[0m 174.377 ms - 181[0m
+2025-06-19 11:22:11 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.263 ms - 0[0m
+2025-06-19 11:22:15 info: [0mPOST /api/v1/files/uploadtoaws [32m200[0m 3815.212 ms - 223[0m
+2025-06-19 11:25:48 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.365 ms - 0[0m
+2025-06-19 11:25:48 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 11.336 ms - -[0m
+2025-06-19 11:25:58 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.175 ms - 0[0m
+2025-06-19 11:25:58 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 5.520 ms - -[0m
+2025-06-19 11:43:33 info: [0mPOST /api/v1/users/login [32m200[0m 78.797 ms - -[0m
+2025-06-19 11:53:15 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.688 ms - 0[0m
+2025-06-19 11:53:15 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.285 ms - 0[0m
+2025-06-19 11:53:15 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 16.258 ms - -[0m
+2025-06-19 11:53:15 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 5.632 ms - -[0m
+2025-06-19 15:07:20 info: [0mPOST /api/v1/users/login [32m200[0m 88.069 ms - -[0m
+2025-06-19 15:07:45 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 7800.791 ms - -[0m

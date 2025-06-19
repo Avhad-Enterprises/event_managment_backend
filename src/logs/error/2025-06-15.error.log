@@ -1,0 +1,4 @@
+2025-06-15 12:05:43 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-15 12:06:01 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-15 12:55:49 error: StatusCode : 400, Message : created_by must be an integer number
+2025-06-15 12:56:02 error: StatusCode : 400, Message : created_by must be an integer number

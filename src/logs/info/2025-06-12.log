@@ -1,0 +1,92 @@
+2025-06-12 09:42:54 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 09:42:58 info: [0mOPTIONS /api/v1/users/login [32m204[0m 1.025 ms - 0[0m
+2025-06-12 09:42:58 info: [0mPOST /api/v1/users/login [32m200[0m 161.973 ms - -[0m
+2025-06-12 09:43:01 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.172 ms - 0[0m
+2025-06-12 09:43:01 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.299 ms - 0[0m
+2025-06-12 09:43:01 info: [0mGET /api/v1/event/activeevents [36m304[0m 18.731 ms - -[0m
+2025-06-12 09:43:01 info: [0mGET /api/v1/event/activeevents [36m304[0m 7.003 ms - -[0m
+2025-06-12 09:43:06 info: [0mGET /api/v1/event/activeevents [36m304[0m 9.554 ms - -[0m
+2025-06-12 09:43:06 info: [0mGET /api/v1/event/activeevents [36m304[0m 7.729 ms - -[0m
+2025-06-12 10:23:58 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.559 ms - 0[0m
+2025-06-12 10:23:58 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.193 ms - 0[0m
+2025-06-12 10:23:58 info: [0mGET /api/v1/event/activeevents [36m304[0m 16.636 ms - -[0m
+2025-06-12 10:23:58 info: [0mGET /api/v1/event/activeevents [36m304[0m 7.923 ms - -[0m
+2025-06-12 10:24:11 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.762 ms - 0[0m
+2025-06-12 10:24:11 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.508 ms - -[0m
+2025-06-12 12:48:03 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.852 ms - 0[0m
+2025-06-12 12:48:03 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.122 ms - 0[0m
+2025-06-12 12:48:03 info: [0mGET /api/v1/event/activeevents [36m304[0m 27.353 ms - -[0m
+2025-06-12 12:48:03 info: [0mGET /api/v1/event/activeevents [36m304[0m 11.113 ms - -[0m
+2025-06-12 12:48:04 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.106 ms - 0[0m
+2025-06-12 12:48:04 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.196 ms - 0[0m
+2025-06-12 12:48:04 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 31.508 ms - -[0m
+2025-06-12 12:48:04 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 10.574 ms - -[0m
+2025-06-12 12:48:10 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.509 ms - 0[0m
+2025-06-12 12:48:10 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.114 ms - 0[0m
+2025-06-12 12:48:10 info: [0mGET /api/v1/event/activeevents [36m304[0m 10.218 ms - -[0m
+2025-06-12 12:48:10 info: [0mGET /api/v1/event/activeevents [36m304[0m 9.539 ms - -[0m
+2025-06-12 16:32:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 16:33:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 16:33:05 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 16:33:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 16:33:19 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 16:33:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 16:37:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 16:37:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 16:38:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 16:39:28 info: [0mGET /api/v1/dynamicforms/all [32m200[0m 80.114 ms - 44[0m
+2025-06-12 16:40:10 error: StatusCode : 400, Message : created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-12 16:40:10 info: [0mPOST /api/v1/dynamicforms/insertform [33m400[0m 10.038 ms - 113[0m
+2025-06-12 16:40:34 error: StatusCode : 400, Message : Expected ',' or '}' after property value in JSON at position 1353
+2025-06-12 16:40:34 info: [0mPOST /api/v1/dynamicforms/insertform [33m400[0m 7.244 ms - 79[0m
+2025-06-12 16:40:43 info: [0mPOST /api/v1/dynamicforms/insertform [32m201[0m 14.004 ms - -[0m
+2025-06-12 16:42:43 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 16:45:40 info: [0mPOST /api/v1/dynamicforms/all [33m404[0m 165.325 ms - 163[0m
+2025-06-12 16:45:44 info: [0mGET /api/v1/dynamicforms/all [32m200[0m 14.378 ms - 44[0m
+2025-06-12 16:46:02 info: [0mGET /api/v1/dynamicforms/all [32m200[0m 7.164 ms - -[0m
+2025-06-12 18:44:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 18:45:32 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 18:46:23 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:09:40 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 1.258 ms - 0[0m
+2025-06-12 19:09:40 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.160 ms - 0[0m
+2025-06-12 19:09:40 info: [0mGET /api/v1/event/activeevents [36m304[0m 86.627 ms - -[0m
+2025-06-12 19:09:40 info: [0mGET /api/v1/event/activeevents [36m304[0m 9.708 ms - -[0m
+2025-06-12 19:18:19 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:18:32 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:18:41 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:19:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:19:57 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-12 19:19:57 info: [0mGET /api/v1/dynamicforms/getformbyid [33m401[0m 20.603 ms - 40[0m
+2025-06-12 19:20:17 info: [0mPOST /api/v1/users/login [32m200[0m 127.248 ms - -[0m
+2025-06-12 19:20:39 info: [0mGET /api/v1/dynamicforms/getformbyid [33m404[0m 5.915 ms - 170[0m
+2025-06-12 19:20:43 info: [0mGET /api/v1/dynamicforms/getformbyid [33m404[0m 6.428 ms - 170[0m
+2025-06-12 19:22:27 info: [0mGET /api/v1/dynamicforms/getformbyid [33m404[0m 6.469 ms - 170[0m
+2025-06-12 19:22:41 error: StatusCode : 400, Message : form_title must be a string, form_title should not be empty, form_data should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-12 19:22:41 info: [0mPOST /api/v1/dynamicforms/getformbyid [33m400[0m 10.455 ms - 205[0m
+2025-06-12 19:22:47 error: StatusCode : 400, Message : form_title must be a string, form_title should not be empty, form_data should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-12 19:22:47 info: [0mPOST /api/v1/dynamicforms/getformbyid [33m400[0m 6.990 ms - 205[0m
+2025-06-12 19:23:01 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:23:03 info: [0mPOST /api/v1/dynamicforms/getformbyid [33m404[0m 70.327 ms - 171[0m
+2025-06-12 19:23:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:23:25 error: StatusCode : 400, Message : form_title must be a string, form_title should not be empty, form_data should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-12 19:23:25 info: [0mPOST /api/v1/dynamicforms/getformbyid [33m400[0m 78.310 ms - 205[0m
+2025-06-12 19:23:45 error: StatusCode : 400, Message : form_title must be a string, form_title should not be empty, form_data should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-12 19:23:45 info: [0mPOST /api/v1/dynamicforms/getformbyid [33m400[0m 9.539 ms - 205[0m
+2025-06-12 19:25:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:25:10 error: StatusCode : 400, Message : form_title must be a string, form_title should not be empty, form_data should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-12 19:25:10 info: [0mPOST /api/v1/dynamicforms/getformbyid [33m400[0m 95.984 ms - 205[0m
+2025-06-12 19:27:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:27:36 error: StatusCode : 400, Message : form_title must be a string, form_title should not be empty, form_data should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-12 19:27:36 info: [0mPOST /api/v1/dynamicforms/getformbyid [33m400[0m 180.803 ms - 205[0m
+2025-06-12 19:27:40 error: StatusCode : 400, Message : form_title must be a string, form_title should not be empty, form_data should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-12 19:27:40 info: [0mPOST /api/v1/dynamicforms/getformbyid [33m400[0m 7.912 ms - 205[0m
+2025-06-12 19:28:29 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:28:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:29:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-12 19:29:10 error: StatusCode : 400, Message : form_title must be a string, form_title should not be empty, form_data should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-12 19:29:10 info: [0mPOST /api/v1/dynamicforms/getformbyid [33m400[0m 180.677 ms - 205[0m
+2025-06-12 19:48:11 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.370 ms - 0[0m
+2025-06-12 19:48:11 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.134 ms - 0[0m
+2025-06-12 19:48:11 info: [0mGET /api/v1/booking/activebookings [32m200[0m 19.000 ms - -[0m
+2025-06-12 19:48:11 info: [0mGET /api/v1/booking/activebookings [36m304[0m 7.635 ms - -[0m
+2025-06-12 19:57:39 info: 🚀 App listening on the port 8000. Current Env development.

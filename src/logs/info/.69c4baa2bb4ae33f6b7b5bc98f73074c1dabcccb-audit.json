@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "E:\\projects\\ITW\\ITW-frontend\\itw-backend\\src\\logs\\info\\.69c4baa2bb4ae33f6b7b5bc98f73074c1dabcccb-audit.json",
+    "files": [
+        {
+            "date": 1739515912214,
+            "name": "E:\\projects\\ITW\\ITW-frontend\\itw-backend\\src\\logs\\info\\2025-02-14.log",
+            "hash": "d52ca59ff5faf4ff6ece7eef3497ceea64fda9f7213a5f6b67331b7c20a586c9"
+        }
+    ],
+    "hashType": "sha256"
+}

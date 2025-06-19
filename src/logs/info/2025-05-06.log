@@ -1,0 +1,25 @@
+2025-05-06 08:02:53 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-06 08:03:38 info: [0mGET / [32m200[0m 44.239 ms - -[0m
+2025-05-06 08:03:38 info: [0mGET / [36m304[0m 21.625 ms - -[0m
+2025-05-06 09:06:37 info: [0mGET /?theme=elegant [32m200[0m 9.044 ms - -[0m
+2025-05-06 09:06:37 info: [0mGET /?theme=elegant [36m304[0m 10.005 ms - -[0m
+2025-05-06 09:06:40 info: [0mGET /?theme=elegant [36m304[0m 3.763 ms - -[0m
+2025-05-06 09:06:40 info: [0mGET /?theme=elegant [36m304[0m 6.703 ms - -[0m
+2025-05-06 09:07:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-06 09:07:17 info: [0mGET / [32m200[0m 21.535 ms - 512[0m
+2025-05-06 09:07:17 info: [0mGET /favicon.ico [33m404[0m 2.177 ms - 150[0m
+2025-05-06 09:10:34 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-06 09:10:38 info: [0mGET / [31m500[0m 11.821 ms - -[0m
+2025-05-06 09:10:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-06 09:10:48 info: [0mGET / [32m200[0m 40.211 ms - -[0m
+2025-05-06 09:10:49 info: [0mGET / [36m304[0m 14.139 ms - -[0m
+2025-05-06 09:11:35 info: [0mGET /?shop.njk [32m200[0m 11.408 ms - -[0m
+2025-05-06 09:11:35 info: [0mGET /?shop.njk [36m304[0m 7.491 ms - -[0m
+2025-05-06 09:11:39 info: [0mGET /?shop. [32m200[0m 7.390 ms - -[0m
+2025-05-06 09:11:39 info: [0mGET /?shop. [36m304[0m 5.115 ms - -[0m
+2025-05-06 09:11:44 info: [0mGET /?shop [32m200[0m 6.847 ms - -[0m
+2025-05-06 09:11:44 info: [0mGET /?shop [36m304[0m 5.287 ms - -[0m
+2025-05-06 09:27:44 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-06 09:27:45 error: StatusCode : 500, Message : template not found: shop.njk
+2025-05-06 09:27:49 info: [0mGET / [32m200[0m 17.683 ms - 512[0m
+2025-05-06 11:12:29 info: 🚀 App listening on the port 8000. Current Env development.

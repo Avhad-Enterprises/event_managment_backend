@@ -1,0 +1,122 @@
+2025-05-21 10:54:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 10:55:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:02:03 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:02:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:03:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:03:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:03:28 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:03:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:03:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:04:19 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:04:44 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:04:56 info: [0mGET /api/v1/employee/insertemployee [33m404[0m 3.728 ms - 169[0m
+2025-05-21 11:05:00 error: StatusCode : 400, Message : Data Invalid
+2025-05-21 11:05:00 info: [0mPOST /api/v1/employee/insertemployee [33m400[0m 3.759 ms - 26[0m
+2025-05-21 11:05:34 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:05:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:05:53 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:06:03 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:06:07 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:06:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:08:59 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:09:07 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:09:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:14:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:25:08 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:25:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:25:37 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:25:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:26:12 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:32:39 info: [0mPOST /api/v1/employee/insertemployee [32m201[0m 28.769 ms - 277[0m
+2025-05-21 11:34:44 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:34:49 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 11:34:49 info: [0mPOST /api/v1/employee/insertemployee [31m500[0m 16.259 ms - 156[0m
+2025-05-21 11:35:56 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 11:35:56 info: [0mPOST /api/v1/employee/insertemployee [31m500[0m 4.768 ms - 156[0m
+2025-05-21 11:36:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 11:36:56 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 12:11:00 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:11:00 info: [0mPOST /api/v1/employee/insertemployee [31m500[0m 16.881 ms - 156[0m
+2025-05-21 12:12:56 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:12:56 info: [0mPOST /api/v1/employee/insertemployee [31m500[0m 2.924 ms - 156[0m
+2025-05-21 12:17:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 12:17:49 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:17:49 info: [0mPOST /api/v1/employee/insertemployee [31m500[0m 16.904 ms - 156[0m
+2025-05-21 12:21:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 12:21:11 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 12:26:28 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 12:26:32 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:26:32 info: [0mPOST /api/v1/employee/insertemployee [31m500[0m 18.899 ms - 156[0m
+2025-05-21 12:26:41 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:26:41 info: [0mPOST /api/v1/employee/insertemployee [31m500[0m 2.577 ms - 156[0m
+2025-05-21 12:28:57 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 12:29:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 12:31:42 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:31:42 info: [0mPOST /api/v1/employee/insertemployee [31m500[0m 17.335 ms - 156[0m
+2025-05-21 12:31:49 error: StatusCode : 500, Message : Undefined binding(s) detected when compiling FIRST. Undefined column(s): [email] query: select * from "employee" where "email" = ? limit ?
+2025-05-21 12:31:49 info: [0mPOST /api/v1/employee/insertemployee [31m500[0m 5.707 ms - 156[0m
+2025-05-21 12:33:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 12:33:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 12:33:48 error: StatusCode : 400, Message : Email is required
+2025-05-21 12:33:48 info: [0mPOST /api/v1/employee/insertemployee [33m400[0m 15.812 ms - 31[0m
+2025-05-21 12:34:27 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 12:35:29 error: StatusCode : 400, Message : Email is required
+2025-05-21 12:35:29 info: [0mPOST /api/v1/employee/insertemployee [33m400[0m 17.867 ms - 31[0m
+2025-05-21 12:36:27 error: StatusCode : 400, Message : Email is required
+2025-05-21 12:36:27 info: [0mPOST /api/v1/employee/insertemployee [33m400[0m 3.983 ms - 31[0m
+2025-05-21 12:37:39 info: [0mPOST /api/v1/employee/insertemployee [32m201[0m 12.581 ms - 275[0m
+2025-05-21 12:37:43 error: StatusCode : 409, Message : Email already registered
+2025-05-21 12:37:43 info: [0mPOST /api/v1/employee/insertemployee [33m409[0m 4.858 ms - 38[0m
+2025-05-21 12:39:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 12:39:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:36:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:37:32 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:41:32 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:41:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:43:34 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:43:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:44:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:44:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:45:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:45:36 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:45:55 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:48:23 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:48:27 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:48:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:49:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:49:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:53:14 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:53:32 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:53:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:54:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:54:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:54:34 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:55:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:55:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:55:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:56:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:56:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:57:07 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:57:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:59:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 18:59:56 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:00:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:00:05 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:00:37 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:00:55 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:01:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:01:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:02:12 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:03:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:03:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:03:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:05:05 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:11:26 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:11:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:11:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:11:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-05-21 19:12:50 error: StatusCode : 409, Message : Email already registered
+2025-05-21 19:12:50 info: [0mPOST /api/v1/employee/insertemployee [33m409[0m 68.820 ms - 38[0m
+2025-05-21 19:12:55 info: [0mPOST /api/v1/employee/insertemployee [32m201[0m 70.874 ms - 352[0m
+2025-05-21 19:14:41 info: [0mPOST /api/v1/employee/login [32m200[0m 63.160 ms - 360[0m
+2025-05-21 20:18:34 info: 🚀 App listening on the port 8000. Current Env development.

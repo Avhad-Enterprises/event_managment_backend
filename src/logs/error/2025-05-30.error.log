@@ -1,0 +1,7 @@
+2025-05-30 10:21:51 error: StatusCode : 401, Message : Wrong authentication token
+2025-05-30 15:50:01 error: StatusCode : 400, Message : created_at must be a Date instance, updated_at must be a Date instance
+2025-05-30 15:52:05 error: StatusCode : 400, Message : an unknown value was passed to the validate function
+2025-05-30 15:54:29 error: StatusCode : 400, Message : an unknown value was passed to the validate function
+2025-05-30 18:07:15 error: StatusCode : 400, Message : Unexpected end of JSON input
+2025-05-30 18:07:24 error: StatusCode : 401, Message : Wrong authentication token
+2025-05-30 18:07:27 error: StatusCode : 401, Message : Wrong authentication token

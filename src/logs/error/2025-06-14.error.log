@@ -1,0 +1,25 @@
+2025-06-14 11:10:35 error: StatusCode : 400, Message : form_title should not be empty, form_description should not be empty, form_data must be a json string, form_data should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-14 11:10:43 error: StatusCode : 400, Message : form_title should not be empty, form_description should not be empty, form_data must be a json string, form_data should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-14 11:10:57 error: StatusCode : 400, Message : form_data must be a json string, form_data should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-14 11:11:25 error: StatusCode : 400, Message : form_data must be a json string, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-14 11:12:50 error: StatusCode : 400, Message : form_title should not be empty, form_description should not be empty, form_data must be a json string, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-14 11:12:59 error: StatusCode : 400, Message : form_data must be a json string, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-14 11:13:47 error: StatusCode : 400, Message : form_title should not be empty, form_description should not be empty, created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-14 11:13:55 error: StatusCode : 400, Message : created_by must be a number conforming to the specified constraints, created_by should not be empty
+2025-06-14 11:39:11 error: StatusCode : 400, Message : form_title should not be empty, form_description should not be empty
+2025-06-14 11:46:21 error: uncaughtException: Route.put() requires a callback function but got a [object Undefined]
+Error: Route.put() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as put] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\router\route.js:216:15)
+    at Function.proto.<computed> [as put] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\router\index.js:521:19)
+    at DynamicFormRoute.initializeRoutes (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\routes\dynamicform.route.ts:20:21)
+    at new DynamicFormRoute (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\routes\dynamicform.route.ts:13:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:13:115)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+2025-06-14 11:49:35 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-14 11:50:42 error: StatusCode : 400, Message : form_data must be a json string
+2025-06-14 12:27:51 error: StatusCode : 400, Message : updated_at must be a Date instance
+2025-06-14 12:28:19 error: StatusCode : 400, Message : updated_at must be a Date instance

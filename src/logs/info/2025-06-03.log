@@ -1,0 +1,252 @@
+2025-06-03 09:22:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 09:26:12 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 09:26:17 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 09:26:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 09:29:16 info: [0mPOST /api/v1/employee/login [32m200[0m 146.200 ms - -[0m
+2025-06-03 09:30:26 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 0.385 ms - 0[0m
+2025-06-03 09:30:26 info: [0mPOST /api/v1/employee/login [32m200[0m 66.195 ms - -[0m
+2025-06-03 09:42:03 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 0.141 ms - 0[0m
+2025-06-03 09:42:03 info: [0mPOST /api/v1/employee/login [32m200[0m 65.989 ms - -[0m
+2025-06-03 09:42:43 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.143 ms - 0[0m
+2025-06-03 09:42:43 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.238 ms - 0[0m
+2025-06-03 09:42:43 info: [0mGET /api/v1/event/activeevents [32m200[0m 19.083 ms - -[0m
+2025-06-03 09:42:43 info: [0mGET /api/v1/event/activeevents [36m304[0m 9.149 ms - -[0m
+2025-06-03 09:42:45 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.332 ms - 0[0m
+2025-06-03 09:42:45 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.168 ms - 0[0m
+2025-06-03 09:42:45 info: [0mGET /api/v1/booking/activebookings [32m200[0m 14.975 ms - -[0m
+2025-06-03 09:42:45 info: [0mGET /api/v1/booking/activebookings [36m304[0m 5.932 ms - -[0m
+2025-06-03 09:47:11 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.231 ms - 0[0m
+2025-06-03 09:47:11 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.258 ms - 0[0m
+2025-06-03 09:47:11 info: [0mGET /api/v1/event/activeevents [36m304[0m 6.592 ms - -[0m
+2025-06-03 09:47:11 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.163 ms - -[0m
+2025-06-03 09:47:59 info: [0mOPTIONS /api/v1/event/editevent/2 [32m204[0m 0.492 ms - 0[0m
+2025-06-03 09:47:59 info: [0mOPTIONS /api/v1/event/editevent/2 [32m204[0m 0.842 ms - 0[0m
+2025-06-03 09:47:59 info: [0mGET /api/v1/event/editevent/2 [32m200[0m 11.566 ms - -[0m
+2025-06-03 09:47:59 info: [0mGET /api/v1/event/editevent/2 [36m304[0m 11.464 ms - -[0m
+2025-06-03 09:48:12 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.160 ms - 0[0m
+2025-06-03 09:48:12 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.255 ms - 0[0m
+2025-06-03 09:48:12 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.346 ms - -[0m
+2025-06-03 09:48:12 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.190 ms - -[0m
+2025-06-03 09:48:13 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.187 ms - 0[0m
+2025-06-03 09:48:13 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.268 ms - 0[0m
+2025-06-03 09:48:13 info: [0mGET /api/v1/booking/activebookings [36m304[0m 6.926 ms - -[0m
+2025-06-03 09:48:13 info: [0mGET /api/v1/booking/activebookings [36m304[0m 7.192 ms - -[0m
+2025-06-03 09:49:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:02:01 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:02:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:03:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:03:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:03:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:03:54 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:04:01 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:08:15 error: StatusCode : 404, Message : Authentication token missing
+2025-06-03 10:08:15 info: [0mPOST /api/v1/booking/insertbooking [33m404[0m 21.452 ms - 42[0m
+2025-06-03 10:10:01 info: [0mPOST /api/v1/employee/login [32m200[0m 229.146 ms - -[0m
+2025-06-03 10:10:20 error: StatusCode : 500, Message : document is not defined
+2025-06-03 10:10:20 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 75.558 ms - 37[0m
+2025-06-03 10:11:09 error: StatusCode : 500, Message : insert into "bookings" ("booking_status", "created_by", "email_address", "event_id", "is_active", "location", "name", "notes", "notify_via_email_sms", "payment_method", "phone_number", "promo_code", "quantity", "tags", "terms_and_conditions", "ticket_download_link", "ticket_price", "ticket_type", "total_amount") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19) returning * - invalid input syntax for type json
+2025-06-03 10:11:09 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 15.451 ms - 510[0m
+2025-06-03 10:11:23 error: StatusCode : 500, Message : document is not defined
+2025-06-03 10:11:23 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 35.277 ms - 37[0m
+2025-06-03 10:15:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:15:24 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:15:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:15:43 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:15:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:16:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:16:07 error: StatusCode : 500, Message : Input file is missing: D:\React Apps\Event Management\Event Management Backend\itw-backend\src\assets\ticket_template.png
+2025-06-03 10:16:07 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 611.155 ms - 142[0m
+2025-06-03 10:16:16 error: StatusCode : 500, Message : Input file is missing: D:\React Apps\Event Management\Event Management Backend\itw-backend\src\assets\ticket_template.png
+2025-06-03 10:16:16 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 35.181 ms - 142[0m
+2025-06-03 10:18:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:18:59 error: StatusCode : 500, Message : Failed to send email
+2025-06-03 10:18:59 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 4080.291 ms - 34[0m
+2025-06-03 10:19:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 10:53:28 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 1.426 ms - 0[0m
+2025-06-03 10:53:28 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.197 ms - 0[0m
+2025-06-03 10:53:28 info: [0mGET /api/v1/booking/activebookings [36m304[0m 93.185 ms - -[0m
+2025-06-03 10:53:28 info: [0mGET /api/v1/booking/activebookings [36m304[0m 4.952 ms - -[0m
+2025-06-03 10:53:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:02:50 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:03:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:04:20 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:04:39 error: StatusCode : 500, Message : bwipp.typeError: barcode text not a string (22)
+2025-06-03 11:04:39 info: [0mPOST /api/v1/booking/insertbooking [31m500[0m 845.700 ms - 61[0m
+2025-06-03 11:05:56 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:07:29 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:07:29 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 585.868 ms - 820[0m
+2025-06-03 11:10:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:11:11 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:11:36 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:11:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:11:57 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:11:59 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 822.505 ms - 820[0m
+2025-06-03 11:14:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:14:18 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:14:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:14:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:14:44 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:15:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:15:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:15:59 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:16:03 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 561.418 ms - 820[0m
+2025-06-03 11:17:36 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:17:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:17:55 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:18:11 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:18:13 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 1000.640 ms - 820[0m
+2025-06-03 11:18:34 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:19:29 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:19:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:19:36 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 606.292 ms - 820[0m
+2025-06-03 11:24:27 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:24:33 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 1119.238 ms - 820[0m
+2025-06-03 11:34:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:34:23 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 1011.930 ms - 820[0m
+2025-06-03 11:36:49 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:37:20 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:37:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:37:50 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 1077.372 ms - 820[0m
+2025-06-03 11:38:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:38:24 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 819.752 ms - 820[0m
+2025-06-03 11:38:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:39:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:39:19 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 836.755 ms - 820[0m
+2025-06-03 11:49:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:50:11 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:50:13 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 1004.127 ms - 820[0m
+2025-06-03 11:50:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:50:57 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 834.533 ms - 820[0m
+2025-06-03 11:52:03 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:52:05 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:52:20 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:52:22 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 834.371 ms - 820[0m
+2025-06-03 11:52:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 11:59:56 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:00:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:03:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:03:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:03:56 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:06:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:06:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:06:51 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 1064.145 ms - 820[0m
+2025-06-03 12:07:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:07:45 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 1077.447 ms - 820[0m
+2025-06-03 12:08:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:08:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:09:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:09:06 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 1022.807 ms - 820[0m
+2025-06-03 12:09:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:09:35 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 787.024 ms - 820[0m
+2025-06-03 12:10:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:10:36 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 784.009 ms - 820[0m
+2025-06-03 12:11:17 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:11:20 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 833.546 ms - 820[0m
+2025-06-03 12:14:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:14:04 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:14:10 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 1040.194 ms - 820[0m
+2025-06-03 12:32:05 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:32:07 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 874.230 ms - 820[0m
+2025-06-03 12:35:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:36:01 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:36:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:43:44 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:44:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:44:53 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:45:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:46:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:46:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:46:43 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 12:48:30 info: [0mPOST /api/v1/booking/insertbooking [32m201[0m 7433.720 ms - 830[0m
+2025-06-03 14:27:04 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 14:27:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 14:27:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 14:38:07 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 15:36:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 15:37:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 15:37:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 15:37:49 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 15:59:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 15:59:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 15:59:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 16:00:12 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 16:01:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 16:01:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 16:01:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 16:01:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 16:10:12 error: StatusCode : 400, Message : Expected double-quoted property name in JSON at position 2917
+2025-06-03 16:10:12 info: [0mPOST /api/v1/event/insertevent [33m400[0m 28.675 ms - 75[0m
+2025-06-03 16:11:49 error: StatusCode : 400, Message : Expected double-quoted property name in JSON at position 1318
+2025-06-03 16:11:49 info: [0mPOST /api/v1/event/insertevent [33m400[0m 2.882 ms - 75[0m
+2025-06-03 16:12:02 error: StatusCode : 404, Message : Authentication token missing
+2025-06-03 16:12:02 info: [0mPOST /api/v1/event/insertevent [33m404[0m 2.148 ms - 42[0m
+2025-06-03 16:12:41 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-03 16:12:41 info: [0mPOST /api/v1/event/insertevent [33m401[0m 3.657 ms - 40[0m
+2025-06-03 16:12:56 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.435 ms - 0[0m
+2025-06-03 16:12:56 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.309 ms - 0[0m
+2025-06-03 16:13:11 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.364 ms - 0[0m
+2025-06-03 16:13:11 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.514 ms - 0[0m
+2025-06-03 16:13:11 info: [0mGET /api/v1/event/activeevents [36m304[0m 112.431 ms - -[0m
+2025-06-03 16:13:11 info: [0mGET /api/v1/event/activeevents [36m304[0m 9.839 ms - -[0m
+2025-06-03 16:13:41 error: StatusCode : 400, Message : more_images must be a string, speaker_details must be a json string
+2025-06-03 16:13:41 info: [0mPOST /api/v1/event/insertevent [33m400[0m 9.900 ms - 81[0m
+2025-06-03 16:13:48 error: StatusCode : 400, Message : speaker_details must be a json string
+2025-06-03 16:13:48 info: [0mPOST /api/v1/event/insertevent [33m400[0m 6.226 ms - 51[0m
+2025-06-03 16:14:44 error: StatusCode : 400, Message : speaker_details must be a json string
+2025-06-03 16:14:44 info: [0mPOST /api/v1/event/insertevent [33m400[0m 6.534 ms - 51[0m
+2025-06-03 16:47:26 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.360 ms - 0[0m
+2025-06-03 16:47:26 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.399 ms - 0[0m
+2025-06-03 16:47:26 info: [0mGET /api/v1/event/activeevents [36m304[0m 19.132 ms - -[0m
+2025-06-03 16:47:26 info: [0mGET /api/v1/event/activeevents [36m304[0m 64.884 ms - -[0m
+2025-06-03 16:48:23 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.412 ms - 0[0m
+2025-06-03 16:48:23 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.277 ms - 0[0m
+2025-06-03 16:48:23 info: [0mGET /api/v1/event/activeevents [36m304[0m 6.837 ms - -[0m
+2025-06-03 16:48:23 info: [0mGET /api/v1/event/activeevents [36m304[0m 11.336 ms - -[0m
+2025-06-03 16:48:30 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.180 ms - 0[0m
+2025-06-03 16:48:30 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.404 ms - 0[0m
+2025-06-03 16:48:30 info: [0mGET /api/v1/booking/activebookings [36m304[0m 12.675 ms - -[0m
+2025-06-03 16:48:30 info: [0mGET /api/v1/booking/activebookings [36m304[0m 5.044 ms - -[0m
+2025-06-03 17:55:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 17:55:02 error: StatusCode : 400, Message : speaker_details must be a json string
+2025-06-03 17:55:02 info: [0mPOST /api/v1/event/insertevent [33m400[0m 82.505 ms - 51[0m
+2025-06-03 18:04:24 error: StatusCode : 400, Message : speaker_details must be a json string
+2025-06-03 18:04:24 info: [0mPOST /api/v1/event/insertevent [33m400[0m 8.684 ms - 51[0m
+2025-06-03 18:07:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:09:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:12:11 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:12:20 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:13:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:34:07 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:34:18 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:34:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:34:37 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:34:41 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:35:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:35:59 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:36:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:38:26 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:45:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:55:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:55:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:56:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 18:58:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 19:12:59 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 19:23:56 info: [0mOPTIONS /api/v1/tags/inserttag [32m204[0m 9.364 ms - 0[0m
+2025-06-03 19:23:56 info: [0mPOST /api/v1/tags/inserttag [33m404[0m 230.276 ms - 161[0m
+2025-06-03 19:26:11 info: [0mOPTIONS /api/v1/tags/insertetag [32m204[0m 0.974 ms - 0[0m
+2025-06-03 19:26:11 error: StatusCode : 500, Message : insert into "tags" ("created_by", "is_active", "tag_name", "tag_value") values ($1, $2, $3, $4) returning * - null value in column "tag_type" of relation "tags" violates not-null constraint
+2025-06-03 19:26:11 info: [0mPOST /api/v1/tags/insertetag [31m500[0m 75.162 ms - 217[0m
+2025-06-03 19:27:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-03 19:27:49 info: [0mOPTIONS /api/v1/tags/insertetag [32m204[0m 8.311 ms - 0[0m
+2025-06-03 19:27:50 info: [0mPOST /api/v1/tags/insertetag [32m201[0m 224.683 ms - 278[0m
+2025-06-03 19:28:48 info: [0mOPTIONS /api/v1/tags/insertetag [32m204[0m 0.383 ms - 0[0m
+2025-06-03 19:28:48 info: [0mPOST /api/v1/tags/insertetag [32m201[0m 27.919 ms - 278[0m
+2025-06-03 19:29:25 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.221 ms - 0[0m
+2025-06-03 19:29:25 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.243 ms - 0[0m
+2025-06-03 19:29:25 info: [0mGET /api/v1/booking/activebookings [36m304[0m 91.183 ms - -[0m
+2025-06-03 19:29:25 info: [0mGET /api/v1/booking/activebookings [36m304[0m 40.071 ms - -[0m
+2025-06-03 19:29:30 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 4.009 ms - 0[0m
+2025-06-03 19:29:30 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 17.222 ms - 0[0m
+2025-06-03 19:29:30 info: [0mGET /api/v1/event/activeevents [36m304[0m 37.060 ms - -[0m
+2025-06-03 19:29:30 info: [0mGET /api/v1/event/activeevents [36m304[0m 34.707 ms - -[0m
+2025-06-03 19:32:58 info: 🚀 App listening on the port 8000. Current Env development.

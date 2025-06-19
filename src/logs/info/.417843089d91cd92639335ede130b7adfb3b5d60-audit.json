@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "E:\\sample-node-api-structure\\itw-backend\\src\\logs\\info\\.417843089d91cd92639335ede130b7adfb3b5d60-audit.json",
+    "files": [
+        {
+            "date": 1744040343175,
+            "name": "E:\\sample-node-api-structure\\itw-backend\\src\\logs\\info\\2025-04-07.log",
+            "hash": "dc477207c17fc01030f75248ddafa34d40e9eab9e273ca13d5b46e6c9bcc203b"
+        }
+    ],
+    "hashType": "sha256"
+}

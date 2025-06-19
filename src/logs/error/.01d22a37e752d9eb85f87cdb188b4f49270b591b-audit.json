@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "E:\\AE\\itw-backend\\itw-backend\\src\\logs\\error\\.01d22a37e752d9eb85f87cdb188b4f49270b591b-audit.json",
+    "files": [
+        {
+            "date": 1747036776387,
+            "name": "E:\\AE\\itw-backend\\itw-backend\\src\\logs\\error\\2025-05-12.error.log",
+            "hash": "dd1868f29affed1df973437ec73dee3d957bf557eaa2488c4232c6db0828567b"
+        },
+        {
+            "date": 1747202983938,
+            "name": "E:\\AE\\itw-backend\\itw-backend\\src\\logs\\error\\2025-05-14.error.log",
+            "hash": "96ce8817199a85650fc9acd4c080bb95eaf8a4ecba2140705763a65c7460a3eb"
+        },
+        {
+            "date": 1747400171305,
+            "name": "E:\\AE\\itw-backend\\itw-backend\\src\\logs\\error\\2025-05-16.error.log",
+            "hash": "11dae8c7d2d66164d441cc0fad48a0fca9745762b520f3671747b0a122ba419b"
+        },
+        {
+            "date": 1747484335544,
+            "name": "E:\\AE\\itw-backend\\itw-backend\\src\\logs\\error\\2025-05-17.error.log",
+            "hash": "46c63bc54491ab3baaab16248b3cacba1c7db0623868c0c2c9b0769eed06c8ee"
+        },
+        {
+            "date": 1747556739630,
+            "name": "E:\\AE\\itw-backend\\itw-backend\\src\\logs\\error\\2025-05-18.error.log",
+            "hash": "7ca03c91fb350b4637e35caaaef549566d6c4f88f70dd7efcae86126fe59cd98"
+        }
+    ],
+    "hashType": "sha256"
+}

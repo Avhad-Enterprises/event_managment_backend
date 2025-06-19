@@ -1,0 +1,219 @@
+2025-06-08 09:33:53 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 09:34:48 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 1.964 ms - 0[0m
+2025-06-08 09:34:48 error: StatusCode : 404, Message : Authentication token missing
+2025-06-08 09:34:48 info: [0mPOST /api/v1/employee/login [33m404[0m 19.459 ms - 42[0m
+2025-06-08 09:34:59 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 0.235 ms - 0[0m
+2025-06-08 09:34:59 error: StatusCode : 404, Message : Authentication token missing
+2025-06-08 09:34:59 info: [0mPOST /api/v1/employee/login [33m404[0m 1.555 ms - 42[0m
+2025-06-08 09:35:09 info: [0mOPTIONS /api/v1/employee/login [32m204[0m 0.124 ms - 0[0m
+2025-06-08 09:35:09 error: StatusCode : 404, Message : Authentication token missing
+2025-06-08 09:35:09 info: [0mPOST /api/v1/employee/login [33m404[0m 3.645 ms - 42[0m
+2025-06-08 09:35:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 09:36:12 info: [0mOPTIONS /api/v1/users/login [32m204[0m 2.807 ms - 0[0m
+2025-06-08 09:36:12 info: [0mPOST /api/v1/users/login [32m200[0m 519.218 ms - -[0m
+2025-06-08 09:42:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 09:42:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 09:43:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 09:43:45 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 1.977 ms - 0[0m
+2025-06-08 09:43:45 error: StatusCode : 500, Message : Failed to upload file
+2025-06-08 09:43:45 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 264.467 ms - 35[0m
+2025-06-08 09:46:18 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:05:11 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 1.821 ms - 0[0m
+2025-06-08 10:05:11 error: StatusCode : 500, Message : Failed to upload file
+2025-06-08 10:05:11 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 231.925 ms - 35[0m
+2025-06-08 10:05:30 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.227 ms - 0[0m
+2025-06-08 10:05:30 error: StatusCode : 500, Message : Failed to upload file
+2025-06-08 10:05:30 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 138.735 ms - 35[0m
+2025-06-08 10:08:12 info: [0mPOST /api/v1/users/login [32m200[0m 83.057 ms - -[0m
+2025-06-08 10:08:32 error: StatusCode : 500, Message : Failed to upload file
+2025-06-08 10:08:32 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 60.329 ms - 35[0m
+2025-06-08 10:08:46 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.229 ms - 0[0m
+2025-06-08 10:08:46 error: StatusCode : 500, Message : Failed to upload file
+2025-06-08 10:08:46 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 83.538 ms - 35[0m
+2025-06-08 10:09:57 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:10:23 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:11:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:11:49 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:12:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:13:46 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 1.785 ms - 0[0m
+2025-06-08 10:13:47 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:13:47 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 242.032 ms - 40[0m
+2025-06-08 10:22:08 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.328 ms - 0[0m
+2025-06-08 10:22:08 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:22:08 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 85.711 ms - 40[0m
+2025-06-08 10:23:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:27:18 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:27:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:27:56 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:28:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:28:23 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:28:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:31:47 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:31:55 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:32:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:32:08 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 3.210 ms - 0[0m
+2025-06-08 10:32:08 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:32:08 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 246.577 ms - 40[0m
+2025-06-08 10:32:20 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:32:34 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:41:16 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 1.806 ms - 0[0m
+2025-06-08 10:41:17 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:41:17 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 199.942 ms - 40[0m
+2025-06-08 10:43:00 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.263 ms - 0[0m
+2025-06-08 10:43:00 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:43:00 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 101.753 ms - 40[0m
+2025-06-08 10:44:43 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.273 ms - 0[0m
+2025-06-08 10:44:43 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:44:43 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 77.302 ms - 40[0m
+2025-06-08 10:47:28 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:47:28 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 104.865 ms - 40[0m
+2025-06-08 10:48:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:49:19 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:49:36 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:50:57 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:51:03 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:55:49 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:56:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:56:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:58:20 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:58:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 10:58:38 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 1.816 ms - 0[0m
+2025-06-08 10:58:38 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 10:58:38 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 216.997 ms - 40[0m
+2025-06-08 10:58:57 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:00:19 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:00:25 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 1.785 ms - 0[0m
+2025-06-08 11:00:25 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:00:25 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 332.684 ms - 40[0m
+2025-06-08 11:00:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:01:34 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:02:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:02:37 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:03:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:04:17 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:04:36 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:04:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:04:44 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:04:52 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 3.047 ms - 0[0m
+2025-06-08 11:04:52 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:04:52 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 220.429 ms - 40[0m
+2025-06-08 11:06:42 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 3.314 ms - 0[0m
+2025-06-08 11:06:42 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:06:42 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 99.150 ms - 40[0m
+2025-06-08 11:30:25 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.911 ms - 0[0m
+2025-06-08 11:30:25 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:30:25 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 85.955 ms - 40[0m
+2025-06-08 11:31:11 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.181 ms - 0[0m
+2025-06-08 11:31:11 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:31:11 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 101.857 ms - 40[0m
+2025-06-08 11:44:03 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 1.279 ms - 0[0m
+2025-06-08 11:44:03 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:44:03 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 94.668 ms - 40[0m
+2025-06-08 11:44:16 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 11:44:16 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 70.142 ms - 40[0m
+2025-06-08 11:45:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:46:04 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:46:05 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 2.966 ms - 0[0m
+2025-06-08 11:46:05 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.271 ms - 0[0m
+2025-06-08 11:46:05 info: [0mGET /api/v1/event/activeevents [32m200[0m 292.700 ms - -[0m
+2025-06-08 11:46:05 info: [0mGET /api/v1/event/activeevents [36m304[0m 37.907 ms - -[0m
+2025-06-08 11:46:09 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 11:50:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:04:19 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:04:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:04:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:07:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:07:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:07:41 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:08:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:08:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:10:27 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:12:27 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:13:23 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:13:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:13:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:13:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:13:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:14:01 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:18:06 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:18:12 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:18:24 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:18:27 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:18:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:18:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:18:36 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:18:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:18:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:18:59 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:19:04 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:19:07 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:19:10 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:19:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:19:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:19:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:19:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:19:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:19:56 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:20:03 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:20:12 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:23:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:28:36 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:28:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:29:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:29:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:29:25 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:29:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 12:29:34 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 13:04:05 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 1.504 ms - 0[0m
+2025-06-08 13:04:05 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.894 ms - 0[0m
+2025-06-08 13:04:05 info: [0mGET /api/v1/tags/geteventtags [32m200[0m 159.713 ms - -[0m
+2025-06-08 13:04:05 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 7.712 ms - -[0m
+2025-06-08 13:04:52 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.152 ms - 0[0m
+2025-06-08 13:04:52 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.141 ms - 0[0m
+2025-06-08 13:04:52 info: [0mGET /api/v1/booking/purchasedtickets [32m200[0m 23.114 ms - -[0m
+2025-06-08 13:04:52 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 8.685 ms - -[0m
+2025-06-08 13:04:56 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.320 ms - 0[0m
+2025-06-08 13:04:56 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.842 ms - 0[0m
+2025-06-08 13:04:56 info: [0mGET /api/v1/booking/activebookings [32m200[0m 11.165 ms - 905[0m
+2025-06-08 13:04:56 info: [0mGET /api/v1/booking/activebookings [36m304[0m 4.351 ms - -[0m
+2025-06-08 13:04:59 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 0.214 ms - 0[0m
+2025-06-08 13:04:59 info: [0mOPTIONS /api/v1/booking/purchasedtickets [32m204[0m 1.861 ms - 0[0m
+2025-06-08 13:04:59 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 12.424 ms - -[0m
+2025-06-08 13:04:59 info: [0mGET /api/v1/booking/purchasedtickets [36m304[0m 5.167 ms - -[0m
+2025-06-08 13:05:07 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.197 ms - 0[0m
+2025-06-08 13:05:07 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.171 ms - 0[0m
+2025-06-08 13:05:07 info: [0mGET /api/v1/event/activeevents [36m304[0m 9.975 ms - -[0m
+2025-06-08 13:05:07 info: [0mGET /api/v1/event/activeevents [36m304[0m 8.719 ms - -[0m
+2025-06-08 13:05:50 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.159 ms - 0[0m
+2025-06-08 13:05:50 info: [0mOPTIONS /api/v1/tags/geteventtags [32m204[0m 0.248 ms - 0[0m
+2025-06-08 13:05:50 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 14.111 ms - -[0m
+2025-06-08 13:05:50 info: [0mGET /api/v1/tags/geteventtags [36m304[0m 15.492 ms - -[0m
+2025-06-08 13:14:35 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.167 ms - 0[0m
+2025-06-08 13:14:35 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.140 ms - 0[0m
+2025-06-08 13:14:35 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.585 ms - -[0m
+2025-06-08 13:14:35 info: [0mGET /api/v1/event/activeevents [36m304[0m 6.839 ms - -[0m
+2025-06-08 13:50:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 13:50:54 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 13:51:18 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 13:51:23 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 13:51:37 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 15:21:31 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 2.547 ms - 0[0m
+2025-06-08 15:21:32 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 15:21:32 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 358.668 ms - 40[0m
+2025-06-08 15:23:16 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 15:23:19 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 1.702 ms - 0[0m
+2025-06-08 15:23:20 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 15:23:20 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 283.758 ms - 40[0m
+2025-06-08 15:24:04 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 15:24:14 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 15:24:33 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 15:24:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 15:24:51 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 5.593 ms - 0[0m
+2025-06-08 15:24:52 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-08 15:24:52 info: [0mPOST /api/v1/files/uploadtoaws [31m500[0m 267.509 ms - 40[0m
+2025-06-08 15:30:01 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.280 ms - 0[0m
+2025-06-08 15:30:01 info: [0mPOST /api/v1/files/uploadtoaws [32m200[0m 132.745 ms - 352[0m
+2025-06-08 15:37:04 info: [0mOPTIONS /api/v1/files/uploadtoaws [32m204[0m 0.673 ms - 0[0m
+2025-06-08 15:37:04 info: [0mPOST /api/v1/files/uploadtoaws [32m200[0m 304.861 ms - 391[0m
+2025-06-08 15:40:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-08 19:05:59 info: 🚀 App listening on the port 8000. Current Env development.
