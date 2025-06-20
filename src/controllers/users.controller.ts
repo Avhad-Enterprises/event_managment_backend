@@ -1,21 +1,21 @@
 import { NextFunction, Request, Response } from "express";
-import { EmployeeDto } from "../dtos/employee.dto";
-import { IEmployee } from "../interfaces/employee.interface";
-import EmployeeService from "../services/employee.service";
+import { UsersDto } from "../dtos/users.dto";
+import { IUser } from "../interfaces/users.interface";
+import UsersService from "../services/users.service";
 import { generateToken } from "../utils/jwt";
 import HttpException from "../exceptions/HttpException";
 
-class EmployeeController {
-  public EmployeeService = new EmployeeService();
+class UsersController {
+  public UsersService = new UsersService();
 
   public insertEmployee = async (
     req: Request,
     res: Response,
     next: NextFunction
-    ): Promise<void> => {
+  ): Promise<void> => {
     try {
-      const userData: EmployeeDto = req.body;
-      const locationData: IEmployee = await this.EmployeeService.Insert(
+      const userData: UsersDto = req.body;
+      const locationData: IUser = await this.UsersService.Insert(
         userData
       );
       res.status(201).json({ data: locationData, message: "Inserted" });
@@ -36,7 +36,7 @@ class EmployeeController {
         throw new HttpException(400, "Please provide both email and password");
       }
 
-      const user = await this.EmployeeService.Login(email, password);
+      const user = await this.UsersService.Login(email, password);
 
       // Exclude password from response
       const { password: _pw, ...userData } = user as any;
@@ -55,4 +55,4 @@ class EmployeeController {
 
 }
 
-export default EmployeeController;
+export default UsersController;

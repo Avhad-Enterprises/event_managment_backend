@@ -1,0 +1,27 @@
+2025-06-20 12:03:56 error: StatusCode : 404, Message : Authentication token missing
+2025-06-20 12:04:11 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 12:04:22 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 12:09:47 error: StatusCode : 404, Message : Authentication token missing
+2025-06-20 12:10:21 error: StatusCode : 409, Message : Email already registered
+2025-06-20 12:10:49 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 12:11:17 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 12:11:38 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 12:11:54 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 12:12:17 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 12:13:16 error: uncaughtException: app.use() requires a middleware function
+TypeError: app.use() requires a middleware function
+    at Function.use (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\application.js:217:11)
+    at App.initializeRoutes (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:166:14)
+    at new App (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:36:10)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:13:13)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1104:12)
+2025-06-20 12:23:07 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 15:31:55 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 15:31:56 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 15:31:56 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 15:32:04 error: StatusCode : 401, Message : Wrong authentication token

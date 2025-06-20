@@ -1,12 +1,13 @@
 import { NextFunction, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import HttpException from '../exceptions/HttpException';
-import { DataStoredInToken, RequestWithUser } from '../interfaces/auth.interface';
-import userModel from '../models/users.model';
+import { DataStoredInToken } from '../interfaces/auth.interface';
+import { RequestWithUser } from '../interfaces/auth.interface';
+import { RequestHandler } from 'express';
 import DB from '../database/index.schema';
 import { IsEmpty } from 'class-validator';
 
-const authMiddleware = async (req: RequestWithUser, res: Response, next: NextFunction) => {
+const authMiddleware: RequestHandler = async (req, res, next) => {
 
   try {
     //if (req.path.includes('/employee/login') || req.path.includes('/public')) {

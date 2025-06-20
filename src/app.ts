@@ -26,9 +26,8 @@ class App {
     // Serve the QR code images before any other middleware
     this.app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-    this.app = express();
     this.port = process.env.PORT || 8000;
-    this.env = process.env.NODE_ENV || "development";
+    this.env = process.env.NODE_ENV || "production";
     this.app.use(cookieParser()); // make sure this comes BEFORE your theme middleware
     /** Move theme middleware before anything else */
     this.setDynamicThemeSupport();

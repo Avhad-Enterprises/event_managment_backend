@@ -1,13 +1,13 @@
-import { EmployeeDto } from "../dtos/employee.dto";
+import { UsersDto } from "../dtos/users.dto";
 import DB, { T } from "../database/index.schema";
-import { IEmployee } from "../interfaces/employee.interface";
+import { IUser } from "../interfaces/users.interface";
 import HttpException from "../exceptions/HttpException";
 import { isEmpty } from "../utils/util";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
-class EmployeeService {
-  public async Insert(data: EmployeeDto): Promise<IEmployee> {
+class UsersService {
+  public async Insert(data: UsersDto): Promise<IUser> {
     if (isEmpty(data)) throw new HttpException(400, "Data Invalid");
     const existingEmployee = await DB(T.USERS_TABLE)
       .where({ email: data.email })
@@ -20,7 +20,7 @@ class EmployeeService {
     return res[0];
   }
 
-  public async Login(email: string, password: string): Promise<IEmployee & { token: string }> {
+  public async Login(email: string, password: string): Promise<IUser & { token: string }> {
     if (!email || !password) {
       throw new HttpException(400, "Email and password are required");
     }
@@ -52,4 +52,4 @@ class EmployeeService {
 
 }
 
-export default EmployeeService;
+export default UsersService;

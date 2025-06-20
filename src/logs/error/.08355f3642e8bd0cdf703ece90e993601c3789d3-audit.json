@@ -119,6 +119,11 @@
             "date": 1750307112794,
             "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-19.error.log",
             "hash": "c3978c5a1da9b3067b9ded5b85d7626361ff85771e0a71a06f0de9c1c682fcf9"
+        },
+        {
+            "date": 1750393197127,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\itw-backend\\src\\logs\\error\\2025-06-20.error.log",
+            "hash": "4b70e1a5df7d5b6162f2788ea30869eece34285c50c7049eba5d588221d51deb"
         }
     ],
     "hashType": "sha256"

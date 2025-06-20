@@ -4,3 +4,100 @@
 2025-06-19 11:18:54 error: StatusCode : 500, Message : Error uploading file to S3
 2025-06-19 11:20:06 error: StatusCode : 500, Message : Error uploading file to S3
 2025-06-19 11:21:15 error: StatusCode : 500, Message : Error uploading file to S3
+2025-06-19 16:18:18 error: StatusCode : 404, Message : Authentication token missing
+2025-06-19 16:45:18 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at Server.listen (node:net:2063:7)
+    at Function.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:53:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:15:5)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-06-19 16:46:18 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at Server.listen (node:net:2063:7)
+    at Function.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:53:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:15:5)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-06-19 16:46:54 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at Server.listen (node:net:2063:7)
+    at Function.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:53:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:15:5)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-06-19 16:47:14 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at Server.listen (node:net:2063:7)
+    at Function.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:53:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:15:5)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-06-19 17:53:19 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at Server.listen (node:net:2063:7)
+    at Function.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:53:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:15:5)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-06-19 18:28:08 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at Server.listen (node:net:2063:7)
+    at Function.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:53:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:15:5)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-06-19 18:28:33 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at Server.listen (node:net:2063:7)
+    at Function.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:53:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:15:5)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)
+2025-06-19 18:28:39 error: uncaughtException: listen EADDRINUSE: address already in use :::8000
+Error: listen EADDRINUSE: address already in use :::8000
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at Server.listen (node:net:2063:7)
+    at Function.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\express\lib\application.js:635:24)
+    at App.listen (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\app.ts:53:14)
+    at Object.<anonymous> (D:\React Apps\Event Management\Event Management Backend\itw-backend\src\server.ts:15:5)
+    at Module._compile (node:internal/modules/cjs/loader:1469:14)
+    at Module.m._compile (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1618:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1548:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\React Apps\Event Management\Event Management Backend\itw-backend\node_modules\ts-node\src\index.ts:1621:12)

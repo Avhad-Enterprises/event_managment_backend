@@ -124,35 +124,10 @@ class BookingService {
         };
     }
 
-    public async ScanAndMarkBooking(payload: { base64_image?: string; ticket_id?: string }): Promise<any> {
-        let ticketId = payload.ticket_id;
+    public async ScanAndMarkBooking(payload: { ticket_id: string }): Promise<any> {
+        const ticketId = payload.ticket_id;
 
-        if (!ticketId && payload.base64_image) {
-            const buffer = Buffer.from(payload.base64_image.replace(/^data:image\/\w+;base64,/, ""), "base64");
-            // Use Jimp to read the buffer
-            let image: any;
-            try {
-                image = await Jimp.read(buffer);
-            } catch (error) {
-                throw new HttpException(400, "Failed to read image: " + error.message);
-            }
-
-            ticketId = await new Promise((resolve, reject) => {
-                const qr = new QrCode();
-                qr.callback = (err: any, value: any) => {
-                    if (err || !value) return reject(new HttpException(400, "QR code decoding failed: " + (err?.message || "Unknown error")));
-                    try {
-                        const data = JSON.parse(value.result);
-                        resolve(data.ticket_id || value.result);
-                    } catch {
-                        resolve(value.result);
-                    }
-                };
-                qr.decode(image.bitmap);
-            });
-        }
-
-        if (!ticketId) throw new HttpException(400, "Ticket ID not found");
+        if (!ticketId) throw new HttpException(400, "Ticket ID is required");
 
         const booking = await DB(T.TICKET_DETAILS_TABLE)
             .where({ ticket_id: ticketId })
@@ -166,11 +141,15 @@ class BookingService {
 
         const updated = await DB(T.TICKET_DETAILS_TABLE)
             .where({ ticket_id: ticketId })
-            .update({ is_present: true, check_in_time: new Date() })
+            .update({
+                is_present: true,
+                check_in_time: new Date()
+            })
             .returning("*");
 
         return updated[0];
     }
+
 
     private async generateTicketImage(booking: any, event: any, qrImagePath: string): Promise<string> {
         const width = 400;

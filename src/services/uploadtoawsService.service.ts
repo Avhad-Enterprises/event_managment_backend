@@ -1,6 +1,6 @@
-import { EmployeeDto } from "../dtos/employee.dto";
+import { UsersDto } from "../dtos/users.dto";
 import DB, { T } from "../database/index.schema";
-import { IEmployee } from "../interfaces/employee.interface";
+import { IUser } from "../interfaces/users.interface";
 import HttpException from "../exceptions/HttpException";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";

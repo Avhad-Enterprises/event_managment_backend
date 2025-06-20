@@ -6,10 +6,10 @@ import {
   IsString,
 } from "class-validator";
 
-export class EmployeeDto {
+export class UsersDto {
   @IsOptional({ groups: ["insert"] })
   @IsInt({ groups: ["update"] })
-  employee_id: number;
+  user_id: number;
 
   @IsOptional({ groups: ["update"] })
   @IsString({ groups: ["update", "create"] })
@@ -25,7 +25,7 @@ export class EmployeeDto {
 
   @IsOptional({ groups: ["update", "create"] })
   @IsString({ groups: ["update", "create"] })
-  profile_pic: string;
+  profile_picture: string;
 
   @IsOptional({ groups: ["insert", "update"] })
   @IsBoolean({ groups: ["insert", "update"] })
