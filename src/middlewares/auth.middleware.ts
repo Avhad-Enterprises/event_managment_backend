@@ -10,8 +10,8 @@ import { IsEmpty } from 'class-validator';
 const authMiddleware: RequestHandler = async (req, res, next) => {
 
   try {
-    //if (req.path.includes('/employee/login') || req.path.includes('/public')) {
-    if (req.path.includes('/users/login')) {
+    if (req.path.includes('/users/login') || req.path.includes('/users/insertemployee')) {
+      //if (req.path.includes('/users/login')) {
       await DB.raw("SET search_path TO public");
       return next();
     }
