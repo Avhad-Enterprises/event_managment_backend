@@ -162,7 +162,7 @@ class App {
   // }
 
   private initializeRoutes(routes: Routes[]) {
-    this.app.use("/api/v1/", authMiddleware);
+    // this.app.use("/api/v1/", authMiddleware);
     routes.forEach((route) => {
       this.app.use("/api/v1/", route.router);
     });
