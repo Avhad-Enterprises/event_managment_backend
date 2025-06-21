@@ -11,7 +11,7 @@ import Routes from "./interfaces/routes.interface";
 import errorMiddleware from "./middlewares/error.middleware";
 import { logger, stream } from "./utils/logger";
 import authMiddleware from "./middlewares/auth.middleware";
-import nunjucks from "nunjucks";
+// import nunjucks from "nunjucks";
 
 class App {
   public app: express.Application;
@@ -30,22 +30,22 @@ class App {
     this.env = process.env.NODE_ENV || "production";
     this.app.use(cookieParser()); // make sure this comes BEFORE your theme middleware
     /** Move theme middleware before anything else */
-    this.setDynamicThemeSupport();
+  ///  this.setDynamicThemeSupport();
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
     this.initializeSwagger();
     this.initializeErrorHandling();
 
-    this.app.get("/", (req, res) => {
-      const customization = {
-        pageTitle: "Welcome to My Store",
-        settings: {
-          showNewsletterSignup: true,
-          heroText: "Shop our Spring Collection!",
-        },
-      };
-      res.render("index.njk", customization);
-    });
+    // this.app.get("/", (req, res) => {
+    //   const customization = {
+    //     pageTitle: "Welcome to My Store",
+    //     settings: {
+    //       showNewsletterSignup: true,
+    //       heroText: "Shop our Spring Collection!",
+    //     },
+    //   };
+    //   res.render("index.njk", customization);
+    // });
   }
 
   public listen() {
@@ -93,73 +93,73 @@ class App {
     this.app.use(cookieParser());
   }
 
-  private setDynamicThemeSupport() {
-    const themeMap = {
-      localhost: "elegant",
-    };
+  // private setDynamicThemeSupport() {
+  //   const themeMap = {
+  //     localhost: "elegant",
+  //   };
 
-    const getThemeFromRequest = (req: express.Request): string => {
-      const themeFromQuery = req.query.theme?.toString();
-      const themeFromCookie = req.cookies?.theme;
-      const theme = "default";
+  //   const getThemeFromRequest = (req: express.Request): string => {
+  //     const themeFromQuery = req.query.theme?.toString();
+  //     const themeFromCookie = req.cookies?.theme;
+  //     const theme = "default";
 
-      console.log(
-        "[Theme Resolution] Hostname:",
-        req.hostname,
-        "| Theme Query:",
-        req.query.theme,
-        "| Cookie Theme:",
-        themeFromCookie,
-        "| Resolved:",
-        theme
-      );
+  //     console.log(
+  //       "[Theme Resolution] Hostname:",
+  //       req.hostname,
+  //       "| Theme Query:",
+  //       req.query.theme,
+  //       "| Cookie Theme:",
+  //       themeFromCookie,
+  //       "| Resolved:",
+  //       theme
+  //     );
 
-      return theme;
-    };
+  //     return theme;
+  //   };
 
-    this.app.use((req, res, next) => {
-      const theme = getThemeFromRequest(req);
+  //   this.app.use((req, res, next) => {
+  //     const theme = getThemeFromRequest(req);
 
-      // Set cookie if not already set
-      if (!req.cookies.theme && theme) {
-        res.cookie("theme", theme, { maxAge: 900000, httpOnly: false });
-      }
+  //     // Set cookie if not already set
+  //     if (!req.cookies.theme && theme) {
+  //       res.cookie("theme", theme, { maxAge: 900000, httpOnly: false });
+  //     }
 
-      const themePath = path.resolve(__dirname, "themes", theme, "templates");
+  //     const themePath = path.resolve(__dirname, "themes", theme, "templates");
 
-      nunjucks.configure(themePath, {
-        autoescape: true,
-        express: this.app,
-        noCache: true,
-      });
+  //     nunjucks.configure(themePath, {
+  //       autoescape: true,
+  //       express: this.app,
+  //       noCache: true,
+  //     });
 
-      res.locals.theme = theme;
-      next();
-    });
+  //     res.locals.theme = theme;
+  //     next();
+  //   });
 
-    this.app.get("/shop", (req, res) => {
-      res.render("shop.njk", { theme: res.locals.theme });
-    });
+  //   this.app.get("/shop", (req, res) => {
+  //     res.render("shop.njk", { theme: res.locals.theme });
+  //   });
 
-    this.app.get("/assets/*", (req, res, next) => {
-      const theme = res.locals.theme;
-      const assetPath = req.params[0]; // gets the actual path after /assets/
+  //   this.app.get("/assets/*", (req, res, next) => {
+  //     const theme = res.locals.theme;
+  //     const assetPath = req.params[0]; // gets the actual path after /assets/
 
-      const resolvedFile = path.join(
-        __dirname,
-        `themes/${theme}/assets`,
-        assetPath
-      );
-      console.log("[Assets] Theme:", theme, "| File:", resolvedFile);
+  //     const resolvedFile = path.join(
+  //       __dirname,
+  //       `themes/${theme}/assets`,
+  //       assetPath
+  //     );
+  //     console.log("[Assets] Theme:", theme, "| File:", resolvedFile);
 
-      fs.access(resolvedFile, fs.constants.F_OK, (err) => {
-        if (err) {
-          return res.status(404).send("Asset not found");
-        }
-        res.sendFile(resolvedFile);
-      });
-    });
-  }
+  //     fs.access(resolvedFile, fs.constants.F_OK, (err) => {
+  //       if (err) {
+  //         return res.status(404).send("Asset not found");
+  //       }
+  //       res.sendFile(resolvedFile);
+  //     });
+  //   });
+  // }
 
   private initializeRoutes(routes: Routes[]) {
     this.app.use("/api/v1/", authMiddleware);
