@@ -108,3 +108,32 @@
 2025-06-20 16:41:33 info: 🚀 App listening on the port 8000. Current Env development.
 2025-06-20 16:42:07 info: [0mPOST /api/v1/users/login [32m200[0m 139.443 ms - -[0m
 2025-06-20 16:48:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 19:58:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 19:59:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:01:04 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:01:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:01:35 error: StatusCode : 409, Message : Email already registered
+2025-06-20 20:01:35 info: [0mPOST /api/v1/users/insertemployee [33m409[0m 114.400 ms - 38[0m
+2025-06-20 20:01:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:01:57 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:02:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:02:28 error: StatusCode : 409, Message : Email already registered
+2025-06-20 20:02:28 info: [0mPOST /api/v1/users/insertemployee [33m409[0m 106.938 ms - 38[0m
+2025-06-20 20:02:46 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 20:02:46 info: [0mPOST /api/v1/dynamicforms/insertform [33m401[0m 6.212 ms - 40[0m
+2025-06-20 20:02:52 error: StatusCode : 404, Message : Authentication token missing
+2025-06-20 20:02:52 info: [0mPOST /api/v1/dynamicforms/insertform [33m404[0m 1.410 ms - 42[0m
+2025-06-20 20:02:59 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:03:04 error: StatusCode : 404, Message : Authentication token missing
+2025-06-20 20:03:04 info: [0mPOST /api/v1/dynamicforms/insertform [33m404[0m 13.059 ms - 42[0m
+2025-06-20 20:03:20 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:03:35 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:03:35 error: StatusCode : 404, Message : Authentication token missing
+2025-06-20 20:03:35 info: [0mPOST /api/v1/dynamicforms/insertform [33m404[0m 14.473 ms - 42[0m
+2025-06-20 20:05:13 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:05:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:05:22 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:06:26 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:06:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:08:23 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-20 20:08:37 info: 🚀 App listening on the port 8000. Current Env development.

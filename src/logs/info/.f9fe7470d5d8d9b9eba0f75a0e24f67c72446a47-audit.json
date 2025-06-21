@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\.f9fe7470d5d8d9b9eba0f75a0e24f67c72446a47-audit.json",
+    "files": [
+        {
+            "date": 1750429723309,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\2025-06-20.log",
+            "hash": "98f403bfd3836a86b8a313035b4fd3862940e948296f728b302aaac9ba33c34c"
+        },
+        {
+            "date": 1750483167800,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\2025-06-21.log",
+            "hash": "d4b91b22bdff633f8babffbce18dbcaeeb4963bb89c7932f22581483a7f99b3b"
+        }
+    ],
+    "hashType": "sha256"
+}
