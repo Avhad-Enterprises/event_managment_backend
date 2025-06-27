@@ -25,3 +25,9 @@ TypeError: app.use() requires a middleware function
 2025-06-20 15:31:56 error: StatusCode : 401, Message : Wrong authentication token
 2025-06-20 15:31:56 error: StatusCode : 401, Message : Wrong authentication token
 2025-06-20 15:32:04 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 20:01:35 error: StatusCode : 409, Message : Email already registered
+2025-06-20 20:02:28 error: StatusCode : 409, Message : Email already registered
+2025-06-20 20:02:46 error: StatusCode : 401, Message : Wrong authentication token
+2025-06-20 20:02:52 error: StatusCode : 404, Message : Authentication token missing
+2025-06-20 20:03:04 error: StatusCode : 404, Message : Authentication token missing
+2025-06-20 20:03:35 error: StatusCode : 404, Message : Authentication token missing

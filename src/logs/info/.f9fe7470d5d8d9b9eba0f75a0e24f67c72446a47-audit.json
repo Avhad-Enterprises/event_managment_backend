@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\.f9fe7470d5d8d9b9eba0f75a0e24f67c72446a47-audit.json",
+    "files": [
+        {
+            "date": 1750429723309,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\2025-06-20.log",
+            "hash": "98f403bfd3836a86b8a313035b4fd3862940e948296f728b302aaac9ba33c34c"
+        },
+        {
+            "date": 1750565166516,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\2025-06-22.log",
+            "hash": "9fc60e1483e03c6d2b9e89a21b646a61587606d205465c9c4318b4564a2ee57c"
+        },
+        {
+            "date": 1750739087105,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\2025-06-24.log",
+            "hash": "f316d1b54254e6810c08a5a6b90d41ffe953fe3ff2e95270b0799df43b6c550f"
+        },
+        {
+            "date": 1750941074919,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\2025-06-26.log",
+            "hash": "7d22f78e895c5b62fdc5aa836d67620f3721a2b723babe648cf146c44cc350d0"
+        },
+        {
+            "date": 1751003855091,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\2025-06-27.log",
+            "hash": "98cc1d683fd63dc9f29e3b99c3c95bc0e2d202c62ad66841fa3b5b76e088b320"
+        }
+    ],
+    "hashType": "sha256"
+}

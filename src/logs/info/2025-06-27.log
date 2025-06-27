@@ -1,0 +1,80 @@
+2025-06-27 11:27:39 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 11:29:12 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 3.766 ms - 0[0m
+2025-06-27 11:29:12 info: [0mOPTIONS /api/v1/event/activeevents [32m204[0m 0.127 ms - 0[0m
+2025-06-27 11:29:12 info: [0mGET /api/v1/event/activeevents [36m304[0m 84.176 ms - -[0m
+2025-06-27 11:29:12 info: [0mGET /api/v1/event/activeevents [36m304[0m 5.211 ms - -[0m
+2025-06-27 11:29:17 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.144 ms - 0[0m
+2025-06-27 11:29:17 info: [0mOPTIONS /api/v1/booking/activebookings [32m204[0m 0.215 ms - 0[0m
+2025-06-27 11:29:17 info: [0mGET /api/v1/booking/activebookings [36m304[0m 19.122 ms - -[0m
+2025-06-27 11:29:17 info: [0mGET /api/v1/booking/activebookings [36m304[0m 7.645 ms - -[0m
+2025-06-27 11:29:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 11:55:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 11:56:42 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 11:56:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 11:57:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:00:01 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:04:40 error: StatusCode : 409, Message : Email already registered
+2025-06-27 12:04:40 info: [0mPOST /api/v1/users/insertemployee [33m409[0m 196.258 ms - 38[0m
+2025-06-27 12:06:26 error: StatusCode : 500, Message : insert into "users" ("aadhaar_verification", "account_status", "account_type", "address_line_first", "address_line_second", "availability", "bank_account_info", "banned_reason", "bio", "certification", "city", "country", "education", "email", "email_notifications", "email_verified", "experience", "first_name", "hire_count", "is_active", "is_banned", "kyc_verified", "last_login_at", "last_name", "login_attempts", "notes", "password", "payment_method", "payout_method", "phone_number", "phone_verified", "pincode", "previous_works", "profile_picture", "projects_applied", "projects_completed", "projects_created", "reset_token", "reset_token_expires", "review_id", "role", "services", "skill", "state", "tags", "time_spent", "timezone", "total_earnings", "total_spent", "username") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50) returning * - invalid input syntax for type json
+2025-06-27 12:06:26 info: [0mPOST /api/v1/users/insertemployee [31m500[0m 78.091 ms - -[0m
+2025-06-27 12:08:09 error: StatusCode : 500, Message : insert into "users" ("aadhaar_verification", "account_status", "account_type", "address_line_first", "address_line_second", "availability", "bank_account_info", "banned_reason", "bio", "certification", "city", "country", "education", "email", "email_notifications", "email_verified", "experience", "first_name", "hire_count", "is_active", "is_banned", "kyc_verified", "last_login_at", "last_name", "login_attempts", "notes", "password", "payment_method", "payout_method", "phone_number", "phone_verified", "pincode", "previous_works", "profile_picture", "projects_applied", "projects_completed", "projects_created", "reset_token", "reset_token_expires", "review_id", "role", "services", "skill", "state", "tags", "time_spent", "timezone", "total_earnings", "total_spent", "username") values ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46, $47, $48, $49, $50) returning * - invalid input syntax for type json
+2025-06-27 12:08:09 info: [0mPOST /api/v1/users/insertemployee [31m500[0m 71.161 ms - -[0m
+2025-06-27 12:14:26 info: [0mPOST /api/v1/users/insertemployee [32m201[0m 77.126 ms - -[0m
+2025-06-27 12:15:08 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:23:29 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:23:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:23:54 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:23:58 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:25:52 error: StatusCode : 404, Message : Authentication token missing
+2025-06-27 12:25:52 info: [0mPOST /api/v1/users/update_user_by_id [33m404[0m 23.373 ms - 42[0m
+2025-06-27 12:26:00 info: [0mPOST /api/v1/users/login [32m200[0m 131.404 ms - -[0m
+2025-06-27 12:26:23 info: [0mPOST /api/v1/users/update_user_by_id [32m200[0m 34.561 ms - -[0m
+2025-06-27 12:26:36 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:31:48 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:31:54 info: [0mPOST /api/v1/users/update_user_by_id [32m200[0m 147.134 ms - -[0m
+2025-06-27 12:32:21 info: [0mPOST /api/v1/users/update_user_by_id [32m200[0m 72.976 ms - -[0m
+2025-06-27 12:32:30 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:44:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:45:05 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:45:36 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:45:40 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:45:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:46:02 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:46:11 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:46:14 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:47:31 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:47:37 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:47:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:47:54 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:48:05 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:48:12 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:50:18 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:50:21 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:50:24 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:50:45 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:51:08 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:51:25 error: StatusCode : 400, Message : Expected double-quoted property name in JSON at position 47
+2025-06-27 12:51:25 info: [0mPOST /api/v1/users/forgot-password [33m400[0m 27.323 ms - 73[0m
+2025-06-27 12:51:38 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:51:46 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:52:01 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:52:04 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:52:12 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:54:02 info: [0mPOST /api/v1/users/forgot-password [32m200[0m 5039.649 ms - 38[0m
+2025-06-27 12:54:32 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:56:11 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 12:56:23 info: [0mPOST /api/v1/users/forgot-password [32m200[0m 10156.532 ms - 38[0m
+2025-06-27 12:56:43 info: [0mGET /reset-password?token=b68378a3fd7fea91ada61fbb526cea0760033e5eead9ec3ded965b126e227567 [33m404[0m 2.656 ms - 153[0m
+2025-06-27 12:57:01 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 13:58:53 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 13:59:12 info: [0mPOST /api/v1/users/forgot-password [32m200[0m 6120.139 ms - 38[0m
+2025-06-27 16:33:52 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 16:34:29 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 16:44:55 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 16:45:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 16:45:19 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 16:45:32 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 16:45:51 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 16:47:15 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 19:12:00 info: 🚀 App listening on the port 8000. Current Env development.
+2025-06-27 19:12:03 info: 🚀 App listening on the port 8000. Current Env development.
