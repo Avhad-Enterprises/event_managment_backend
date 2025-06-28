@@ -12,10 +12,12 @@ const authMiddleware: RequestHandler = async (req, res, next) => {
   try {
     //if (req.path.includes('/users/login') || req.path.includes('/users/insertemployee')) {
     if (req.path.includes('/users/login')) {
+      console.log("in if for /user/login");
       await DB.raw("SET search_path TO public");
       return next();
     }
 
+    console.log("after next");
     const bearerHeader = req.headers['authorization'];
 
     if (bearerHeader) {
@@ -50,7 +52,7 @@ const authMiddleware: RequestHandler = async (req, res, next) => {
     }
 
   } catch (error) {
-    next(new HttpException(401, 'Wrong authentication token'));
+    next(new HttpException(401, 'Wrong authentication token'+error));
   }
 };
 
