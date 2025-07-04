@@ -7,6 +7,20 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 class UsersService {
+
+  public async getAllActiveCustomers(): Promise<IUser[]> {
+    const users = await DB(T.USERS_TABLE)
+      .select("*")
+      .where({
+        account_type: "customer",
+        is_active: true,
+        is_banned: false,
+      })
+      .orderBy("created_at", "desc");
+
+    return users;
+  }
+
   public async Insert(data: UsersDto): Promise<IUser> {
     if (isEmpty(data)) throw new HttpException(400, "Data Invalid");
     const existingEmployee = await DB(T.USERS_TABLE)
@@ -14,6 +28,17 @@ class UsersService {
       .first();
     if (existingEmployee)
       throw new HttpException(409, "Email already registered");
+
+    if (data.username) {
+      const existingUsername = await DB(T.USERS_TABLE)
+        .where({ username: data.username })
+        .first();
+
+      if (existingUsername) {
+        throw new HttpException(409, "Username already taken");
+      }
+    }
+
     const hashedPassword = await bcrypt.hash(data.password, 10);
     data.password = hashedPassword;
     const res = await DB(T.USERS_TABLE).insert(data).returning("*");
@@ -137,7 +162,7 @@ class UsersService {
       .where({
         user_id,
         account_type,
-        account_status: '1',
+        account_status: 1,
         is_active: false,
         is_banned: false,
       })
@@ -163,7 +188,36 @@ class UsersService {
     return this.getUserByType(user_id, 'admin');
   }
 
+  public async createUserInvitation(data: Record<string, any>): Promise<void> {
+    const { email } = data;
 
+    if (!email) throw new HttpException(400, "Email is required");
+
+    const exists = await DB(T.USERINVITATIONS).where({ email }).first();
+    if (exists) throw new HttpException(409, "User already invited");
+
+    await DB(T.USERINVITATIONS).insert(data);
+  }
+
+
+  public async validateInvitation(email: string, token: string): Promise<void> {
+    const invite = await DB(T.USERINVITATIONS)
+      .where({ email, invite_token: token, used: false })
+      .andWhere('expires_at', '>', new Date())
+      .first();
+
+    if (!invite) {
+      throw new HttpException(403, "Invalid or expired invitation token");
+    }
+  }
+
+  public async getAllInvitations(): Promise<any[]> {
+    const invitations = await DB(T.USERINVITATIONS)
+      .select('*')
+      .orderBy('created_at', 'desc');
+
+    return invitations;
+  }
 }
 
 export default UsersService;

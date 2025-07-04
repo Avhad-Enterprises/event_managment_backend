@@ -29,6 +29,36 @@
             "date": 1751003855095,
             "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\error\\2025-06-27.error.log",
             "hash": "830fbdf6eaebf4a7c11a6982ac2607595a471fad795914fb77fdbcfbae4ed979"
+        },
+        {
+            "date": 1751100064950,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\error\\2025-06-28.error.log",
+            "hash": "ab76fb3a6bbf67b63d204ed01c6f833dc512c6830b15009a6886984f32582f70"
+        },
+        {
+            "date": 1751169883296,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\error\\2025-06-29.error.log",
+            "hash": "4dca104b2a9eaeee6437ec07ac77deacc1389bd245d5e0486cd31890a8a75cf6"
+        },
+        {
+            "date": 1751342826924,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\error\\2025-07-01.error.log",
+            "hash": "03b81519e4046fc610cefb370e1e2f3608d7a752a741da4f2af1574cba077440"
+        },
+        {
+            "date": 1751432951989,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\error\\2025-07-02.error.log",
+            "hash": "cff2e7551d2f1019d5f58ca45c77a566210edb6c06ef6d9105f538d51b50537f"
+        },
+        {
+            "date": 1751517321808,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\error\\2025-07-03.error.log",
+            "hash": "7e6c4a7523012783bdd886025db1e70da47747357af0cb261f5c2e1fc58619a2"
+        },
+        {
+            "date": 1751602300675,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\error\\2025-07-04.error.log",
+            "hash": "ab9112512a835daa5fddfac85eb04aa198c8572a0abea2a6a645255a3a243639"
         }
     ],
     "hashType": "sha256"

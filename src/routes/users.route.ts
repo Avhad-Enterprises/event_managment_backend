@@ -14,7 +14,8 @@ class UsersRoute implements Route {
   }
 
   private initializeRoutes() {
-    this.router.post(`${this.path}/insert_user`, validationMiddleware(UsersDto, 'body', false, []), this.usersController.insertEmployee);
+    this.router.get(`${this.path}/customers/active`, this.usersController.getAllActiveCustomers);
+    this.router.post(`${this.path}/insert_user`, validationMiddleware(UsersDto, 'body', false, []), this.usersController.insertUser);
     this.router.post(`${this.path}/login`, this.usersController.loginEmployee);
     this.router.post(`${this.path}/get_user_by_id`, this.usersController.getUserById);
     this.router.post(`${this.path}/update_user_by_id`, validationMiddleware(UsersDto, 'body', false, []), this.usersController.updateUserById);
@@ -27,6 +28,14 @@ class UsersRoute implements Route {
     this.router.post(`${this.path}/get_client_by_id`, this.usersController.getClientById);
     this.router.post(`${this.path}/get_customer_by_id`, this.usersController.getCustomerById);
     this.router.post(`${this.path}/get_admin_by_id`, this.usersController.getAdminById);
+
+    // Invite user (Admin only)
+    this.router.get(`${this.path}/invitations`, this.usersController.getAllInvitations);
+    this.router.post(`${this.path}/invite`, this.usersController.inviteUser);
+
+
+    // Register invited user
+    this.router.post(`${this.path}/register`, validationMiddleware(UsersDto, 'body', false, []), this.usersController.insertEmployee);
   }
 }
 

@@ -11,9 +11,9 @@ const awsConf = {
     password: process.env.DB_PASSWORD,
     database: process.env.DB_DATABASE,
     port: 5432,
-    ssl: {
-    rejectUnauthorized: false, // or false if using self-signed cert
-  }
+    //   ssl: {
+    //   rejectUnauthorized: true,
+    // }
   },
   searchPath: "public",
 };
@@ -23,7 +23,6 @@ const DB = knex(awsConf);
 export default DB;
 
 // Table Names
-import { LOGIN_TABLE } from "./login.schema";
 import { USERS_TABLE } from "./users.schema";
 import { EVENT_TABLE } from "./event.schema";
 import { TAGS_TABLE } from "./tags.schema";
@@ -32,10 +31,10 @@ import { TICKET_DETAILS_TABLE } from "./ticket_details.schema";
 import { ROLE_PERMISSIONS_TABLE } from "./role_permissions.schema";
 import { PERMISSIONS_TABLE } from "./permissions.schema";
 import { DYNAMIC_FORMS_TABLE } from "./dynamic_forms.schema";
+import { USERINVITATIONS } from "./userinvitations.schema";
 
 // Table Names
 export const T = {
-  LOGIN_TABLE,
   USERS_TABLE,
   EVENT_TABLE,
   TAGS_TABLE,
@@ -43,7 +42,8 @@ export const T = {
   TICKET_DETAILS_TABLE,
   ROLE_PERMISSIONS_TABLE,
   PERMISSIONS_TABLE,
-  DYNAMIC_FORMS_TABLE
+  DYNAMIC_FORMS_TABLE,
+  USERINVITATIONS,
 };
 
 // Creates the procedure that is then added as a trigger to every table

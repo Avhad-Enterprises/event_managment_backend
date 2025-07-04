@@ -12,60 +12,63 @@ export const seed = async (dropFirst = false) => {
     console.log("Seeding Tables");
     // await DB.raw("set search_path to public")
     await DB.schema.createTable(USERS_TABLE, (table) => {
-      table.increments('user_id').primary(); // ID
-      table.string("first_name").notNullable;
-      table.string("last_name").nullable;
-      table.string("username").notNullable();
-      table.string("email").unique();
+      table.increments('user_id').primary();
+
+      // Basic Info
+      table.string('first_name').notNullable();
+      table.string('last_name').nullable();
+      table.string('username').notNullable().unique();
+      table.string('email').notNullable().unique();
       table.string('phone_number').notNullable();
+      table.string('password').nullable();
+
+      // Role & Access
+      table.string('role').defaultTo('attendee'); // attendee, organizer, admin
+      table.string('account_type').nullable();    // optional if separate from role
+      table.string('account_status').defaultTo('active'); // active, inactive, banned
+      table.boolean('is_active').defaultTo(true);
+      table.boolean('is_banned').defaultTo(false);
+
+      // Profile & Settings
       table.string('profile_picture').nullable();
-      table.string("address_line_first").notNullable();
-      table.string("address_line_second").defaultTo(null);
-      table.string("city").nullable();
-      table.string("state").nullable();
-      table.string("country").nullable();
-      table.string("pincode").nullable();
-      table.string("password").nullable();
-      table.boolean("aadhaar_verification").defaultTo(false);
-      table.boolean("email_verified").defaultTo(false);
-      table.boolean('phone_verified').defaultTo(false);
-      table.text("reset_token").nullable();
-      table.timestamp("reset_token_expires").nullable();
-      table.string('login_attempts').defaultTo(0);
-      table.boolean('kyc_verified').defaultTo(false);
-      table.string("role").nullable();
-      table.text('banned_reason').nullable();
       table.text('bio').nullable();
       table.string('timezone').nullable();
-      table.jsonb("skill").nullable();
-      table.boolean("email_notifications").nullable();
-      table.jsonb("tags").defaultTo(true);
-      table.boolean("notes").nullable();
-      table.jsonb('certification').nullable();
-      table.jsonb('education').nullable;
-      table.text('experience').nullable()
-      table.jsonb('services').nullable();
-      table.jsonb('previous_works').nullable();
-      table.integer('projects_created').defaultTo(0);
-      table.integer('projects_applied').defaultTo(0);
-      table.integer('projects_completed').defaultTo(0);
-      table.integer('hire_count').defaultTo(0);
-      table.integer('review_id').defaultTo(0);
-      table.integer('total_earnings').defaultTo(0);
+      table.boolean('email_notifications').defaultTo(true);
+
+      // Address
+      table.string('address_line_first').nullable();
+      table.string('address_line_second').nullable();
+      table.string('city').nullable();
+      table.string('state').nullable();
+      table.string('country').nullable();
+      table.string('pincode').nullable();
+
+      // Auth and Verification
+      table.boolean('email_verified').defaultTo(false);
+      table.boolean('phone_verified').defaultTo(false);
+      table.text('reset_token').nullable();
+      table.timestamp('reset_token_expires').nullable();
+      table.integer('login_attempts').defaultTo(0);
+      table.timestamp('last_login_at').nullable();
+
+      // Stats for Organizers/Attendees
+      table.integer('events_created').defaultTo(0);
+      table.integer('events_attended').defaultTo(0);
+      table.integer('tickets_purchased').defaultTo(0);
       table.integer('total_spent').defaultTo(0);
+      table.integer('total_earned').defaultTo(0);
+
+      // Optional Booking Preferences or Details
       table.jsonb('payment_method').nullable();
       table.jsonb('payout_method').nullable();
       table.jsonb('bank_account_info').nullable();
-      table.string('account_type').nullable();
       table.string('availability').nullable();
-      table.integer('time_spent').defaultTo(0);
-      table.string('account_status').defaultTo(1);
-      table.boolean("is_active").defaultTo(true);
-      table.boolean('is_banned').defaultTo(false);
-      table.timestamp("created_at").defaultTo(DB.fn.now());
-      table.timestamp("updated_at").defaultTo(DB.fn.now());
-      table.timestamp("updated_by").nullable();
-      table.timestamp('last_login_at').nullable();
+
+      // Internal Metadata
+      table.text('banned_reason').nullable();
+      table.timestamp('created_at').defaultTo(DB.fn.now());
+      table.timestamp('updated_at').defaultTo(DB.fn.now());
+      table.timestamp('updated_by').nullable();
     });
 
 
