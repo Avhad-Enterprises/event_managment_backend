@@ -28,10 +28,14 @@ import { EVENT_TABLE } from "./event.schema";
 import { TAGS_TABLE } from "./tags.schema";
 import { BOOKINGS_TABLE } from "./bookings.schema";
 import { TICKET_DETAILS_TABLE } from "./ticket_details.schema";
-import { ROLE_PERMISSIONS_TABLE } from "./role_permissions.schema";
-import { PERMISSIONS_TABLE } from "./permissions.schema";
 import { DYNAMIC_FORMS_TABLE } from "./dynamic_forms.schema";
 import { USERINVITATIONS } from "./userinvitations.schema";
+
+// RABC System Tables
+import { ROLES_TABLE } from "./roles.schema";
+import { PERMISSIONS_TABLE } from "./permissions.schema";
+import { ROLE_PERMISSIONS_TABLE } from "./role_permissions.schema";
+import { USER_ROLES_TABLE } from "./user_roles.schema";
 
 // Table Names
 export const T = {
@@ -40,10 +44,12 @@ export const T = {
   TAGS_TABLE,
   BOOKINGS_TABLE,
   TICKET_DETAILS_TABLE,
-  ROLE_PERMISSIONS_TABLE,
-  PERMISSIONS_TABLE,
   DYNAMIC_FORMS_TABLE,
   USERINVITATIONS,
+  ROLES_TABLE,
+  PERMISSIONS_TABLE,
+  ROLE_PERMISSIONS_TABLE,
+  USER_ROLES_TABLE,
 };
 
 // Creates the procedure that is then added as a trigger to every table

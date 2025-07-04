@@ -4,7 +4,6 @@ import HttpException from "../exceptions/HttpException";
 import { isEmpty } from "../utils/util";
 
 class EventService {
-
     public async GetAllActiveEvents(): Promise<any[]> {
         const events = await DB(T.EVENT_TABLE)
             .where({ is_deleted: false })

@@ -54,6 +54,9 @@ export const seed = async (dropFirst = false) => {
             table.text('sponsors', 'jsonb').nullable();
             table.text('our_partners', 'jsonb').nullable();
 
+            // Data Collection form 
+            table.integer('data_collection_form').nullable();
+
             // Status and Soft Delete fields
             table.integer('is_active').defaultTo(0);
             table.integer('created_by').notNullable();

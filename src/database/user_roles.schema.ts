@@ -1,24 +1,21 @@
 import DB from './index.schema';
 
-export const PERMISSIONS_TABLE = 'permissions';
+export const USER_ROLES_TABLE = 'user_roles';
 
 export const seed = async (dropFirst = false) => {
 
     try {
         if (dropFirst) {
             console.log('Dropping Tables');
-            await DB.schema.dropTable(PERMISSIONS_TABLE);
+            await DB.schema.dropTable(USER_ROLES_TABLE);
             console.log('Dropped Tables');
         }
         console.log('Seeding Tables');
         // await DB.raw("set search_path to public")
-        await DB.schema.createTable(PERMISSIONS_TABLE, table => {
+        await DB.schema.createTable(USER_ROLES_TABLE, table => {
             table.increments('id').primary();
-            table.string('name', 100).unique().notNullable();
-            table.string('label', 100);
-            table.string('module', 50);
-            table.text('description');
-            table.boolean('is_critical').defaultTo(false);
+            table.integer('user_id').notNullable();
+            table.integer('role_id').unsigned().references('id').inTable('roles').onDelete('CASCADE');
             table.timestamp('created_at').defaultTo(DB.fn.now());
         });
 
@@ -26,7 +23,7 @@ export const seed = async (dropFirst = false) => {
         await DB.raw(`
           CREATE TRIGGER update_timestamp
           BEFORE UPDATE
-          ON ${PERMISSIONS_TABLE}
+          ON ${USER_ROLES_TABLE}
           FOR EACH ROW
           EXECUTE PROCEDURE update_timestamp();
         `);
