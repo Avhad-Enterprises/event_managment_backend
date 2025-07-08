@@ -13,7 +13,7 @@ export const seed = async (dropFirst = false) => {
 
         await DB.schema.createTable(TICKET_DETAILS_TABLE, table => {
             table.increments('id').primary();
-            table.string('ticket_id').notNullable();
+            table.string('ticket_id').unique();
             table.integer('booking_id').notNullable().references('booking_id').inTable('bookings').onDelete('CASCADE');
             table.string('ticket_type').nullable();
             table.string('customer_name').notNullable();

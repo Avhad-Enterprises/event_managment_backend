@@ -23,7 +23,7 @@ export const seed = async (dropFirst = false) => {
       table.string('password').nullable();
 
       // Role & Access
-      table.string('role').defaultTo('attendee'); // attendee, organizer, admin
+      table.string('role').defaultTo('customer'); // attendee, organizer, admin
       table.string('account_type').nullable();    // optional if separate from role
       table.string('account_status').defaultTo('active'); // active, inactive, banned
       table.boolean('is_active').defaultTo(true);

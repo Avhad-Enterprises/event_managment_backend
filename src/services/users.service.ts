@@ -21,6 +21,19 @@ class UsersService {
     return users;
   }
 
+  public async getAllActiveAdmins(): Promise<IUser[]> {
+    const users = await DB(T.USERS_TABLE)
+      .select("*")
+      .where({
+        account_type: "admin",
+        is_active: true,
+        is_banned: false,
+      })
+      .orderBy("created_at", "desc");
+
+    return users;
+  }
+
   public async Insert(data: UsersDto): Promise<IUser> {
     if (isEmpty(data)) throw new HttpException(400, "Data Invalid");
     const existingEmployee = await DB(T.USERS_TABLE)
@@ -49,14 +62,26 @@ class UsersService {
     if (!email || !password) {
       throw new HttpException(400, "Email and password are required");
     }
-    const user = await DB(T.USERS_TABLE).where({ email }).first();
+
+    const user = await DB(T.USERS_TABLE)
+      .where({
+        email,
+        account_type: 'admin',
+        account_status: 'active',
+        is_active: true,
+        is_banned: false,
+      })
+      .first();
+
     if (!user) {
-      throw new HttpException(404, "Email not registered");
+      throw new HttpException(404, "User not found or access denied");
     }
+
     const isPasswordValid = await bcrypt.compare(password, user.password);
     if (!isPasswordValid) {
       throw new HttpException(401, "Incorrect password");
     }
+
     const token = jwt.sign(
       {
         user_id: user.user_id,
@@ -69,6 +94,51 @@ class UsersService {
       process.env.JWT_SECRET as string,
       { expiresIn: "24h" }
     );
+
+    return {
+      ...user,
+      token,
+    };
+  }
+
+
+  public async customerLogin(email: string, password: string): Promise<IUser & { token: string }> {
+    if (!email || !password) {
+      throw new HttpException(400, "Email and password are required");
+    }
+
+    const user = await DB(T.USERS_TABLE)
+      .where({
+        email,
+        account_type: 'customer',
+        account_status: 'active',
+        is_active: true,
+        is_banned: false,
+      })
+      .first();
+
+    if (!user) {
+      throw new HttpException(404, "User not found or access denied");
+    }
+
+    const isPasswordValid = await bcrypt.compare(password, user.password);
+    if (!isPasswordValid) {
+      throw new HttpException(401, "Incorrect password");
+    }
+
+    const token = jwt.sign(
+      {
+        user_id: user.user_id,
+        email: user.email,
+        first_name: user.first_name,
+        last_name: user.last_name,
+        profile_picture: user.profile_picture,
+        account_type: user.account_type,
+      },
+      process.env.JWT_SECRET as string,
+      { expiresIn: "24h" }
+    );
+
     return {
       ...user,
       token,
@@ -77,7 +147,7 @@ class UsersService {
 
   public async getById(user_id: number): Promise<IUser> {
     const user = await DB(T.USERS_TABLE)
-      .where({ user_id, is_active: true, account_status: '1' }) // active user
+      .where({ user_id, is_active: true, account_status: 'active' })
       .first();
 
     if (!user) throw new HttpException(404, "User not found");
@@ -162,8 +232,8 @@ class UsersService {
       .where({
         user_id,
         account_type,
-        account_status: 1,
-        is_active: false,
+        account_status: 'active',
+        is_active: true,
         is_banned: false,
       })
       .first();

@@ -15,8 +15,10 @@ class UsersRoute implements Route {
 
   private initializeRoutes() {
     this.router.get(`${this.path}/customers/active`, this.usersController.getAllActiveCustomers);
+    this.router.get(`${this.path}/admin-users/active`, this.usersController.getAllActiveAdminMem);
     this.router.post(`${this.path}/insert_user`, validationMiddleware(UsersDto, 'body', false, []), this.usersController.insertUser);
     this.router.post(`${this.path}/login`, this.usersController.loginEmployee);
+    this.router.post(`${this.path}/userlogin`, this.usersController.loginUser);
     this.router.post(`${this.path}/get_user_by_id`, this.usersController.getUserById);
     this.router.post(`${this.path}/update_user_by_id`, validationMiddleware(UsersDto, 'body', false, []), this.usersController.updateUserById);
     this.router.post(`${this.path}/soft_delete_user`, this.usersController.softDeleteUser);

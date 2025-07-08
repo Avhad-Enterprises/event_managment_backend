@@ -11,6 +11,7 @@ import { format } from "date-fns";
 import sendEmail from "../utils/email";
 import QrCode from "qrcode-reader";
 import Jimp from 'jimp';
+import { uploadToAws } from "../utils/util";
 
 class BookingService {
     public async GetAllActiveBookings(): Promise<any[]> {
@@ -59,18 +60,19 @@ class BookingService {
         const insertedBooking = await DB(T.BOOKINGS_TABLE).insert(data).returning("*");
         const booking = insertedBooking[0];
 
-        const event = await DB(T.EVENT_TABLE).where({ event_id: booking.event_id }).first();
+        const event = await DB(T.EVENT_TABLE)
+            .select("*")
+            .where({ event_id: booking.event_id })
+            .first();
         if (!event) throw new HttpException(404, "Event not found");
 
         const qrCodeDirectory = path.join(__dirname, "../uploads/qr_codes");
-        const ticketDirectory = path.join(__dirname, "../uploads/tickets");
         if (!fs.existsSync(qrCodeDirectory)) fs.mkdirSync(qrCodeDirectory, { recursive: true });
-        if (!fs.existsSync(ticketDirectory)) fs.mkdirSync(ticketDirectory, { recursive: true });
 
         const ticketDetailsData = [];
 
         for (let i = 0; i < booking.quantity; i++) {
-            const uniqueTicketId = `NE${Math.floor(10000 + Math.random() * 90000)}`;
+            const uniqueTicketId = await this.generateUniqueTicketId();
 
             const qrData = {
                 ticket_id: uniqueTicketId,
@@ -87,11 +89,15 @@ class BookingService {
             const qrImagePath = path.join(qrCodeDirectory, `ticket_${uniqueTicketId}.png`);
             await QRCode.toFile(qrImagePath, JSON.stringify(qrData));
 
-            const ticketImagePath = await this.generateTicketImage(
+            const { buffer, filename } = await this.generateTicketImageBase64(
                 { ...booking, ticket_id: uniqueTicketId },
                 event,
                 qrImagePath
             );
+
+            const base64String = `data:image/jpeg;base64,${buffer.toString("base64")}`;
+            const awsUpload = await uploadToAws(filename, base64String);
+            const ticketImagePath = awsUpload.fileUrl;
 
             ticketDetailsData.push({
                 booking_id: booking.booking_id,
@@ -124,6 +130,102 @@ class BookingService {
         };
     }
 
+    private async generateUniqueTicketId(): Promise<string> {
+        let ticketId: string;
+        let isDuplicate = true;
+
+        while (isDuplicate) {
+            ticketId = `NE${Math.floor(10000 + Math.random() * 90000)}`;
+            const existing = await DB(T.TICKET_DETAILS_TABLE).where({ ticket_id: ticketId }).first();
+            if (!existing) isDuplicate = false;
+        }
+
+        return ticketId;
+    }
+
+    private async generateTicketImageBase64(
+        booking: any,
+        event: any,
+        qrImagePath: string
+    ): Promise<{ buffer: Buffer; filename: string }> {
+        const width = 400;
+        const height = 900;
+        const canvas = createCanvas(width, height);
+        const ctx = canvas.getContext("2d");
+
+        const formattedDate = format(new Date(event.date), "EEE, dd MMM yyyy");
+
+        // ✅ Check all_day flag to conditionally render time
+        let formattedTime = "All Day";
+        if (!event.all_day && event.time) {
+            try {
+                formattedTime = format(new Date(`1970-01-01T${event.time}`), "hh:mm a");
+            } catch {
+                formattedTime = "Time Invalid";
+            }
+        }
+
+        // ✅ Dynamically load event banner image
+        const posterImage = await loadImage(event.banner_image);
+
+        // Background
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(0, 0, width, height);
+
+        // Header Bar
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, 0, width, 80);
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "bold 20px Arial";
+        ctx.fillText(`Ticket ID: ${booking.ticket_id}`, 20, 50);
+
+        // Banner Image
+        ctx.drawImage(posterImage, 0, 80, width, 220);
+
+        // Event Info Section
+        ctx.fillStyle = "#f4f4f4";
+        ctx.fillRect(0, 300, width, 280);
+        ctx.fillStyle = "#000000";
+        ctx.font = "bold 20px Arial";
+        ctx.fillText(event.event_title, 20, 340);
+
+        ctx.font = "18px Arial";
+        ctx.fillText("Date", 20, 370);
+        ctx.fillText(formattedDate, 110, 370);
+
+        ctx.fillText("Time", 20, 400);
+        ctx.fillText(formattedTime, 110, 400);
+
+        ctx.fillText("Venue", 20, 430);
+        ctx.fillText(event.venue_name, 110, 430);
+
+        ctx.fillText("Name", 20, 460);
+        ctx.fillText(booking.name, 110, 460);
+
+        ctx.fillText("Email", 20, 490);
+        ctx.fillText(booking.email_address, 110, 490);
+
+        ctx.fillText("Ticket No.", 20, 520);
+        ctx.fillText(booking.ticket_id, 110, 520);
+
+        // QR Code
+        const qrImage = await loadImage(qrImagePath);
+        ctx.drawImage(qrImage, width / 2 - 100, 600, 200, 200);
+
+        // Footer
+        ctx.fillStyle = "#000000";
+        ctx.fillRect(0, height - 60, width, 60);
+        ctx.fillStyle = "#ffffff";
+        ctx.font = "bold 18px Arial";
+        ctx.fillText("Your Company Name", 20, height - 25);
+
+        const buffer = canvas.toBuffer("image/jpeg");
+        const filename = `ticket_${booking.ticket_id}.jpg`;
+
+        return { buffer, filename };
+    }
+
+
     public async ScanAndMarkBooking(payload: { ticket_id: string }): Promise<any> {
         const ticketId = payload.ticket_id;
 
@@ -150,68 +252,6 @@ class BookingService {
         return updated[0];
     }
 
-
-    private async generateTicketImage(booking: any, event: any, qrImagePath: string): Promise<string> {
-        const width = 400;
-        const height = 900;
-        const canvas = createCanvas(width, height);
-        const ctx = canvas.getContext("2d");
-
-        const posterImage = await loadImage(path.join(__dirname, "../assets/poster.jpg"));
-        const formattedDate = format(new Date(event.date), "EEE, dd MMM yyyy");
-        const formattedTime = format(new Date(`1970-01-01T${event.time}`), "hh:mm a");
-
-        ctx.fillStyle = "#ffffff";
-        ctx.fillRect(0, 0, width, height);
-
-        ctx.fillStyle = "#000000";
-        ctx.fillRect(0, 0, width, 80);
-        ctx.fillStyle = "#ffffff";
-        ctx.font = "bold 20px Arial";
-        ctx.fillText(`Ticket ID: ${booking.ticket_id}`, 20, 50);
-
-        ctx.drawImage(posterImage, 0, 80, width, 220);
-
-        ctx.fillStyle = "#f4f4f4";
-        ctx.fillRect(0, 300, width, 280);
-        ctx.fillStyle = "#000000";
-        ctx.font = "bold 20px Arial";
-        ctx.fillText(event.event_title, 20, 340);
-
-        ctx.font = "18px Arial";
-        ctx.fillText("Date", 20, 370);
-        ctx.fillText(formattedDate, 110, 370);
-
-        ctx.fillText("Time", 20, 400);
-        ctx.fillText(formattedTime, 110, 400);
-
-        ctx.fillText("Venue", 20, 430);
-        ctx.fillText(event.venue_name, 110, 430);
-
-        ctx.fillText("Name", 20, 460);
-        ctx.fillText(booking.name, 110, 460);
-
-        ctx.fillText("Email", 20, 490);
-        ctx.fillText(booking.email_address, 110, 490);
-
-        ctx.fillText("Ticket No.", 20, 520);
-        ctx.fillText(booking.ticket_id, 110, 520);
-
-        const qrImage = await loadImage(qrImagePath);
-        ctx.drawImage(qrImage, width / 2 - 100, 600, 200, 200);
-
-        ctx.fillStyle = "#000000";
-        ctx.fillRect(0, height - 60, width, 60);
-        ctx.fillStyle = "#ffffff";
-        ctx.font = "bold 18px Arial";
-        ctx.fillText("Your Company Name", 20, height - 25);
-
-        const ticketImagePath = path.join(__dirname, `../uploads/tickets/ticket_${booking.ticket_id}.jpg`);
-        const buffer = canvas.toBuffer("image/jpeg");
-        fs.writeFileSync(ticketImagePath, buffer);
-
-        return ticketImagePath;
-    }
 
     public async GetBookingById(booking_id: number): Promise<any> {
         if (!booking_id) throw new HttpException(400, "Booking ID is required");

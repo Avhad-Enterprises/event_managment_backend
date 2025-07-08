@@ -21,6 +21,15 @@ class UsersController {
     }
   };
 
+  public getAllActiveAdminMem = async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const users = await this.UsersService.getAllActiveAdmins();
+      res.status(200).json({ data: users, message: "Active Members fetched successfully" });
+    } catch (error) {
+      next(error);
+    }
+  };
+
   public insertUser = async (
     req: Request,
     res: Response,
@@ -50,6 +59,33 @@ class UsersController {
       }
 
       const user = await this.UsersService.Login(email, password);
+
+      const { password: _pw, ...userData } = user as any;
+
+      const token = generateToken(userData);
+
+      res.status(200).json({
+        data: { user: userData, token },
+        message: "Login successful",
+      });
+    } catch (error) {
+      next(error);
+    }
+  };
+
+  public loginUser = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<void> => {
+    try {
+      const { email, password } = req.body;
+
+      if (!email || !password) {
+        throw new HttpException(400, "Please provide both email and password");
+      }
+
+      const user = await this.UsersService.customerLogin(email, password);
 
       const { password: _pw, ...userData } = user as any;
 

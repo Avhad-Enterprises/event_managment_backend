@@ -34,10 +34,11 @@ export class BookingDto {
     promo_code?: string;
 
     @IsBoolean()
-    terms_and_conditions: boolean;
+    terms_and_conditions?: boolean;
 
+    @IsOptional()
     @IsBoolean()
-    notify_via_email_sms: boolean;
+    notify_via_email_sms?: boolean;
 
     @IsOptional()
     @IsInt()

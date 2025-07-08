@@ -59,6 +59,16 @@
             "date": 1751602300673,
             "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\2025-07-04.log",
             "hash": "fe9950b7524648127e11e9b709a49b192a2d1d830b38f0f2667e4e530e6189c3"
+        },
+        {
+            "date": 1751690567852,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\2025-07-05.log",
+            "hash": "d34b1ae5025e3864f27baa48d09339ecfc723e6b547fab54efa3adf387ffcd24"
+        },
+        {
+            "date": 1751972728538,
+            "name": "D:\\React Apps\\Event Management\\Event Management Backend\\event-backend\\src\\logs\\info\\2025-07-08.log",
+            "hash": "f23c23c7a60f41af5431356036ddc247ba2359a52bed3886b1a4658c36056345"
         }
     ],
     "hashType": "sha256"

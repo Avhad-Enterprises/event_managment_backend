@@ -25,8 +25,8 @@ export const seed = async (dropFirst = false) => {
             table.string('location').nullable();
             table.string('payment_method').nullable();
             table.string('promo_code').nullable();
-            table.boolean('terms_and_conditions').notNullable();
-            table.boolean('notify_via_email_sms').notNullable();
+            table.boolean('terms_and_conditions').nullable();
+            table.boolean('notify_via_email_sms').nullable();
 
             table.specificType('tags', 'jsonb').nullable();
             table.text('notes').nullable();

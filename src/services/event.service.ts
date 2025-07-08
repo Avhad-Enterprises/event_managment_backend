@@ -64,6 +64,20 @@ class EventService {
         return updated[0];
     }
 
+    public async getEventByMetaUrl(meta_url: string): Promise<any> {
+        if (!meta_url) throw new HttpException(400, "Meta URL is required");
+
+        const event = await DB(T.EVENT_TABLE)
+            .where({ meta_url, is_deleted: false })
+            .first();
+
+        if (!event) throw new HttpException(404, "Event not found with given meta_url");
+
+        return {
+            ...event,
+            date_and_time: `${event.date} ${event.time}`,
+        };
+    }
 
 }
 

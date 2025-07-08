@@ -56,6 +56,16 @@ class EventController {
             next(error);
         }
     };
+
+    public getEventByMetaUrl = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+        try {
+            const { meta_url } = req.params;
+            const event = await this.eventService.getEventByMetaUrl(meta_url);
+            res.status(200).json({ data: event, message: "Event fetched by URL" });
+        } catch (error) {
+            next(error);
+        }
+    };
 }
 
 export default EventController;

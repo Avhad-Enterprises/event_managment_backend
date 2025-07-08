@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /src/logs
+/src/uploads
 
 # testing
 /coverage
