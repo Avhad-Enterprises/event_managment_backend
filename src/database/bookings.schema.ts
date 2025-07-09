@@ -15,7 +15,8 @@ export const seed = async (dropFirst = false) => {
         await DB.schema.createTable(BOOKINGS_TABLE, table => {
             table.increments('booking_id').primary(); // ID
             table.integer('event_id').notNullable();
-            table.string('ticket_id').notNullable();
+            table.string('ticket_id').nullable();
+            table.integer("user_id").nullable().references("user_id").inTable("users").onDelete("SET NULL");
 
             table.string('ticket_type').nullable();
             table.integer('quantity').notNullable();

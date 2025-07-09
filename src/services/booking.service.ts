@@ -5,13 +5,16 @@ import { isEmpty } from "../utils/util";
 import QRCode from "qrcode";
 import path from "path";
 import fs from "fs";
-import { createCanvas, loadImage } from "canvas";
+import { createCanvas, loadImage, CanvasRenderingContext2D } from "canvas";
 import bwipjs from "bwip-js";
 import { format } from "date-fns";
-import sendEmail from "../utils/email";
+import sendEmailWithZip from "../utils/email";
 import QrCode from "qrcode-reader";
 import Jimp from 'jimp';
 import { uploadToAws } from "../utils/util";
+import archiver from "archiver";
+import axios from "axios";
+import stream from "stream";
 
 class BookingService {
     public async GetAllActiveBookings(): Promise<any[]> {
@@ -49,13 +52,14 @@ class BookingService {
         return ticketsWithBookingAndEvent;
     }
 
-    public async InsertBooking(data: BookingDto): Promise<any> {
+    public async InsertBooking(data: BookingDto, loggedInUser?: any): Promise<any> {
         if (isEmpty(data)) {
             throw new HttpException(400, "Booking data is empty");
         }
 
-        const mainTicketId = `NE${Math.floor(10000 + Math.random() * 90000)}`;
-        data.ticket_id = mainTicketId;
+        if (loggedInUser && loggedInUser.id) {
+            data.user_id = loggedInUser.id;
+        }
 
         const insertedBooking = await DB(T.BOOKINGS_TABLE).insert(data).returning("*");
         const booking = insertedBooking[0];
@@ -121,13 +125,38 @@ class BookingService {
             .update({ ticket_download_link: ticketDetailsData[0].ticket_image_path })
             .returning("*");
 
-        await sendEmail(booking.email_address, ticketDetailsData[0].ticket_image_path, booking);
+        const ticketUrls = ticketDetailsData.map(t => t.ticket_image_path);
+
+        const zipBuffer = await this.downloadAndZipTickets(ticketUrls);
+
+        await sendEmailWithZip(booking.email_address, zipBuffer, booking);
 
         return {
             booking: updatedBooking[0],
             tickets: ticketDetailsData,
             message: "Booking inserted with unique QR & tickets"
         };
+    }
+
+    private async downloadAndZipTickets(ticketUrls: string[]): Promise<Buffer> {
+        const archive = archiver("zip", { zlib: { level: 9 } });
+        const bufferStream = new stream.PassThrough();
+        archive.pipe(bufferStream);
+
+        for (const url of ticketUrls) {
+            const fileResponse = await axios.get(url, { responseType: "arraybuffer" });
+            const fileName = url.split("/").pop() || `ticket_${Date.now()}.jpg`;
+            archive.append(fileResponse.data, { name: fileName });
+        }
+
+        archive.finalize();
+
+        const chunks: any[] = [];
+        return new Promise((resolve, reject) => {
+            bufferStream.on("data", (chunk) => chunks.push(chunk));
+            bufferStream.on("end", () => resolve(Buffer.concat(chunks)));
+            bufferStream.on("error", reject);
+        });
     }
 
     private async generateUniqueTicketId(): Promise<string> {
@@ -149,13 +178,13 @@ class BookingService {
         qrImagePath: string
     ): Promise<{ buffer: Buffer; filename: string }> {
         const width = 400;
-        const height = 900;
-        const canvas = createCanvas(width, height);
-        const ctx = canvas.getContext("2d");
 
+        // Temporary height for initial canvas (will be adjusted dynamically later)
+        const tempCanvas = createCanvas(width, 1000);
+        const tempCtx = tempCanvas.getContext("2d");
+
+        // Format date and time
         const formattedDate = format(new Date(event.date), "EEE, dd MMM yyyy");
-
-        // ✅ Check all_day flag to conditionally render time
         let formattedTime = "All Day";
         if (!event.all_day && event.time) {
             try {
@@ -165,14 +194,30 @@ class BookingService {
             }
         }
 
-        // ✅ Dynamically load event banner image
+        // Load banner and QR image
         const posterImage = await loadImage(event.banner_image);
+        const qrImage = await loadImage(qrImagePath);
+
+        // --- Calculate title line height
+        tempCtx.font = "bold 20px Arial";
+        const titleLines = this.getWrappedTextLines(tempCtx, event.event_title, width - 40);
+        const titleHeight = titleLines.length * 24;
+
+        // Estimate full canvas height
+        const baseY = 340 + titleHeight + 10;
+        const contentBlockHeight = 180 + 200 + 60 + 40;
+        const totalHeight = baseY + contentBlockHeight;
+        const height = Math.max(900, totalHeight);
+
+        // Create actual canvas
+        const canvas = createCanvas(width, height);
+        const ctx = canvas.getContext("2d");
 
         // Background
         ctx.fillStyle = "#ffffff";
         ctx.fillRect(0, 0, width, height);
 
-        // Header Bar
+        // Header
         ctx.fillStyle = "#000000";
         ctx.fillRect(0, 0, width, 80);
         ctx.fillStyle = "#ffffff";
@@ -182,42 +227,46 @@ class BookingService {
         // Banner Image
         ctx.drawImage(posterImage, 0, 80, width, 220);
 
-        // Event Info Section
+        // Event Info Background
         ctx.fillStyle = "#f4f4f4";
-        ctx.fillRect(0, 300, width, 280);
+        ctx.fillRect(0, 300, width, baseY - 300 + 180);
+
+        // Event Title
         ctx.fillStyle = "#000000";
         ctx.font = "bold 20px Arial";
-        ctx.fillText(event.event_title, 20, 340);
+        this.drawWrappedText(ctx, event.event_title, 20, 340, width - 40, 24);
 
+        // Shifted content
         ctx.font = "18px Arial";
-        ctx.fillText("Date", 20, 370);
-        ctx.fillText(formattedDate, 110, 370);
+        ctx.fillText("Date", 20, baseY);
+        ctx.fillText(formattedDate, 110, baseY);
 
-        ctx.fillText("Time", 20, 400);
-        ctx.fillText(formattedTime, 110, 400);
+        ctx.fillText("Time", 20, baseY + 30);
+        ctx.fillText(formattedTime, 110, baseY + 30);
 
-        ctx.fillText("Venue", 20, 430);
-        ctx.fillText(event.venue_name, 110, 430);
+        ctx.fillText("Venue", 20, baseY + 60);
+        ctx.fillText(event.venue_name, 110, baseY + 60);
 
-        ctx.fillText("Name", 20, 460);
-        ctx.fillText(booking.name, 110, 460);
+        ctx.fillText("Name", 20, baseY + 90);
+        ctx.fillText(booking.name, 110, baseY + 90);
 
-        ctx.fillText("Email", 20, 490);
-        ctx.fillText(booking.email_address, 110, 490);
+        ctx.fillText("Email", 20, baseY + 120);
+        ctx.fillText(booking.email_address, 110, baseY + 120);
 
-        ctx.fillText("Ticket No.", 20, 520);
-        ctx.fillText(booking.ticket_id, 110, 520);
+        ctx.fillText("Ticket No.", 20, baseY + 150);
+        ctx.fillText(booking.ticket_id, 110, baseY + 150);
 
         // QR Code
-        const qrImage = await loadImage(qrImagePath);
-        ctx.drawImage(qrImage, width / 2 - 100, 600, 200, 200);
+        const qrY = baseY + 180;
+        ctx.drawImage(qrImage, width / 2 - 100, qrY, 200, 200);
 
         // Footer
+        const footerY = qrY + 200 + 40;
         ctx.fillStyle = "#000000";
-        ctx.fillRect(0, height - 60, width, 60);
+        ctx.fillRect(0, footerY, width, 60);
         ctx.fillStyle = "#ffffff";
         ctx.font = "bold 18px Arial";
-        ctx.fillText("Your Company Name", 20, height - 25);
+        ctx.fillText("Your Company Name", 20, footerY + 35);
 
         const buffer = canvas.toBuffer("image/jpeg");
         const filename = `ticket_${booking.ticket_id}.jpg`;
@@ -225,6 +274,42 @@ class BookingService {
         return { buffer, filename };
     }
 
+    private getWrappedTextLines(
+        ctx: CanvasRenderingContext2D,
+        text: string,
+        maxWidth: number
+    ): string[] {
+        const words = text.split(" ");
+        const lines: string[] = [];
+        let line = "";
+
+        for (let i = 0; i < words.length; i++) {
+            const testLine = line + words[i] + " ";
+            const { width: testWidth } = ctx.measureText(testLine);
+            if (testWidth > maxWidth && i > 0) {
+                lines.push(line.trim());
+                line = words[i] + " ";
+            } else {
+                line = testLine;
+            }
+        }
+        lines.push(line.trim());
+        return lines;
+    }
+
+    private drawWrappedText(
+        ctx: CanvasRenderingContext2D,
+        text: string,
+        x: number,
+        y: number,
+        maxWidth: number,
+        lineHeight: number
+    ): void {
+        const lines = this.getWrappedTextLines(ctx, text, maxWidth);
+        lines.forEach((line, index) => {
+            ctx.fillText(line, x, y + index * lineHeight);
+        });
+    }
 
     public async ScanAndMarkBooking(payload: { ticket_id: string }): Promise<any> {
         const ticketId = payload.ticket_id;
@@ -296,6 +381,35 @@ class BookingService {
 
         return deleted[0];
     }
+
+    public async getUserBookingHistory(userId: number): Promise<any[]> {
+        const bookings = await DB(T.BOOKINGS_TABLE)
+            .where({ user_id: userId })
+            .orderBy("created_at", "desc");
+
+        if (!bookings.length) return [];
+
+        const bookingIds = bookings.map(b => b.booking_id);
+
+        const tickets = await DB(T.TICKET_DETAILS_TABLE)
+            .whereIn("booking_id", bookingIds);
+
+        const ticketsByBooking: Record<number, any[]> = {};
+        for (const ticket of tickets) {
+            if (!ticketsByBooking[ticket.booking_id]) {
+                ticketsByBooking[ticket.booking_id] = [];
+            }
+            ticketsByBooking[ticket.booking_id].push(ticket);
+        }
+
+        const result = bookings.map(booking => ({
+            ...booking,
+            tickets: ticketsByBooking[booking.booking_id] || []
+        }));
+
+        return result;
+    }
+
 }
 
 export default BookingService;

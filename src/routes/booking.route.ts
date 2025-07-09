@@ -21,6 +21,7 @@ class BookingRoute implements Route {
         this.router.put(`${this.path}/updatebooking/:id`, validationMiddleware(BookingDto, 'body', false, []), (req, res, next) => this.bookingController.updateBooking(req, res, next));
         this.router.post(`${this.path}/deletebooking`, validationMiddleware(BookingDto, 'body', true, []), (req, res, next) => this.bookingController.deleteBooking(req, res, next));
         this.router.post(`${this.path}/scan`, validationMiddleware(BookingDto, 'body', true, []), (req, res, next) => this.bookingController.scanBookingTicket(req, res, next));
+        this.router.get(`${this.path}/users/bookings/:userId`, (req, res, next) => this.bookingController.getUserBookingHistory(req, res, next));
     }
 }
 

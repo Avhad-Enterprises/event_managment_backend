@@ -7,6 +7,10 @@ export class BookingDto {
 
     @IsOptional()
     @IsString()
+    user_id?: string;
+
+    @IsOptional()
+    @IsString()
     ticket_id?: string;
 
     @IsNumber()

@@ -17,17 +17,19 @@ class BookingController {
     public insertBooking = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
         try {
             const bookingData = req.body;
-            const insertedBooking = await this.bookingService.InsertBooking(bookingData);
-            const qrCodeUrl = `/uploads/qr_codes/booking_${insertedBooking.booking_id}.png`;
+
+            // ✅ Pass req.user (set by your JWT middleware)
+            const insertedBooking = await this.bookingService.InsertBooking(bookingData, req.user);
+
             res.status(201).json({
                 data: insertedBooking,
-                message: "Booking inserted successfully",
-                qr_code_url: qrCodeUrl
+                message: "Booking inserted successfully"
             });
         } catch (error) {
             next(error);
         }
     };
+
 
     public getAllTickets = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
         try {
@@ -73,6 +75,21 @@ class BookingController {
             const bookingId = req.body.id;
             const deletedBooking = await this.bookingService.SoftDeleteBooking(bookingId);
             res.status(200).json({ data: deletedBooking, message: "Booking deleted" });
+        } catch (error) {
+            next(error);
+        }
+    };
+
+    public getUserBookingHistory = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+        try {
+            const userId = parseInt(req.params.userId, 10);
+            if (!userId) {
+                res.status(400).json({ message: "Invalid user ID" });
+                return;
+            }
+
+            const result = await this.bookingService.getUserBookingHistory(userId);
+            res.status(200).json({ message: "Booking history fetched", data: result });
         } catch (error) {
             next(error);
         }
