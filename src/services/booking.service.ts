@@ -164,7 +164,8 @@ class BookingService {
         for (const url of ticketUrls) {
             const fileResponse = await axios.get(url, { responseType: "arraybuffer" });
             const fileName = url.split("/").pop() || `ticket_${Date.now()}.jpg`;
-            archive.append(fileResponse.data, { name: fileName });
+            const buffer = Buffer.from(fileResponse.data);
+            archive.append(buffer, { name: fileName });
         }
 
         archive.finalize();
