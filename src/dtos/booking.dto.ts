@@ -6,8 +6,8 @@ export class BookingDto {
     ticket_type?: string;
 
     @IsOptional()
-    @IsString()
-    user_id?: string;
+    @IsNumber()
+    user_id?: number;
 
     @IsOptional()
     @IsString()
@@ -16,12 +16,15 @@ export class BookingDto {
     @IsNumber()
     quantity: number;
 
+    @IsOptional()
     @IsString()
     name: string;
 
+    @IsOptional()
     @IsString()
     email_address: string;
 
+    @IsOptional()
     @IsString()
     phone_number: string;
 

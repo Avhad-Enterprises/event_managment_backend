@@ -25,16 +25,9 @@ class UsersRoute implements Route {
     this.router.post(`${this.path}/forgot-password`, this.usersController.forgotPassword);
     this.router.post(`${this.path}/reset-password`, this.usersController.resetPassword);
 
-    // Get All types of user By id
-    this.router.post(`${this.path}/get_freelancer_by_id`, this.usersController.getFreelancerById);
-    this.router.post(`${this.path}/get_client_by_id`, this.usersController.getClientById);
-    this.router.post(`${this.path}/get_customer_by_id`, this.usersController.getCustomerById);
-    this.router.post(`${this.path}/get_admin_by_id`, this.usersController.getAdminById);
-
     // Invite user (Admin only)
     this.router.get(`${this.path}/invitations`, this.usersController.getAllInvitations);
     this.router.post(`${this.path}/invite`, this.usersController.inviteUser);
-
 
     // Register invited user
     this.router.post(`${this.path}/register`, validationMiddleware(UsersDto, 'body', false, []), this.usersController.insertEmployee);

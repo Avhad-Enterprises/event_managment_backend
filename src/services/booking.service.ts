@@ -18,18 +18,23 @@ import stream from "stream";
 
 class BookingService {
     public async GetAllActiveBookings(): Promise<any[]> {
-        const bookingsWithEventData = await DB(T.BOOKINGS_TABLE)
-            .join(T.EVENT_TABLE, `${T.BOOKINGS_TABLE}.event_id`, '=', `${T.EVENT_TABLE}.event_id`)
+        const bookingsWithDetails = await DB(T.BOOKINGS_TABLE)
+            .leftJoin(T.EVENT_TABLE, `${T.BOOKINGS_TABLE}.event_id`, '=', `${T.EVENT_TABLE}.event_id`)
+            .leftJoin(T.USERS_TABLE, `${T.BOOKINGS_TABLE}.user_id`, '=', `${T.USERS_TABLE}.user_id`)
             .select(
                 `${T.BOOKINGS_TABLE}.*`,
                 `${T.EVENT_TABLE}.event_title`,
                 `${T.EVENT_TABLE}.venue_name`,
-                `${T.EVENT_TABLE}.date`
+                `${T.EVENT_TABLE}.date`,
+                `${T.USERS_TABLE}.first_name as user_first_name`,
+                `${T.USERS_TABLE}.last_name as user_last_name`,
+                `${T.USERS_TABLE}.email as user_email`,
+                `${T.USERS_TABLE}.user_id as linked_user_id`
             )
             .where(`${T.BOOKINGS_TABLE}.is_deleted`, false)
             .orderBy(`${T.BOOKINGS_TABLE}.created_at`, 'desc');
 
-        return bookingsWithEventData;
+        return bookingsWithDetails;
     }
 
     public async GetAllAllTickets(): Promise<any[]> {
@@ -59,6 +64,19 @@ class BookingService {
 
         if (loggedInUser && loggedInUser.id) {
             data.user_id = loggedInUser.id;
+        }
+
+        if (data.user_id) {
+            const user = await DB(T.USERS_TABLE)
+                .select("first_name", "last_name", "email", "phone_number")
+                .where({ user_id: data.user_id })
+                .first();
+
+            if (!user) throw new HttpException(404, "User not found");
+
+            data.name = `${user.first_name} ${user.last_name}`;
+            data.email_address = user.email;
+            data.phone_number = user.phone_number;
         }
 
         const insertedBooking = await DB(T.BOOKINGS_TABLE).insert(data).returning("*");
@@ -206,7 +224,8 @@ class BookingService {
         // Estimate full canvas height
         const baseY = 340 + titleHeight + 10;
         const contentBlockHeight = 180 + 200 + 60 + 40;
-        const totalHeight = baseY + contentBlockHeight;
+        const footerHeight = 60;
+        const totalHeight = baseY + contentBlockHeight + footerHeight;
         const height = Math.max(900, totalHeight);
 
         // Create actual canvas
@@ -253,7 +272,7 @@ class BookingService {
         ctx.fillText("Email", 20, baseY + 120);
         ctx.fillText(booking.email_address, 110, baseY + 120);
 
-        ctx.fillText("Ticket No.", 20, baseY + 150);
+        ctx.fillText("Ticket ID.", 20, baseY + 150);
         ctx.fillText(booking.ticket_id, 110, baseY + 150);
 
         // QR Code
@@ -337,15 +356,36 @@ class BookingService {
         return updated[0];
     }
 
-
     public async GetBookingById(booking_id: number): Promise<any> {
         if (!booking_id) throw new HttpException(400, "Booking ID is required");
 
-        const booking = await DB(T.BOOKINGS_TABLE).where({ booking_id }).first();
+        const booking = await DB(`${T.BOOKINGS_TABLE} as b`)
+            .leftJoin(`${T.EVENT_TABLE} as e`, 'b.event_id', 'e.event_id')
+            .leftJoin(`${T.USERS_TABLE} as u`, 'b.user_id', 'u.user_id')
+            .select(
+                'b.*',
+                // Event Info
+                'e.event_title',
+                'e.event_description',
+                'e.banner_image',
+                'e.date as event_date',
+                'e.time as event_time',
+                'e.venue_name',
+                // User Info
+                'u.first_name as user_first_name',
+                'u.last_name as user_last_name',
+                'u.email as user_email',
+                'u.phone_number as user_phone_number',
+                'u.profile_picture as user_profile_picture'
+            )
+            .where('b.booking_id', booking_id)
+            .first();
+
         if (!booking) throw new HttpException(404, "Booking not found");
 
         return booking;
     }
+
 
     public async UpdateBooking(booking_id: number, data: Partial<BookingDto>): Promise<any> {
         if (!booking_id) throw new HttpException(400, "Booking ID is required");
@@ -410,6 +450,18 @@ class BookingService {
         return result;
     }
 
+    public async GetTicketsByBookingId(booking_id: number): Promise<any[]> {
+        if (!booking_id) {
+            throw new HttpException(400, "Booking ID is required");
+        }
+
+        const tickets = await DB(T.TICKET_DETAILS_TABLE)
+            .where("booking_id", booking_id)
+            .andWhere("is_active", true)
+            .orderBy("created_at", "asc");
+
+        return tickets;
+    }
 }
 
 export default BookingService;

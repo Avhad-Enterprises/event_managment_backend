@@ -70,6 +70,9 @@ export class EventDto {
     @IsString()
     our_partners?: string;
 
+    @IsString()
+    meta_url?: string
+
     @IsOptional()
     @IsInt()
     updated_by?: number;
@@ -77,5 +80,5 @@ export class EventDto {
     @IsOptional()
     @IsDate()
     updated_at?: Date;
-    
+
 }

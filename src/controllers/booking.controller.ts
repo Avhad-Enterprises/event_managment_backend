@@ -17,8 +17,6 @@ class BookingController {
     public insertBooking = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
         try {
             const bookingData = req.body;
-
-            // ✅ Pass req.user (set by your JWT middleware)
             const insertedBooking = await this.bookingService.InsertBooking(bookingData, req.user);
 
             res.status(201).json({
@@ -90,6 +88,20 @@ class BookingController {
 
             const result = await this.bookingService.getUserBookingHistory(userId);
             res.status(200).json({ message: "Booking history fetched", data: result });
+        } catch (error) {
+            next(error);
+        }
+    };
+
+    public getTicketsByBookingId = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+        try {
+            const bookingId = parseInt(req.params.bookingId, 10);
+            const tickets = await this.bookingService.GetTicketsByBookingId(bookingId);
+
+            res.status(200).json({
+                data: tickets,
+                message: "Tickets for booking fetched successfully"
+            });
         } catch (error) {
             next(error);
         }

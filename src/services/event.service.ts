@@ -22,9 +22,21 @@ class EventService {
         if (isEmpty(data)) {
             throw new HttpException(400, "Event data is empty");
         }
+
+        if (data.meta_url) {
+            const existingEvent = await DB(T.EVENT_TABLE)
+                .where({ meta_url: data.meta_url })
+                .first();
+
+            if (existingEvent) {
+                throw new HttpException(409, "Meta URL already exists. Please choose a different one.");
+            }
+        }
+
         const insertedEvent = await DB(T.EVENT_TABLE).insert(data).returning("*");
         return insertedEvent[0];
     }
+
 
     public async GetEventById(event_id: number): Promise<any> {
         if (!event_id) throw new HttpException(400, "Event ID is required");
@@ -68,16 +80,27 @@ class EventService {
         if (!meta_url) throw new HttpException(400, "Meta URL is required");
 
         const event = await DB(T.EVENT_TABLE)
-            .where({ meta_url, is_deleted: false })
+            .where({ meta_url, is_deleted: false, is_active: 1 })
             .first();
 
         if (!event) throw new HttpException(404, "Event not found with given meta_url");
 
+        let dataCollectionForm = null;
+
+        if (event.data_collection_form) {
+            dataCollectionForm = await DB("dynamic_forms")
+                .select("*")
+                .where({ id: event.data_collection_form, is_deleted: false })
+                .first();
+        }
+
         return {
             ...event,
             date_and_time: `${event.date} ${event.time}`,
+            data_collection_form_details: dataCollectionForm, // null if not found
         };
     }
+
 
 }
 
