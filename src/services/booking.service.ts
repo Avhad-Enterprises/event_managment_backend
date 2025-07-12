@@ -58,34 +58,65 @@ class BookingService {
     }
 
     public async InsertBooking(data: BookingDto, loggedInUser?: any): Promise<any> {
-        if (isEmpty(data)) {
-            throw new HttpException(400, "Booking data is empty");
+        if (isEmpty(data)) throw new HttpException(400, "Booking data is empty");
+        if (!Array.isArray(data.ticket_holders) || data.ticket_holders.length !== data.quantity) {
+            throw new HttpException(400, "Ticket holder data must match quantity");
         }
 
-        if (loggedInUser && loggedInUser.id) {
-            data.user_id = loggedInUser.id;
-        }
+        let ticketHolders = data.ticket_holders;
 
-        if (data.user_id) {
+        // If user is logged in, auto-fill first ticket
+        if (loggedInUser?.id) {
             const user = await DB(T.USERS_TABLE)
                 .select("first_name", "last_name", "email", "phone_number")
-                .where({ user_id: data.user_id })
+                .where({ user_id: loggedInUser.id })
                 .first();
 
             if (!user) throw new HttpException(404, "User not found");
 
-            data.name = `${user.first_name} ${user.last_name}`;
-            data.email_address = user.email;
-            data.phone_number = user.phone_number;
+            // Replace first ticket holder with logged-in user
+            ticketHolders[0] = {
+                name: `${user.first_name} ${user.last_name}`,
+                email: user.email,
+                phone_number: user.phone_number,
+                location: ticketHolders[0]?.location || null
+            };
         }
 
-        const insertedBooking = await DB(T.BOOKINGS_TABLE).insert(data).returning("*");
+        // If you need to store ticket_holders as JSON in the DB, do it in a separate variable for DB insert only
+        let ticketHoldersJson: string | undefined;
+        if (data.ticket_holders) {
+            ticketHoldersJson = JSON.stringify(data.ticket_holders);
+        }
+
+        // Insert main booking entry
+        const bookingInsertData = { ...data, ticket_holders: ticketHoldersJson ?? data.ticket_holders };
+        // Prepare clean insert payload
+        const {
+            ticket_holders, // remove this from original
+            ...rest
+        } = data;
+
+        // Insert booking using modified ticketHolders JSON if needed
+        const insertedBooking = await DB(T.BOOKINGS_TABLE)
+            .insert({
+                ...rest,
+                user_id: loggedInUser?.id || null,
+                created_by: loggedInUser?.id || 0,
+                ticket_holders: JSON.stringify(ticketHolders) // ✅ use overwritten array
+            })
+            .returning("*");
+
+        // Insert main booking entry
+        // const insertedBooking = await DB(T.BOOKINGS_TABLE).insert(data).returning("*");
+
         const booking = insertedBooking[0];
 
         const event = await DB(T.EVENT_TABLE)
             .select("*")
             .where({ event_id: booking.event_id })
             .first();
+
         if (!event) throw new HttpException(404, "Event not found");
 
         const qrCodeDirectory = path.join(__dirname, "../uploads/qr_codes");
@@ -93,13 +124,14 @@ class BookingService {
 
         const ticketDetailsData = [];
 
-        for (let i = 0; i < booking.quantity; i++) {
+        for (let i = 0; i < data.quantity; i++) {
             const uniqueTicketId = await this.generateUniqueTicketId();
+            const holder = ticketHolders[i];
 
             const qrData = {
                 ticket_id: uniqueTicketId,
-                name: booking.name,
-                email_address: booking.email_address,
+                name: holder.name,
+                email_address: holder.email,
                 quantity: 1,
                 event_id: event.event_id,
                 event_title: event.event_title,
@@ -112,7 +144,7 @@ class BookingService {
             await QRCode.toFile(qrImagePath, JSON.stringify(qrData));
 
             const { buffer, filename } = await this.generateTicketImageBase64(
-                { ...booking, ticket_id: uniqueTicketId },
+                { ...holder, ticket_id: uniqueTicketId },
                 event,
                 qrImagePath
             );
@@ -125,9 +157,10 @@ class BookingService {
                 booking_id: booking.booking_id,
                 ticket_id: uniqueTicketId,
                 ticket_type: data.ticket_type,
-                customer_name: booking.name,
-                customer_email: booking.email_address,
-                customer_phone: booking.phone_number,
+                customer_name: holder.name,
+                customer_email: holder.email,
+                customer_phone: holder.phone_number,
+                location: holder.location,
                 status: "confirmed",
                 ticket_image_path: ticketImagePath,
                 is_active: true,
@@ -138,23 +171,21 @@ class BookingService {
 
         await DB("ticket_details").insert(ticketDetailsData);
 
-        const updatedBooking = await DB(T.BOOKINGS_TABLE)
+        await DB(T.BOOKINGS_TABLE)
             .where({ booking_id: booking.booking_id })
-            .update({ ticket_download_link: ticketDetailsData[0].ticket_image_path })
-            .returning("*");
+            .update({ ticket_download_link: ticketDetailsData[0].ticket_image_path });
 
-        const ticketUrls = ticketDetailsData.map(t => t.ticket_image_path);
+        const zipBuffer = await this.downloadAndZipTickets(ticketDetailsData.map(t => t.ticket_image_path));
 
-        const zipBuffer = await this.downloadAndZipTickets(ticketUrls);
-
-        await sendEmailWithZip(booking.email_address, zipBuffer, booking);
+        await sendEmailWithZip(ticketHolders[0].email, zipBuffer, booking); // email to primary
 
         return {
-            booking: updatedBooking[0],
+            booking,
             tickets: ticketDetailsData,
-            message: "Booking inserted with unique QR & tickets"
+            message: "Booking inserted with multiple ticket holders"
         };
     }
+
 
     private async downloadAndZipTickets(ticketUrls: string[]): Promise<Buffer> {
         const archive = archiver("zip", { zlib: { level: 9 } });

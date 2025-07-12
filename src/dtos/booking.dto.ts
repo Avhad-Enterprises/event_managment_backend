@@ -1,4 +1,30 @@
-import { IsString, IsOptional, IsNumber, IsBoolean, IsInt, IsDate } from "class-validator";
+import {
+    IsString,
+    IsOptional,
+    IsNumber,
+    IsBoolean,
+    IsInt,
+    IsDate,
+    IsArray,
+    ValidateNested,
+    IsEmail,
+} from "class-validator";
+import { Type } from "class-transformer";
+
+class TicketHolderDto {
+    @IsString()
+    name: string;
+
+    @IsEmail()
+    email: string;
+
+    @IsString()
+    phone_number: string;
+
+    @IsOptional()
+    @IsString()
+    location?: string;
+}
 
 export class BookingDto {
     @IsOptional()
@@ -54,4 +80,9 @@ export class BookingDto {
     @IsOptional()
     @IsDate()
     updated_at?: Date;
+
+    @IsArray()
+    @ValidateNested({ each: true })
+    @Type(() => TicketHolderDto)
+    ticket_holders: TicketHolderDto[];
 }

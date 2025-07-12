@@ -12,6 +12,7 @@ import errorMiddleware from "./middlewares/error.middleware";
 import { logger, stream } from "./utils/logger";
 import authMiddleware from "./middlewares/auth.middleware";
 import nunjucks from "nunjucks";
+import 'reflect-metadata';
 
 class App {
   public app: express.Application;

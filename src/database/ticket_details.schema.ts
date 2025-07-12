@@ -19,6 +19,7 @@ export const seed = async (dropFirst = false) => {
             table.string('customer_name').notNullable();
             table.string('customer_email').notNullable();
             table.string('customer_phone').nullable();
+            table.string('location').nullable();
             table.string('status').defaultTo('pending');
             table.string('ticket_image_path').nullable();
             table.integer('is_present').defaultTo(0);
