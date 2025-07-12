@@ -83,32 +83,31 @@ class BookingService {
             };
         }
 
-        // If you need to store ticket_holders as JSON in the DB, do it in a separate variable for DB insert only
         let ticketHoldersJson: string | undefined;
         if (data.ticket_holders) {
             ticketHoldersJson = JSON.stringify(data.ticket_holders);
         }
 
-        // Insert main booking entry
-        const bookingInsertData = { ...data, ticket_holders: ticketHoldersJson ?? data.ticket_holders };
-        // Prepare clean insert payload
-        const {
-            ticket_holders, // remove this from original
-            ...rest
-        } = data;
+        const bookingInsertData = {
+            event_id: data.event_id,
+            ticket_type: data.ticket_type,
+            quantity: data.quantity,
+            ticket_price: data.ticket_price,
+            total_amount: data.total_amount,
+            booking_status: data.booking_status,
+            terms_and_conditions: data.terms_and_conditions,
+            notify_via_email_sms: data.notify_via_email_sms,
+            is_active: data.is_active ?? true,
+            created_by: loggedInUser?.id || 0,
+            user_id: loggedInUser?.id || null,
+            ticket_holders: JSON.stringify(ticketHolders),
+            created_at: new Date(),
+            updated_at: new Date()
+        };
 
-        // Insert booking using modified ticketHolders JSON if needed
         const insertedBooking = await DB(T.BOOKINGS_TABLE)
-            .insert({
-                ...rest,
-                user_id: loggedInUser?.id || null,
-                created_by: loggedInUser?.id || 0,
-                ticket_holders: JSON.stringify(ticketHolders) // ✅ use overwritten array
-            })
+            .insert(bookingInsertData)
             .returning("*");
-
-        // Insert main booking entry
-        // const insertedBooking = await DB(T.BOOKINGS_TABLE).insert(data).returning("*");
 
         const booking = insertedBooking[0];
 
@@ -177,7 +176,12 @@ class BookingService {
 
         const zipBuffer = await this.downloadAndZipTickets(ticketDetailsData.map(t => t.ticket_image_path));
 
-        await sendEmailWithZip(ticketHolders[0].email, zipBuffer, booking); // email to primary
+        await sendEmailWithZip(ticketHolders[0].email, zipBuffer, {
+            ...booking,
+            name: ticketHolders[0].name,
+            event_title: event.event_title,
+            date: format(event.date, "EEE, dd MMM yyyy")
+        });
 
         return {
             booking,
@@ -185,7 +189,6 @@ class BookingService {
             message: "Booking inserted with multiple ticket holders"
         };
     }
-
 
     private async downloadAndZipTickets(ticketUrls: string[]): Promise<Buffer> {
         const archive = archiver("zip", { zlib: { level: 9 } });
@@ -300,9 +303,6 @@ class BookingService {
 
         ctx.fillText("Name", 20, baseY + 90);
         ctx.fillText(booking.name, 110, baseY + 90);
-
-        ctx.fillText("Email", 20, baseY + 120);
-        ctx.fillText(booking.email_address, 110, baseY + 120);
 
         ctx.fillText("Ticket ID.", 20, baseY + 150);
         ctx.fillText(booking.ticket_id, 110, baseY + 150);

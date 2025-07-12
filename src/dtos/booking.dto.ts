@@ -7,7 +7,7 @@ import {
     IsDate,
     IsArray,
     ValidateNested,
-    IsEmail,
+    IsEmail
 } from "class-validator";
 import { Type } from "class-transformer";
 
@@ -27,32 +27,47 @@ class TicketHolderDto {
 }
 
 export class BookingDto {
+    @IsInt()
+    event_id: number;
+
     @IsOptional()
     @IsString()
     ticket_type?: string;
 
     @IsOptional()
-    @IsNumber()
+    @IsInt()
     user_id?: number;
 
     @IsOptional()
     @IsString()
     ticket_id?: string;
 
-    @IsNumber()
+    @IsInt()
     quantity: number;
 
     @IsOptional()
-    @IsString()
-    name: string;
+    @IsNumber()
+    ticket_price?: number;
+
+    @IsOptional()
+    @IsNumber()
+    total_amount?: number;
 
     @IsOptional()
     @IsString()
-    email_address: string;
+    booking_status?: string;
 
     @IsOptional()
     @IsString()
-    phone_number: string;
+    name?: string;
+
+    @IsOptional()
+    @IsString()
+    email_address?: string;
+
+    @IsOptional()
+    @IsString()
+    phone_number?: string;
 
     @IsOptional()
     @IsString()
@@ -66,6 +81,7 @@ export class BookingDto {
     @IsString()
     promo_code?: string;
 
+    @IsOptional()
     @IsBoolean()
     terms_and_conditions?: boolean;
 
@@ -74,12 +90,44 @@ export class BookingDto {
     notify_via_email_sms?: boolean;
 
     @IsOptional()
+    @IsString()
+    tags?: string;
+
+    @IsOptional()
+    @IsString()
+    notes?: string;
+
+    @IsOptional()
+    @IsInt()
+    is_active?: number;
+
+    @IsOptional()
     @IsInt()
     created_by?: number;
 
     @IsOptional()
     @IsDate()
+    created_at?: Date;
+
+    @IsOptional()
+    @IsDate()
     updated_at?: Date;
+
+    @IsOptional()
+    @IsInt()
+    updated_by?: number;
+
+    @IsOptional()
+    @IsBoolean()
+    is_deleted?: boolean;
+
+    @IsOptional()
+    @IsInt()
+    deleted_by?: number;
+
+    @IsOptional()
+    @IsDate()
+    deleted_at?: Date;
 
     @IsArray()
     @ValidateNested({ each: true })

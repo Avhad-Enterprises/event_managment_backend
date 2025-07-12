@@ -36,9 +36,7 @@ const sendEmailWithZip = async (to: string, zipBuffer: Buffer, booking: any) => 
         };
 
         await transporter.sendMail(mailOptions);
-        console.log("Email with ZIP sent successfully to:", to);
     } catch (error) {
-        console.error("Error sending email with ZIP:", error);
         throw new Error("Error sending email with ZIP");
     }
 };
